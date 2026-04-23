@@ -1,0 +1,21 @@
+{
+  "model_name": "BAAI/bge-large-zh-v1.5",
+  "company_profiles_path": "D:\\Math_match\\codes\\outputs\\task2_profile_run\\company_profiles.json",
+  "events_path": "D:\\Math_match\\codes\\outputs\\live_classification_eastmoney30\\classification_results.json",
+  "company_count": 300,
+  "event_count": 30,
+  "matrix_shape": [
+    30,
+    300
+  ],
+  "matrix_axis": "rows=events, cols=companies",
+  "top_k": 20,
+  "batch_size": 32,
+  "device": "auto",
+  "outputs": {
+    "s0_pairs_csv": "D:\\Math_match\\codes\\outputs\\live_task2_semantic\\s0_pairs.csv",
+    "s0_topk_jsonl": "D:\\Math_match\\codes\\outputs\\live_task2_semantic\\s0_topk.jsonl",
+    "s0_matrix_npy": "D:\\Math_match\\codes\\outputs\\live_task2_semantic\\s0_matrix.npy",
+    "s0_matrix_csv": "D:\\Math_match\\codes\\outputs\\live_task2_semantic\\s0_matrix.csv"
+  }
+}

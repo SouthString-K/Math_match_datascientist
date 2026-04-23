@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "dataset_name": "lstm_event_stock_dataset_from_existing_three_files",
+    "version": "v1_dual_day_no_index",
+    "description": "基于三个现有JSON直接构造的样本级训练数据集。采用正式论文问题三的双交易日输入结构，但因缺少市场基准指数，不计算CAR(4)，改用未来4个交易日累计收益率作为标签。",
+    "source_files": [
+      "top45_event_company_4_11_to_4_14.json",
+      "hs300_history_batch1.json",
+      "hs300_history_batch2.json"
+    ],
+    "event_unit": "单事件-单公司",
+    "input_definition": {
+      "window": "事件触发前最近两个可用交易日",
+      "fields": [
+        "open",
+        "close",
+        "high",
+        "low",
+        "volume",
+        "amount",
+        "amplitude",
+        "pct_change",
+        "change_amount",
+        "turnover_rate"
+      ],
+      "extra": "提供delta_features = x[tau(j)] - x[tau-(j)]"
+    },
+    "time_alignment_rule": {
+      "tau_j": "不晚于事件自然日的最近交易日",
+      "tau_prev_j": "tau_j 的前一个交易日",
+      "eta_j": "严格晚于事件自然日的最近交易日",
+      "future_window": "从 eta_j 开始向后4个交易日"
+    },
+    "label_definition": {
+      "future_4day_return": "(close[last_future_day] - close[first_future_day]) / close[first_future_day]",
+      "future_4day_up": "1 if future_4day_return > 0 else 0"
+    },
+    "split_suggestion": {
+      "train_event_dates": [
+        "20260411",
+        "20260412"
+      ],
+      "val_event_dates": [
+        "20260413"
+      ],
+      "test_event_dates": [],
+      "note": "20260414 在现有股票文件中无法凑满完整未来4交易日标签窗口，因此单独放入 pending_inference_samples。"
+    },
+    "counts": {
+      "labeled_samples": 130,
+      "pending_inference_samples": 42,
+      "dropped_samples": 8
+    },
+    "subset": "dropped"
+  },
+  "samples": [
+    {
+      "event_date": "20260411",
+      "stock_code": "000540",
+      "event_id": "DOC-0310",
+      "reason": "stock_missing"
+    },
+    {
+      "event_date": "20260413",
+      "stock_code": "601658",
+      "event_id": "DOC-0108",
+      "reason": "stock_missing"
+    },
+    {
+      "event_date": "20260413",
+      "stock_code": "000001",
+      "event_id": "DOC-0108",
+      "reason": "stock_missing"
+    },
+    {
+      "event_date": "20260413",
+      "stock_code": "601117",
+      "event_id": "DOC-0108",
+      "reason": "stock_missing"
+    },
+    {
+      "event_date": "20260413",
+      "stock_code": "600588",
+      "event_id": "DOC-0108",
+      "reason": "stock_missing"
+    },
+    {
+      "event_date": "20260414",
+      "stock_code": "000858",
+      "event_id": "DOC-0001",
+      "reason": "stock_missing"
+    },
+    {
+      "event_date": "20260414",
+      "stock_code": "601658",
+      "event_id": "DOC-0001",
+      "reason": "stock_missing"
+    },
+    {
+      "event_date": "20260414",
+      "stock_code": "000001",
+      "event_id": "DOC-0001",
+      "reason": "stock_missing"
+    }
+  ]
+}

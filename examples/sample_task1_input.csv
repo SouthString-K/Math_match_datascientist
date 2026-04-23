@@ -1,0 +1,6 @@
+document_id,title,content,url,publish_time,source_site,event_label,event_type
+DOC-001,国务院发布新一轮新能源汽车支持政策,国务院印发通知提出继续支持新能源汽车下乡并完善充电基础设施建设，行业预期提升。,https://example.com/a,2026-03-01,gov.cn,1,政策类
+DOC-002,午评：沪指震荡整理市场情绪一般,今日市场午间复盘，分析师认为短期指数仍将震荡，暂无新增重大事件。,https://example.com/b,2026-03-01,news.example,0,
+DOC-003,某军工集团获得大额装备订单,公司公告称下属子公司签订重大军品采购合同，合同金额占去年营收比例较高。,https://example.com/c,2026-03-02,cninfo,1,公司类
+DOC-004,海外冲突升级推动黄金与军工板块走强,地缘冲突升级带来避险需求上升，A股军工产业链关注度快速提升。,https://example.com/d,2026-03-03,finance.example,,
+DOC-005,半导体设备行业景气度回升,多家媒体报道晶圆厂扩产预期升温，上游设备与材料需求改善。,https://example.com/e,2026-03-03,36kr,,

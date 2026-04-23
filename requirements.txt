@@ -1,0 +1,6 @@
+﻿beautifulsoup4
+openai
+pandas
+requests
+numpy
+sentence-transformers

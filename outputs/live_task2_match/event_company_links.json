@@ -1,0 +1,521 @@
+[
+  {
+    "sample_id": "LIVE-0001",
+    "title": "沪指收盘上涨0.76% 商业航天概念股掀涨停潮",
+    "event_type": "行业类",
+    "source_site": "东方财富",
+    "impact_direction": "正向",
+    "matched_companies": []
+  },
+  {
+    "sample_id": "LIVE-0002",
+    "title": "伊朗议会要员：伊朗已决定继续与美国进行谈判",
+    "event_type": "地缘类",
+    "source_site": "东方财富",
+    "impact_direction": "正向",
+    "matched_companies": []
+  },
+  {
+    "sample_id": "LIVE-0003",
+    "title": "20分钟 20%涨停！商业航天快速拉升！热门赛道突传利好！",
+    "event_type": "行业类",
+    "source_site": "东方财富",
+    "impact_direction": "",
+    "matched_companies": []
+  },
+  {
+    "sample_id": "LIVE-0004",
+    "title": "重磅利好！预计突破万亿 融资客抢筹稀土小金属(附股)",
+    "event_type": "行业类",
+    "source_site": "东方财富",
+    "impact_direction": "正向",
+    "matched_companies": [
+      {
+        "stock_code": "600111",
+        "stock_name": "北方稀土",
+        "impact_direction": "正向",
+        "match_type": "直接相关",
+        "match_score": 0.92,
+        "reason": "事件明确指向‘稀土小金属’板块获融资客抢筹，北方稀土是轻稀土龙头，主营稀土氧化物、稀土金属等小金属产品，属于事件直接覆盖的核心标的。公司被东方财富Choice数据列为该主题重点个股，且近期有稀土提价公告，与‘抢筹’行为形成强呼应。",
+        "evidence_keywords": [
+          "稀土小金属",
+          "融资客抢筹",
+          "北方稀土",
+          "稀土氧化物",
+          "稀土金属",
+          "Choice数据"
+        ]
+      },
+      {
+        "stock_code": "000831",
+        "stock_name": "五矿稀土",
+        "impact_direction": "正向",
+        "match_type": "直接相关",
+        "match_score": 0.88,
+        "reason": "五矿稀土（现为中国稀土集团核心上市平台）主营中重稀土矿采选及稀土氧化物冶炼分离，属于‘稀土小金属’细分领域核心企业。事件聚焦稀土小金属整体板块，而该公司在产业链中占据上游关键位置，且历史报道明确将其列为稀土概念股龙头之一，与事件主题高度契合。",
+        "evidence_keywords": [
+          "稀土小金属",
+          "融资客抢筹",
+          "五矿稀土",
+          "中重稀土",
+          "稀土氧化物",
+          "中国稀土集团"
+        ]
+      },
+      {
+        "stock_code": "002056",
+        "stock_name": "横店东磁",
+        "impact_direction": "正向",
+        "match_type": "间接受益",
+        "match_score": 0.72,
+        "reason": "横店东磁虽以铁氧体磁材为主，但其产品属稀土永磁应用的重要替代或补充材料，且公司明确布局稀土永磁概念，下游应用于新能源车、风电等稀土消费场景。事件推动整个稀土功能材料板块估值提升，公司作为磁性材料龙头间接受益于板块情绪和资金流入。",
+        "evidence_keywords": [
+          "稀土小金属",
+          "稀土永磁",
+          "磁性材料",
+          "横店东磁",
+          "新能源汽车",
+          "风电"
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0005",
+    "title": "伊朗副总统：海上封锁不解除 通航安全就不免费",
+    "event_type": "地缘类",
+    "source_site": "东方财富",
+    "impact_direction": "正向",
+    "matched_companies": []
+  },
+  {
+    "sample_id": "LIVE-0006",
+    "title": "超1600亿美元！“特朗普关税退款”周一启动 企业能全部拿回吗？",
+    "event_type": "政策类",
+    "source_site": "东方财富",
+    "impact_direction": "正向",
+    "matched_companies": []
+  },
+  {
+    "sample_id": "LIVE-0007",
+    "title": "伊朗拒绝参加第二轮谈判 美国武力拦扣一艘伊朗船",
+    "event_type": "地缘类",
+    "source_site": "东方财富",
+    "impact_direction": "正向",
+    "matched_companies": []
+  },
+  {
+    "sample_id": "LIVE-0008",
+    "title": "周末刷屏！荣耀“闪电”成大黑马 核心概念股出炉",
+    "event_type": "公司类",
+    "source_site": "东方财富",
+    "impact_direction": "",
+    "matched_companies": [
+      {
+        "stock_code": "300433",
+        "stock_name": "蓝思科技",
+        "impact_direction": "正向",
+        "match_type": "直接相关",
+        "match_score": 0.92,
+        "reason": "多家权威媒体报道（如东方财富、证券时报、21财经）明确指出蓝思科技为荣耀夺冠机器人“闪电”的核心金属结构件供应商，已批量交付132款核心部件，属于事件直接点名的核心供应链企业。",
+        "evidence_keywords": [
+          "蓝思科技",
+          "荣耀机器人",
+          "核心金属结构",
+          "人形机器人",
+          "批量交付"
+        ]
+      },
+      {
+        "stock_code": "000559",
+        "stock_name": "万向钱潮",
+        "impact_direction": "正向",
+        "match_type": "间接受益",
+        "match_score": 0.68,
+        "reason": "公司主营产品包括轴承、传动轴等精密零部件，且明确布局人形机器人关节部件领域。虽然未被当前事件报道直接点名，但其在机器人丝杠、关节执行器等关键节点具备产业能力，有望通过二级供应链或技术替代路径间接受益于荣耀机器人工程化提速与量产预期。",
+        "evidence_keywords": [
+          "人形机器人",
+          "机器人丝杠",
+          "关节部件",
+          "轴承",
+          "传动系统"
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0009",
+    "title": "霍尔木兹海峡突变！35艘船只掉头！美军曝出新动作！",
+    "event_type": "地缘类",
+    "source_site": "东方财富",
+    "impact_direction": "正向",
+    "matched_companies": []
+  },
+  {
+    "sample_id": "LIVE-0010",
+    "title": "【风口研报】商业航天迎密集验证+资本催化 行业有望步入产业化关键拐点",
+    "event_type": "行业类",
+    "source_site": "东方财富",
+    "impact_direction": "正向",
+    "matched_companies": [
+      {
+        "stock_code": "601698",
+        "stock_name": "中国卫通",
+        "impact_direction": "正向",
+        "match_type": "间接受益",
+        "match_score": 0.78,
+        "reason": "事件聚焦长征十号乙火箭首飞及海上网系回收技术验证，属于商业航天发射环节的关键进展；中国卫通作为卫星运营服务商，其业务依赖于卫星成功发射与组网，上游直接关联火箭发射服务。公司历史多次通过长征系列火箭（如长征三号乙）发射中星系列卫星，且2026年4月刚公告与航天科技集团下属单位发生关联交易，表明其深度嵌入国家主导的航天发射体系。可回收火箭若成功降低成本，将加速低轨星座部署，提升卫星运营商长期受益预期。",
+        "evidence_keywords": [
+          "长征十号乙",
+          "火箭发射",
+          "海上网系回收",
+          "卫星运营",
+          "航天科技集团",
+          "中星系列卫星",
+          "通信卫星"
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0011",
+    "title": "海南：提升航天产业全链条技术服务",
+    "event_type": "政策类",
+    "source_site": "东方财富",
+    "impact_direction": "正向",
+    "matched_companies": []
+  },
+  {
+    "sample_id": "LIVE-0012",
+    "title": "不光化肥！“硫磺荒”正引发连锁危机 铜和镍供应将成重灾区？",
+    "event_type": "地缘类",
+    "source_site": "东方财富",
+    "impact_direction": "正向",
+    "matched_companies": [
+      {
+        "stock_code": "600028",
+        "stock_name": "中国石化",
+        "impact_direction": "负向",
+        "match_type": "间接受益",
+        "match_score": 0.72,
+        "reason": "事件明确提及‘中国暂停硫酸出口政策’及‘硫磺供应中断’，而中国石化主营业务包含化肥生产，且其炼化环节涉及硫磺回收与硫酸副产，属于硫资源产业链关键节点；硫酸作为冶炼铜镍的必需原料，其出口受限叠加硫磺短缺可能影响公司下游化工及化肥业务成本与产能调配，传导路径清晰。",
+        "evidence_keywords": [
+          "硫酸出口",
+          "硫磺供应中断",
+          "化肥",
+          "炼化",
+          "化工"
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0013",
+    "title": "国际油价大涨 金银、美股期货跳水！美军开火！伊朗重大警告",
+    "event_type": "地缘类",
+    "source_site": "东方财富",
+    "impact_direction": "正向",
+    "matched_companies": []
+  },
+  {
+    "sample_id": "LIVE-0014",
+    "title": "券商整合潮再添“新军” 行业加速迈向“大而强、专而精”",
+    "event_type": "公司类",
+    "source_site": "东方财富",
+    "impact_direction": "",
+    "matched_companies": [
+      {
+        "stock_code": "600958",
+        "stock_name": "东方证券",
+        "impact_direction": "正向",
+        "match_type": "直接相关",
+        "match_score": 0.98,
+        "reason": "事件明确指出东方证券筹划收购上海证券100%股权，属直接点名其作为收购主体，将显著扩大其资产规模与市场地位。",
+        "evidence_keywords": [
+          "东方证券",
+          "收购",
+          "上海证券",
+          "资产总额突破6000亿元"
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0015",
+    "title": "知情人士：AI投入猛增 字节跳动2025年净利润下滑超70% 海外营收占比创新高",
+    "event_type": "公司类",
+    "source_site": "东方财富",
+    "impact_direction": "",
+    "matched_companies": []
+  },
+  {
+    "sample_id": "LIVE-0016",
+    "title": "工信部等部门召开光伏行业座谈会 部署规范光伏产业竞争秩序相关工作",
+    "event_type": "政策类",
+    "source_site": "东方财富",
+    "impact_direction": "正向",
+    "matched_companies": []
+  },
+  {
+    "sample_id": "LIVE-0017",
+    "title": "CPO引领算力互联新周期 多只核心标的透露最新业务进展",
+    "event_type": "行业类",
+    "source_site": "东方财富",
+    "impact_direction": "",
+    "matched_companies": []
+  },
+  {
+    "sample_id": "LIVE-0018",
+    "title": "AI算力“必选项”！液冷概念爆发 龙头股8连板！融资客提前埋伏这些票",
+    "event_type": "行业类",
+    "source_site": "东方财富",
+    "impact_direction": "正向",
+    "matched_companies": [
+      {
+        "stock_code": "603019",
+        "stock_name": "中科曙光",
+        "impact_direction": "正向",
+        "match_type": "直接相关",
+        "match_score": 0.92,
+        "reason": "事件明确提及‘液冷概念爆发’，而中科曙光主营业务包含‘液冷服务器’，且其公司画像中明确列出‘液冷技术’为概念标签、‘液冷服务器’为主营产品，并在benefit_direction_keywords中包含‘液冷补贴出台’，形成‘事件（液冷技术加速落地）→ 传导路径（液冷服务器需求上升）→ 公司业务（液冷服务器产品）’的完整链条。",
+        "evidence_keywords": [
+          "液冷技术",
+          "液冷服务器",
+          "液冷概念爆发"
+        ]
+      },
+      {
+        "stock_code": "000977",
+        "stock_name": "浪潮信息",
+        "impact_direction": "正向",
+        "match_type": "间接受益",
+        "match_score": 0.78,
+        "reason": "事件核心驱动为‘AI算力需求爆发’，浪潮信息作为AI服务器龙头，其主营业务高度依赖AI算力建设。公司画像中‘AI服务器’为核心产品，且‘AI算力需求’被列为event_sensitive_keywords，传导路径为‘AI算力需求爆发 → 数据中心/服务器采购增加 → AI服务器厂商受益’，虽未直接提及液冷，但AI服务器是液冷技术的主要应用场景之一，具备明确产业链关联。",
+        "evidence_keywords": [
+          "AI算力需求爆发",
+          "AI服务器",
+          "数据中心"
+        ]
+      },
+      {
+        "stock_code": "688041",
+        "stock_name": "海光信息",
+        "impact_direction": "正向",
+        "match_type": "间接受益",
+        "match_score": 0.72,
+        "reason": "事件由AI算力需求驱动，海光信息主营DCU（AI加速芯片）和CPU，用于AI服务器与数据中心，属于算力基础设施上游芯片环节。公司画像中明确将‘AI算力需求爆发’列为敏感关键词，且下游客户包括服务器厂商，传导路径清晰：‘AI算力需求↑ → 服务器采购↑ → 高端处理器（DCU/CPU）需求↑’，虽不直接涉及液冷，但属AI算力核心硬件供应商。",
+        "evidence_keywords": [
+          "AI算力需求爆发",
+          "DCU",
+          "AI加速芯片",
+          "服务器"
+        ]
+      },
+      {
+        "stock_code": "688256",
+        "stock_name": "寒武纪",
+        "impact_direction": "正向",
+        "match_type": "间接受益",
+        "match_score": 0.68,
+        "reason": "事件核心为AI算力需求推动液冷等配套技术发展，寒武纪作为AI芯片设计企业，提供云端训练与推理芯片，是AI算力的底层支撑。公司画像中‘算力需求爆发’列为受益关键词，且产品应用于服务器场景，传导路径为‘AI算力需求↑ → AI芯片需求↑’，虽未直接涉及液冷，但在AI算力产业链中具有明确位置。",
+        "evidence_keywords": [
+          "AI芯片",
+          "算力需求爆发",
+          "云端智能芯片",
+          "服务器"
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0019",
+    "title": "暴涨650%依旧不愁卖！光纤行业迎“量价齐升” 多股业绩有望倍增(名单)",
+    "event_type": "行业类",
+    "source_site": "东方财富",
+    "impact_direction": "正向",
+    "matched_companies": []
+  },
+  {
+    "sample_id": "LIVE-0020",
+    "title": "8连板 最新“涨停王”出炉！业绩连亏股浮出 最低营收仅145万元",
+    "event_type": "公司类",
+    "source_site": "东方财富",
+    "impact_direction": "",
+    "matched_companies": []
+  },
+  {
+    "sample_id": "LIVE-0021",
+    "title": "内存短缺或致苹果推迟上新 新款Mac Studio据称延迟数月发布",
+    "event_type": "行业类",
+    "source_site": "东方财富",
+    "impact_direction": "",
+    "matched_companies": [
+      {
+        "stock_code": "000977",
+        "stock_name": "浪潮信息",
+        "impact_direction": "负向",
+        "match_type": "间接受益",
+        "match_score": 0.74,
+        "reason": "浪潮信息作为服务器制造商，其通用及AI服务器高度依赖内存等核心元器件。公司上游关键词包含“内存”，且业务覆盖数据中心与AI算力基础设施，内存短缺将直接制约其硬件生产和交付节奏，形成明确负向传导。",
+        "evidence_keywords": [
+          "内存",
+          "服务器",
+          "AI服务器",
+          "数据中心",
+          "短缺"
+        ]
+      },
+      {
+        "stock_code": "603019",
+        "stock_name": "中科曙光",
+        "impact_direction": "负向",
+        "match_type": "间接受益",
+        "match_score": 0.72,
+        "reason": "事件核心为全球内存芯片短缺，直接影响高端计算设备生产。中科曙光主营高端计算机、服务器及存储系统，其上游关键词明确包含“内存”，且产品如液冷服务器、智算中心依赖高性能内存组件。内存短缺可能推高成本或限制交付能力，构成负向影响。",
+        "evidence_keywords": [
+          "内存",
+          "高端计算机",
+          "存储系统",
+          "服务器",
+          "短缺"
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0022",
+    "title": "十大券商策略：市场有望走出新高！科技风格回归 价值也会有春天",
+    "event_type": "行业类",
+    "source_site": "东方财富",
+    "impact_direction": "",
+    "matched_companies": []
+  },
+  {
+    "sample_id": "LIVE-0023",
+    "title": "4月LPR不变：1年期3.0% 5年期以上3.5%",
+    "event_type": "宏观类",
+    "source_site": "东方财富",
+    "impact_direction": "",
+    "matched_companies": [
+      {
+        "stock_code": "600919",
+        "stock_name": "江苏银行",
+        "impact_direction": "中性",
+        "match_type": "间接受益",
+        "match_score": 0.72,
+        "reason": "事件为LPR维持不变，属于银行核心定价基准。江苏银行作为商业银行，其贷款利率和净息差受LPR直接影响。公司画像明确列出'LPR调整'为其敏感关键词，且主营业务包含大量贷款及债务工具投资，LPR持稳意味着其资产端定价稳定，避免了因利率下行导致的息差压缩风险，也未获得利率上行带来的收益提升，故影响方向为中性。",
+        "evidence_keywords": [
+          "LPR",
+          "贷款",
+          "存款",
+          "LPR调整",
+          "净息差收窄"
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0024",
+    "title": "4月20日投资日历 | 华为Pura及全场景新品发布会今日召开",
+    "event_type": "公司类",
+    "source_site": "东方财富",
+    "impact_direction": "",
+    "matched_companies": [
+      {
+        "stock_code": "300433",
+        "stock_name": "蓝思科技",
+        "impact_direction": "正向",
+        "match_type": "间接受益",
+        "match_score": 0.82,
+        "reason": "华为此次发布Pura 90系列手机、阔折叠屏手机及AI眼镜，蓝思科技主营玻璃防护屏、精密结构件及AI眼镜组件，明确覆盖智能手机与AI眼镜/XR头显应用场景，并在画像中列出‘华为’为关系实体及‘AI眼镜’为产品关键词，具备直接产业链配套能力。",
+        "evidence_keywords": [
+          "华为",
+          "AI眼镜",
+          "玻璃防护屏",
+          "AI眼镜组件",
+          "智能手机",
+          "XR头显"
+        ]
+      },
+      {
+        "stock_code": "002241",
+        "stock_name": "歌尔股份",
+        "impact_direction": "正向",
+        "match_type": "间接受益",
+        "match_score": 0.78,
+        "reason": "华为发布Pura 90系列、阔折叠屏手机及AI眼镜等新品，歌尔股份作为全球微电声龙头，主营微型扬声器、微型麦克风、VR/AR设备及智能可穿戴产品，处于消费电子中游元器件及整机制造环节，是华为声学器件和智能硬件潜在供应商，新品放量有望带动其订单增长。",
+        "evidence_keywords": [
+          "华为",
+          "AI眼镜",
+          "智能可穿戴产品",
+          "微型扬声器",
+          "微型麦克风",
+          "VR虚拟现实产品"
+        ]
+      },
+      {
+        "stock_code": "002475",
+        "stock_name": "立讯精密",
+        "impact_direction": "正向",
+        "match_type": "间接受益",
+        "match_score": 0.76,
+        "reason": "立讯精密深度布局消费电子零组件及模组，产品包括连接器、声学器件、无线充电模组等，广泛应用于智能手机和可穿戴设备；公司画像中明确列出‘华为’为关系实体，且业务覆盖智能穿戴整机，与华为Pura系列及全场景新品存在供应链协同可能。",
+        "evidence_keywords": [
+          "华为",
+          "智能穿戴整机",
+          "声学器件",
+          "无线充电模组",
+          "智能手机"
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0025",
+    "title": "货币贬值周期未过半？富国银行大胆预测：金价或飙升至8000美元",
+    "event_type": "宏观类",
+    "source_site": "东方财富",
+    "impact_direction": "正向",
+    "matched_companies": []
+  },
+  {
+    "sample_id": "LIVE-0026",
+    "title": "沃什究竟会如何降息+缩表？预告美联储未来四年走向的听证会要来了！",
+    "event_type": "宏观类",
+    "source_site": "东方财富",
+    "impact_direction": "正向",
+    "matched_companies": []
+  },
+  {
+    "sample_id": "LIVE-0027",
+    "title": "格力海信“真铜实料”之争背后：“铝代铜”到底是怎么回事？影响有多大？",
+    "event_type": "公司类",
+    "source_site": "东方财富",
+    "impact_direction": "",
+    "matched_companies": []
+  },
+  {
+    "sample_id": "LIVE-0028",
+    "title": "政策利好+关键发射将至！商业航天涨停潮 31股被融资净买过亿",
+    "event_type": "行业类",
+    "source_site": "东方财富",
+    "impact_direction": "正向",
+    "matched_companies": []
+  },
+  {
+    "sample_id": "LIVE-0029",
+    "title": "4月20日国内四大证券报纸、重要财经媒体头版头条内容精华摘要",
+    "event_type": "政策类",
+    "source_site": "东方财富",
+    "impact_direction": "正向",
+    "matched_companies": []
+  },
+  {
+    "sample_id": "LIVE-0030",
+    "title": "挑战英伟达？谷歌据称欲携手Marvell 围绕TPU开发两款AI芯片！",
+    "event_type": "公司类",
+    "source_site": "东方财富",
+    "impact_direction": "",
+    "matched_companies": []
+  }
+]

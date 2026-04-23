@@ -1,0 +1,4472 @@
+[
+  {
+    "sample_id": "LIVE-0001",
+    "title": "沪指收盘上涨0.76% 商业航天概念股掀涨停潮",
+    "event_type": "行业类",
+    "event_summary": "商业航天概念股掀起涨停潮，板块多只个股涨停，受政策支持与产业催化推动。",
+    "attribute_score": 0.816,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "000738",
+        "stock_name": "航发控制",
+        "cosine_similarity": 0.5092200040817261,
+        "s0": 0.754610002040863
+      },
+      {
+        "rank": 2,
+        "stock_code": "002013",
+        "stock_name": "中航机电",
+        "cosine_similarity": 0.49417901039123535,
+        "s0": 0.7470899820327759
+      },
+      {
+        "rank": 3,
+        "stock_code": "600893",
+        "stock_name": "航发动力",
+        "cosine_similarity": 0.49124398827552795,
+        "s0": 0.7456219792366028
+      },
+      {
+        "rank": 4,
+        "stock_code": "600009",
+        "stock_name": "上海机场",
+        "cosine_similarity": 0.4857200086116791,
+        "s0": 0.7428600192070007
+      },
+      {
+        "rank": 5,
+        "stock_code": "000768",
+        "stock_name": "中航西飞",
+        "cosine_similarity": 0.47037801146507263,
+        "s0": 0.7351890206336975
+      },
+      {
+        "rank": 6,
+        "stock_code": "601088",
+        "stock_name": "中国神华",
+        "cosine_similarity": 0.46453601121902466,
+        "s0": 0.7322679758071899
+      },
+      {
+        "rank": 7,
+        "stock_code": "600115",
+        "stock_name": "中国东航",
+        "cosine_similarity": 0.4631049931049347,
+        "s0": 0.7315530180931091
+      },
+      {
+        "rank": 8,
+        "stock_code": "000519",
+        "stock_name": "银河磁体",
+        "cosine_similarity": 0.4629490077495575,
+        "s0": 0.731473982334137
+      },
+      {
+        "rank": 9,
+        "stock_code": "600760",
+        "stock_name": "中航沈飞",
+        "cosine_similarity": 0.4620780050754547,
+        "s0": 0.7310389876365662
+      },
+      {
+        "rank": 10,
+        "stock_code": "601111",
+        "stock_name": "中国国航",
+        "cosine_similarity": 0.4618760049343109,
+        "s0": 0.7309380173683167
+      },
+      {
+        "rank": 11,
+        "stock_code": "000063",
+        "stock_name": "中兴通讯",
+        "cosine_similarity": 0.4601840078830719,
+        "s0": 0.7300919890403748
+      },
+      {
+        "rank": 12,
+        "stock_code": "600522",
+        "stock_name": "中天科技",
+        "cosine_similarity": 0.46007099747657776,
+        "s0": 0.7300350069999695
+      },
+      {
+        "rank": 13,
+        "stock_code": "601881",
+        "stock_name": "中国银河",
+        "cosine_similarity": 0.45919299125671387,
+        "s0": 0.7295969724655151
+      },
+      {
+        "rank": 14,
+        "stock_code": "000540",
+        "stock_name": "中天城投",
+        "cosine_similarity": 0.45886701345443726,
+        "s0": 0.729433000087738
+      },
+      {
+        "rank": 15,
+        "stock_code": "000415",
+        "stock_name": "渤海租赁",
+        "cosine_similarity": 0.458638995885849,
+        "s0": 0.7293199896812439
+      },
+      {
+        "rank": 16,
+        "stock_code": "601816",
+        "stock_name": "京沪高铁",
+        "cosine_similarity": 0.458530992269516,
+        "s0": 0.7292649745941162
+      },
+      {
+        "rank": 17,
+        "stock_code": "600999",
+        "stock_name": "招商证券",
+        "cosine_similarity": 0.45686399936676025,
+        "s0": 0.7284319996833801
+      },
+      {
+        "rank": 18,
+        "stock_code": "601377",
+        "stock_name": "兴业证券",
+        "cosine_similarity": 0.4565959870815277,
+        "s0": 0.728298008441925
+      },
+      {
+        "rank": 19,
+        "stock_code": "600938",
+        "stock_name": "中国海油",
+        "cosine_similarity": 0.4561220109462738,
+        "s0": 0.7280610203742981
+      },
+      {
+        "rank": 20,
+        "stock_code": "000733",
+        "stock_name": "振华科技",
+        "cosine_similarity": 0.4553000032901764,
+        "s0": 0.727649986743927
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0002",
+    "title": "伊朗议会要员：伊朗已决定继续与美国进行谈判",
+    "event_type": "地缘类",
+    "event_summary": "伊朗议会要员表示伊朗已决定继续与美国进行谈判。",
+    "attribute_score": 1.042,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "601838",
+        "stock_name": "成都银行",
+        "cosine_similarity": 0.18316300213336945,
+        "s0": 0.5915809869766235
+      },
+      {
+        "rank": 2,
+        "stock_code": "600938",
+        "stock_name": "中国海油",
+        "cosine_similarity": 0.1817760020494461,
+        "s0": 0.5908880233764648
+      },
+      {
+        "rank": 3,
+        "stock_code": "601985",
+        "stock_name": "中国核电",
+        "cosine_similarity": 0.1794860064983368,
+        "s0": 0.5897430181503296
+      },
+      {
+        "rank": 4,
+        "stock_code": "600674",
+        "stock_name": "川投能源",
+        "cosine_similarity": 0.176269993185997,
+        "s0": 0.5881350040435791
+      },
+      {
+        "rank": 5,
+        "stock_code": "601988",
+        "stock_name": "中国银行",
+        "cosine_similarity": 0.16968299448490143,
+        "s0": 0.5848410129547119
+      },
+      {
+        "rank": 6,
+        "stock_code": "601872",
+        "stock_name": "招商轮船",
+        "cosine_similarity": 0.16897499561309814,
+        "s0": 0.5844879746437073
+      },
+      {
+        "rank": 7,
+        "stock_code": "600875",
+        "stock_name": "东方电气",
+        "cosine_similarity": 0.16766099631786346,
+        "s0": 0.5838299989700317
+      },
+      {
+        "rank": 8,
+        "stock_code": "000519",
+        "stock_name": "银河磁体",
+        "cosine_similarity": 0.16764700412750244,
+        "s0": 0.583823025226593
+      },
+      {
+        "rank": 9,
+        "stock_code": "003816",
+        "stock_name": "中国广核",
+        "cosine_similarity": 0.16728399693965912,
+        "s0": 0.5836420059204102
+      },
+      {
+        "rank": 10,
+        "stock_code": "601857",
+        "stock_name": "中国石油",
+        "cosine_similarity": 0.16717299818992615,
+        "s0": 0.5835859775543213
+      },
+      {
+        "rank": 11,
+        "stock_code": "600887",
+        "stock_name": "伊利股份",
+        "cosine_similarity": 0.16692300140857697,
+        "s0": 0.5834619998931885
+      },
+      {
+        "rank": 12,
+        "stock_code": "000709",
+        "stock_name": "华菱钢铁",
+        "cosine_similarity": 0.16631999611854553,
+        "s0": 0.5831599831581116
+      },
+      {
+        "rank": 13,
+        "stock_code": "601225",
+        "stock_name": "陕西煤业",
+        "cosine_similarity": 0.16461299359798431,
+        "s0": 0.582306981086731
+      },
+      {
+        "rank": 14,
+        "stock_code": "000155",
+        "stock_name": "川能动力",
+        "cosine_similarity": 0.16324399411678314,
+        "s0": 0.5816220045089722
+      },
+      {
+        "rank": 15,
+        "stock_code": "000333",
+        "stock_name": "美的集团",
+        "cosine_similarity": 0.16276000440120697,
+        "s0": 0.5813800096511841
+      },
+      {
+        "rank": 16,
+        "stock_code": "601328",
+        "stock_name": "交通银行",
+        "cosine_similarity": 0.16256099939346313,
+        "s0": 0.5812810063362122
+      },
+      {
+        "rank": 17,
+        "stock_code": "300274",
+        "stock_name": "阳光电源",
+        "cosine_similarity": 0.1620350033044815,
+        "s0": 0.5810179710388184
+      },
+      {
+        "rank": 18,
+        "stock_code": "601881",
+        "stock_name": "中国银河",
+        "cosine_similarity": 0.16188299655914307,
+        "s0": 0.5809419751167297
+      },
+      {
+        "rank": 19,
+        "stock_code": "601808",
+        "stock_name": "中海油服",
+        "cosine_similarity": 0.1608390063047409,
+        "s0": 0.5804190039634705
+      },
+      {
+        "rank": 20,
+        "stock_code": "601169",
+        "stock_name": "北京银行",
+        "cosine_similarity": 0.16017299890518188,
+        "s0": 0.5800859928131104
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0003",
+    "title": "20分钟 20%涨停！商业航天快速拉升！热门赛道突传利好！",
+    "event_type": "行业类",
+    "event_summary": "第三届商业航天发展大会上，商业航天产业联盟科创基金正式启动。",
+    "attribute_score": 0.617,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "601698",
+        "stock_name": "中国卫通",
+        "cosine_similarity": 0.37009599804878235,
+        "s0": 0.68504798412323
+      },
+      {
+        "rank": 2,
+        "stock_code": "600893",
+        "stock_name": "航发动力",
+        "cosine_similarity": 0.35957199335098267,
+        "s0": 0.6797860264778137
+      },
+      {
+        "rank": 3,
+        "stock_code": "000738",
+        "stock_name": "航发控制",
+        "cosine_similarity": 0.3504120111465454,
+        "s0": 0.6752060055732727
+      },
+      {
+        "rank": 4,
+        "stock_code": "002013",
+        "stock_name": "中航机电",
+        "cosine_similarity": 0.34933099150657654,
+        "s0": 0.6746649742126465
+      },
+      {
+        "rank": 5,
+        "stock_code": "000519",
+        "stock_name": "银河磁体",
+        "cosine_similarity": 0.34210100769996643,
+        "s0": 0.671051025390625
+      },
+      {
+        "rank": 6,
+        "stock_code": "601995",
+        "stock_name": "中金公司",
+        "cosine_similarity": 0.33611801266670227,
+        "s0": 0.6680589914321899
+      },
+      {
+        "rank": 7,
+        "stock_code": "000768",
+        "stock_name": "中航西飞",
+        "cosine_similarity": 0.32787400484085083,
+        "s0": 0.663936972618103
+      },
+      {
+        "rank": 8,
+        "stock_code": "600570",
+        "stock_name": "恒生电子",
+        "cosine_similarity": 0.32678699493408203,
+        "s0": 0.6633930206298828
+      },
+      {
+        "rank": 9,
+        "stock_code": "600115",
+        "stock_name": "中国东航",
+        "cosine_similarity": 0.3265160024166107,
+        "s0": 0.6632580161094666
+      },
+      {
+        "rank": 10,
+        "stock_code": "000415",
+        "stock_name": "渤海租赁",
+        "cosine_similarity": 0.32451799511909485,
+        "s0": 0.6622589826583862
+      },
+      {
+        "rank": 11,
+        "stock_code": "600845",
+        "stock_name": "宝信软件",
+        "cosine_similarity": 0.32354098558425903,
+        "s0": 0.6617699861526489
+      },
+      {
+        "rank": 12,
+        "stock_code": "300059",
+        "stock_name": "东方财富",
+        "cosine_similarity": 0.32273200154304504,
+        "s0": 0.6613659858703613
+      },
+      {
+        "rank": 13,
+        "stock_code": "601136",
+        "stock_name": "首创证券",
+        "cosine_similarity": 0.3224070072174072,
+        "s0": 0.6612039804458618
+      },
+      {
+        "rank": 14,
+        "stock_code": "603886",
+        "stock_name": "兆易创新",
+        "cosine_similarity": 0.32206401228904724,
+        "s0": 0.6610320210456848
+      },
+      {
+        "rank": 15,
+        "stock_code": "688009",
+        "stock_name": "中国通号",
+        "cosine_similarity": 0.31959599256515503,
+        "s0": 0.6597980260848999
+      },
+      {
+        "rank": 16,
+        "stock_code": "601899",
+        "stock_name": "紫金矿业",
+        "cosine_similarity": 0.31817299127578735,
+        "s0": 0.6590859889984131
+      },
+      {
+        "rank": 17,
+        "stock_code": "601901",
+        "stock_name": "方正证券",
+        "cosine_similarity": 0.3172749876976013,
+        "s0": 0.6586369872093201
+      },
+      {
+        "rank": 18,
+        "stock_code": "601111",
+        "stock_name": "中国国航",
+        "cosine_similarity": 0.31664198637008667,
+        "s0": 0.6583210229873657
+      },
+      {
+        "rank": 19,
+        "stock_code": "601881",
+        "stock_name": "中国银河",
+        "cosine_similarity": 0.31582099199295044,
+        "s0": 0.6579110026359558
+      },
+      {
+        "rank": 20,
+        "stock_code": "000970",
+        "stock_name": "中科三环",
+        "cosine_similarity": 0.3155849874019623,
+        "s0": 0.6577919721603394
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0004",
+    "title": "重磅利好！预计突破万亿 融资客抢筹稀土小金属(附股)",
+    "event_type": "行业类",
+    "event_summary": "融资客抢筹稀土小金属，市场预期相关规模将突破万亿",
+    "attribute_score": 0.921,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "000831",
+        "stock_name": "五矿稀土",
+        "cosine_similarity": 0.5215110182762146,
+        "s0": 0.7607560157775879
+      },
+      {
+        "rank": 2,
+        "stock_code": "600111",
+        "stock_name": "北方稀土",
+        "cosine_similarity": 0.5082340240478516,
+        "s0": 0.7541170120239258
+      },
+      {
+        "rank": 3,
+        "stock_code": "000603",
+        "stock_name": "盛达资源",
+        "cosine_similarity": 0.49005401134490967,
+        "s0": 0.7450270056724548
+      },
+      {
+        "rank": 4,
+        "stock_code": "601899",
+        "stock_name": "紫金矿业",
+        "cosine_similarity": 0.46445900201797485,
+        "s0": 0.732230007648468
+      },
+      {
+        "rank": 5,
+        "stock_code": "000166",
+        "stock_name": "申万宏源",
+        "cosine_similarity": 0.4523729979991913,
+        "s0": 0.7261859774589539
+      },
+      {
+        "rank": 6,
+        "stock_code": "000519",
+        "stock_name": "银河磁体",
+        "cosine_similarity": 0.45222800970077515,
+        "s0": 0.7261139750480652
+      },
+      {
+        "rank": 7,
+        "stock_code": "000970",
+        "stock_name": "中科三环",
+        "cosine_similarity": 0.45063498616218567,
+        "s0": 0.7253170013427734
+      },
+      {
+        "rank": 8,
+        "stock_code": "600547",
+        "stock_name": "山东黄金",
+        "cosine_similarity": 0.4457229971885681,
+        "s0": 0.7228620052337646
+      },
+      {
+        "rank": 9,
+        "stock_code": "600489",
+        "stock_name": "中金黄金",
+        "cosine_similarity": 0.4439989924430847,
+        "s0": 0.722000002861023
+      },
+      {
+        "rank": 10,
+        "stock_code": "600362",
+        "stock_name": "江西铜业",
+        "cosine_similarity": 0.43508198857307434,
+        "s0": 0.717540979385376
+      },
+      {
+        "rank": 11,
+        "stock_code": "000617",
+        "stock_name": "中油资本",
+        "cosine_similarity": 0.4348039925098419,
+        "s0": 0.7174019813537598
+      },
+      {
+        "rank": 12,
+        "stock_code": "601600",
+        "stock_name": "中国铝业",
+        "cosine_similarity": 0.43428099155426025,
+        "s0": 0.7171400189399719
+      },
+      {
+        "rank": 13,
+        "stock_code": "000009",
+        "stock_name": "中国宝安",
+        "cosine_similarity": 0.4342760145664215,
+        "s0": 0.7171379923820496
+      },
+      {
+        "rank": 14,
+        "stock_code": "601901",
+        "stock_name": "方正证券",
+        "cosine_similarity": 0.4315960109233856,
+        "s0": 0.715798020362854
+      },
+      {
+        "rank": 15,
+        "stock_code": "601618",
+        "stock_name": "中国中冶",
+        "cosine_similarity": 0.4304479956626892,
+        "s0": 0.715224027633667
+      },
+      {
+        "rank": 16,
+        "stock_code": "601995",
+        "stock_name": "中金公司",
+        "cosine_similarity": 0.4298059940338135,
+        "s0": 0.7149029970169067
+      },
+      {
+        "rank": 17,
+        "stock_code": "002056",
+        "stock_name": "横店东磁",
+        "cosine_similarity": 0.42868301272392273,
+        "s0": 0.7143409848213196
+      },
+      {
+        "rank": 18,
+        "stock_code": "002110",
+        "stock_name": "三川智慧",
+        "cosine_similarity": 0.42544400691986084,
+        "s0": 0.7127220034599304
+      },
+      {
+        "rank": 19,
+        "stock_code": "601881",
+        "stock_name": "中国银河",
+        "cosine_similarity": 0.4196870028972626,
+        "s0": 0.7098439931869507
+      },
+      {
+        "rank": 20,
+        "stock_code": "000807",
+        "stock_name": "云铝股份",
+        "cosine_similarity": 0.4186370074748993,
+        "s0": 0.7093179821968079
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0005",
+    "title": "伊朗副总统：海上封锁不解除 通航安全就不免费",
+    "event_type": "地缘类",
+    "event_summary": "伊朗第一副总统称若海上封锁不解除，将不提供霍尔木兹海峡通航安全保障",
+    "attribute_score": 0.979,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "601872",
+        "stock_name": "招商轮船",
+        "cosine_similarity": 0.2552489936351776,
+        "s0": 0.6276249885559082
+      },
+      {
+        "rank": 2,
+        "stock_code": "000415",
+        "stock_name": "渤海租赁",
+        "cosine_similarity": 0.25394099950790405,
+        "s0": 0.6269699931144714
+      },
+      {
+        "rank": 3,
+        "stock_code": "600009",
+        "stock_name": "上海机场",
+        "cosine_similarity": 0.2445629984140396,
+        "s0": 0.6222820281982422
+      },
+      {
+        "rank": 4,
+        "stock_code": "601919",
+        "stock_name": "中远海控",
+        "cosine_similarity": 0.2427230030298233,
+        "s0": 0.6213610172271729
+      },
+      {
+        "rank": 5,
+        "stock_code": "601298",
+        "stock_name": "青岛港",
+        "cosine_similarity": 0.24166299402713776,
+        "s0": 0.6208310127258301
+      },
+      {
+        "rank": 6,
+        "stock_code": "600018",
+        "stock_name": "上港集团",
+        "cosine_similarity": 0.24042999744415283,
+        "s0": 0.6202149987220764
+      },
+      {
+        "rank": 7,
+        "stock_code": "600938",
+        "stock_name": "中国海油",
+        "cosine_similarity": 0.23691099882125854,
+        "s0": 0.6184560060501099
+      },
+      {
+        "rank": 8,
+        "stock_code": "600893",
+        "stock_name": "航发动力",
+        "cosine_similarity": 0.23571500182151794,
+        "s0": 0.6178579926490784
+      },
+      {
+        "rank": 9,
+        "stock_code": "601888",
+        "stock_name": "中国中免",
+        "cosine_similarity": 0.2351280003786087,
+        "s0": 0.6175640225410461
+      },
+      {
+        "rank": 10,
+        "stock_code": "601111",
+        "stock_name": "中国国航",
+        "cosine_similarity": 0.22936299443244934,
+        "s0": 0.6146810054779053
+      },
+      {
+        "rank": 11,
+        "stock_code": "600115",
+        "stock_name": "中国东航",
+        "cosine_similarity": 0.22327999770641327,
+        "s0": 0.6116399765014648
+      },
+      {
+        "rank": 12,
+        "stock_code": "002352",
+        "stock_name": "顺丰控股",
+        "cosine_similarity": 0.22297899425029755,
+        "s0": 0.61149001121521
+      },
+      {
+        "rank": 13,
+        "stock_code": "601018",
+        "stock_name": "宁波港",
+        "cosine_similarity": 0.22190499305725098,
+        "s0": 0.6109520196914673
+      },
+      {
+        "rank": 14,
+        "stock_code": "601800",
+        "stock_name": "中国交建",
+        "cosine_similarity": 0.2211180031299591,
+        "s0": 0.6105589866638184
+      },
+      {
+        "rank": 15,
+        "stock_code": "000828",
+        "stock_name": "东莞控股",
+        "cosine_similarity": 0.21852999925613403,
+        "s0": 0.6092650294303894
+      },
+      {
+        "rank": 16,
+        "stock_code": "002025",
+        "stock_name": "航天彩虹",
+        "cosine_similarity": 0.21803799271583557,
+        "s0": 0.6090189814567566
+      },
+      {
+        "rank": 17,
+        "stock_code": "000738",
+        "stock_name": "航发控制",
+        "cosine_similarity": 0.21535000205039978,
+        "s0": 0.6076750159263611
+      },
+      {
+        "rank": 18,
+        "stock_code": "601808",
+        "stock_name": "中海油服",
+        "cosine_similarity": 0.21323999762535095,
+        "s0": 0.6066200137138367
+      },
+      {
+        "rank": 19,
+        "stock_code": "601698",
+        "stock_name": "中国卫通",
+        "cosine_similarity": 0.21279099583625793,
+        "s0": 0.6063960194587708
+      },
+      {
+        "rank": 20,
+        "stock_code": "600150",
+        "stock_name": "中国船舶",
+        "cosine_similarity": 0.2121870070695877,
+        "s0": 0.6060940027236938
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0006",
+    "title": "超1600亿美元！“特朗普关税退款”周一启动 企业能全部拿回吗？",
+    "event_type": "政策类",
+    "event_summary": "美国于2026年4月20日正式启动对进口商退还1660亿美元特朗普时期征收关税的退款系统。",
+    "attribute_score": 1.1,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "000333",
+        "stock_name": "美的集团",
+        "cosine_similarity": 0.36984699964523315,
+        "s0": 0.6849240064620972
+      },
+      {
+        "rank": 2,
+        "stock_code": "600690",
+        "stock_name": "海尔智家",
+        "cosine_similarity": 0.35267001390457153,
+        "s0": 0.6763349771499634
+      },
+      {
+        "rank": 3,
+        "stock_code": "601888",
+        "stock_name": "中国中免",
+        "cosine_similarity": 0.3496290147304535,
+        "s0": 0.6748149991035461
+      },
+      {
+        "rank": 4,
+        "stock_code": "002352",
+        "stock_name": "顺丰控股",
+        "cosine_similarity": 0.3428080081939697,
+        "s0": 0.6714040040969849
+      },
+      {
+        "rank": 5,
+        "stock_code": "600588",
+        "stock_name": "用友网络",
+        "cosine_similarity": 0.34195101261138916,
+        "s0": 0.6709750294685364
+      },
+      {
+        "rank": 6,
+        "stock_code": "600845",
+        "stock_name": "宝信软件",
+        "cosine_similarity": 0.34174200892448425,
+        "s0": 0.6708710193634033
+      },
+      {
+        "rank": 7,
+        "stock_code": "600415",
+        "stock_name": "小商品城",
+        "cosine_similarity": 0.34069201350212097,
+        "s0": 0.6703460216522217
+      },
+      {
+        "rank": 8,
+        "stock_code": "601899",
+        "stock_name": "紫金矿业",
+        "cosine_similarity": 0.34056299924850464,
+        "s0": 0.6702820062637329
+      },
+      {
+        "rank": 9,
+        "stock_code": "601988",
+        "stock_name": "中国银行",
+        "cosine_similarity": 0.33884599804878235,
+        "s0": 0.66942298412323
+      },
+      {
+        "rank": 10,
+        "stock_code": "601018",
+        "stock_name": "宁波港",
+        "cosine_similarity": 0.3386070132255554,
+        "s0": 0.6693029999732971
+      },
+      {
+        "rank": 11,
+        "stock_code": "601872",
+        "stock_name": "招商轮船",
+        "cosine_similarity": 0.33789199590682983,
+        "s0": 0.6689460277557373
+      },
+      {
+        "rank": 12,
+        "stock_code": "000651",
+        "stock_name": "泸州老窖",
+        "cosine_similarity": 0.3356820046901703,
+        "s0": 0.6678410172462463
+      },
+      {
+        "rank": 13,
+        "stock_code": "601298",
+        "stock_name": "青岛港",
+        "cosine_similarity": 0.33288100361824036,
+        "s0": 0.666441023349762
+      },
+      {
+        "rank": 14,
+        "stock_code": "601328",
+        "stock_name": "交通银行",
+        "cosine_similarity": 0.33257201313972473,
+        "s0": 0.6662859916687012
+      },
+      {
+        "rank": 15,
+        "stock_code": "601919",
+        "stock_name": "中远海控",
+        "cosine_similarity": 0.33191201090812683,
+        "s0": 0.6659560203552246
+      },
+      {
+        "rank": 16,
+        "stock_code": "601818",
+        "stock_name": "光大银行",
+        "cosine_similarity": 0.33108198642730713,
+        "s0": 0.6655409932136536
+      },
+      {
+        "rank": 17,
+        "stock_code": "000025",
+        "stock_name": "特力A",
+        "cosine_similarity": 0.33042699098587036,
+        "s0": 0.6652129888534546
+      },
+      {
+        "rank": 18,
+        "stock_code": "600570",
+        "stock_name": "恒生电子",
+        "cosine_similarity": 0.3289799988269806,
+        "s0": 0.6644899845123291
+      },
+      {
+        "rank": 19,
+        "stock_code": "000625",
+        "stock_name": "长安汽车",
+        "cosine_similarity": 0.32803401350975037,
+        "s0": 0.6640170216560364
+      },
+      {
+        "rank": 20,
+        "stock_code": "300274",
+        "stock_name": "阳光电源",
+        "cosine_similarity": 0.32774001359939575,
+        "s0": 0.6638699769973755
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0007",
+    "title": "伊朗拒绝参加第二轮谈判 美国武力拦扣一艘伊朗船",
+    "event_type": "地缘类",
+    "event_summary": "美国在阿曼湾武力拦截并扣押一艘伊朗货船，伊朗指责美方违反停火协议并誓言报复。",
+    "attribute_score": 1.066,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "601298",
+        "stock_name": "青岛港",
+        "cosine_similarity": 0.27702000737190247,
+        "s0": 0.63850998878479
+      },
+      {
+        "rank": 2,
+        "stock_code": "601872",
+        "stock_name": "招商轮船",
+        "cosine_similarity": 0.2708680033683777,
+        "s0": 0.6354339718818665
+      },
+      {
+        "rank": 3,
+        "stock_code": "601919",
+        "stock_name": "中远海控",
+        "cosine_similarity": 0.2697969973087311,
+        "s0": 0.6348980069160461
+      },
+      {
+        "rank": 4,
+        "stock_code": "000520",
+        "stock_name": "中船防务",
+        "cosine_similarity": 0.2645210027694702,
+        "s0": 0.6322600245475769
+      },
+      {
+        "rank": 5,
+        "stock_code": "601018",
+        "stock_name": "宁波港",
+        "cosine_similarity": 0.2638939917087555,
+        "s0": 0.6319469809532166
+      },
+      {
+        "rank": 6,
+        "stock_code": "600150",
+        "stock_name": "中国船舶",
+        "cosine_similarity": 0.25707700848579407,
+        "s0": 0.6285390257835388
+      },
+      {
+        "rank": 7,
+        "stock_code": "600018",
+        "stock_name": "上港集团",
+        "cosine_similarity": 0.24924400448799133,
+        "s0": 0.6246219873428345
+      },
+      {
+        "rank": 8,
+        "stock_code": "002352",
+        "stock_name": "顺丰控股",
+        "cosine_similarity": 0.2449679970741272,
+        "s0": 0.622484028339386
+      },
+      {
+        "rank": 9,
+        "stock_code": "000415",
+        "stock_name": "渤海租赁",
+        "cosine_similarity": 0.24198800325393677,
+        "s0": 0.620993971824646
+      },
+      {
+        "rank": 10,
+        "stock_code": "601111",
+        "stock_name": "中国国航",
+        "cosine_similarity": 0.23983299732208252,
+        "s0": 0.6199169754981995
+      },
+      {
+        "rank": 11,
+        "stock_code": "600029",
+        "stock_name": "南方航空",
+        "cosine_similarity": 0.2371159940958023,
+        "s0": 0.6185579895973206
+      },
+      {
+        "rank": 12,
+        "stock_code": "600893",
+        "stock_name": "航发动力",
+        "cosine_similarity": 0.23303599655628204,
+        "s0": 0.6165180206298828
+      },
+      {
+        "rank": 13,
+        "stock_code": "600938",
+        "stock_name": "中国海油",
+        "cosine_similarity": 0.23268699645996094,
+        "s0": 0.6163439750671387
+      },
+      {
+        "rank": 14,
+        "stock_code": "601808",
+        "stock_name": "中海油服",
+        "cosine_similarity": 0.23153899610042572,
+        "s0": 0.6157699823379517
+      },
+      {
+        "rank": 15,
+        "stock_code": "000738",
+        "stock_name": "航发控制",
+        "cosine_similarity": 0.22905799746513367,
+        "s0": 0.614529013633728
+      },
+      {
+        "rank": 16,
+        "stock_code": "000709",
+        "stock_name": "华菱钢铁",
+        "cosine_similarity": 0.2287919968366623,
+        "s0": 0.6143959760665894
+      },
+      {
+        "rank": 17,
+        "stock_code": "002013",
+        "stock_name": "中航机电",
+        "cosine_similarity": 0.22701500356197357,
+        "s0": 0.6135069727897644
+      },
+      {
+        "rank": 18,
+        "stock_code": "000338",
+        "stock_name": "潍柴动力",
+        "cosine_similarity": 0.22566500306129456,
+        "s0": 0.6128330230712891
+      },
+      {
+        "rank": 19,
+        "stock_code": "600233",
+        "stock_name": "圆通速递",
+        "cosine_similarity": 0.22287699580192566,
+        "s0": 0.611437976360321
+      },
+      {
+        "rank": 20,
+        "stock_code": "601800",
+        "stock_name": "中国交建",
+        "cosine_similarity": 0.22087199985980988,
+        "s0": 0.6104360222816467
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0008",
+    "title": "周末刷屏！荣耀“闪电”成大黑马 核心概念股出炉",
+    "event_type": "公司类",
+    "event_summary": "荣耀自研人形机器人“闪电”在2026北京亦庄人形机器人半程马拉松以50分26秒夺冠，超越人类世界纪录，带动相关产业链及概念股上涨。",
+    "attribute_score": 0.734,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "300433",
+        "stock_name": "蓝思科技",
+        "cosine_similarity": 0.5882290005683899,
+        "s0": 0.7941139936447144
+      },
+      {
+        "rank": 2,
+        "stock_code": "688256",
+        "stock_name": "寒武纪",
+        "cosine_similarity": 0.5563899874687195,
+        "s0": 0.7781950235366821
+      },
+      {
+        "rank": 3,
+        "stock_code": "601127",
+        "stock_name": "赛力斯",
+        "cosine_similarity": 0.5543270111083984,
+        "s0": 0.7771639823913574
+      },
+      {
+        "rank": 4,
+        "stock_code": "000559",
+        "stock_name": "万向钱潮",
+        "cosine_similarity": 0.5526890158653259,
+        "s0": 0.7763450145721436
+      },
+      {
+        "rank": 5,
+        "stock_code": "002008",
+        "stock_name": "大族激光",
+        "cosine_similarity": 0.5518620014190674,
+        "s0": 0.7759310007095337
+      },
+      {
+        "rank": 6,
+        "stock_code": "300124",
+        "stock_name": "汇川技术",
+        "cosine_similarity": 0.5481989979743958,
+        "s0": 0.7740989923477173
+      },
+      {
+        "rank": 7,
+        "stock_code": "002025",
+        "stock_name": "航天彩虹",
+        "cosine_similarity": 0.5458940267562866,
+        "s0": 0.7729470133781433
+      },
+      {
+        "rank": 8,
+        "stock_code": "002475",
+        "stock_name": "立讯精密",
+        "cosine_similarity": 0.5424780249595642,
+        "s0": 0.7712389826774597
+      },
+      {
+        "rank": 9,
+        "stock_code": "688169",
+        "stock_name": "石头科技",
+        "cosine_similarity": 0.5416759848594666,
+        "s0": 0.7708380222320557
+      },
+      {
+        "rank": 10,
+        "stock_code": "603501",
+        "stock_name": "韦尔股份",
+        "cosine_similarity": 0.5408210158348083,
+        "s0": 0.7704110145568848
+      },
+      {
+        "rank": 11,
+        "stock_code": "601689",
+        "stock_name": "拓普集团",
+        "cosine_similarity": 0.5363860130310059,
+        "s0": 0.7681930065155029
+      },
+      {
+        "rank": 12,
+        "stock_code": "603886",
+        "stock_name": "兆易创新",
+        "cosine_similarity": 0.5340080261230469,
+        "s0": 0.7670040130615234
+      },
+      {
+        "rank": 13,
+        "stock_code": "000733",
+        "stock_name": "振华科技",
+        "cosine_similarity": 0.532800018787384,
+        "s0": 0.7663999795913696
+      },
+      {
+        "rank": 14,
+        "stock_code": "603296",
+        "stock_name": "华勤技术",
+        "cosine_similarity": 0.5290169715881348,
+        "s0": 0.7645080089569092
+      },
+      {
+        "rank": 15,
+        "stock_code": "600406",
+        "stock_name": "国电南瑞",
+        "cosine_similarity": 0.5277289748191833,
+        "s0": 0.7638639807701111
+      },
+      {
+        "rank": 16,
+        "stock_code": "000519",
+        "stock_name": "银河磁体",
+        "cosine_similarity": 0.5250030159950256,
+        "s0": 0.7625020146369934
+      },
+      {
+        "rank": 17,
+        "stock_code": "002371",
+        "stock_name": "北方华创",
+        "cosine_similarity": 0.5200549960136414,
+        "s0": 0.7600280046463013
+      },
+      {
+        "rank": 18,
+        "stock_code": "603893",
+        "stock_name": "瑞芯微",
+        "cosine_similarity": 0.5197229981422424,
+        "s0": 0.7598620057106018
+      },
+      {
+        "rank": 19,
+        "stock_code": "000066",
+        "stock_name": "中国长城",
+        "cosine_similarity": 0.5197229981422424,
+        "s0": 0.7598609924316406
+      },
+      {
+        "rank": 20,
+        "stock_code": "002920",
+        "stock_name": "德赛西威",
+        "cosine_similarity": 0.519091010093689,
+        "s0": 0.7595459818840027
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0009",
+    "title": "霍尔木兹海峡突变！35艘船只掉头！美军曝出新动作！",
+    "event_type": "地缘类",
+    "event_summary": "美军对霍尔木兹海峡实施封锁并阻截船只，导致多艘船舶掉头折返。",
+    "attribute_score": 1.123,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "601919",
+        "stock_name": "中远海控",
+        "cosine_similarity": 0.32170599699020386,
+        "s0": 0.6608530282974243
+      },
+      {
+        "rank": 2,
+        "stock_code": "000520",
+        "stock_name": "中船防务",
+        "cosine_similarity": 0.30607500672340393,
+        "s0": 0.6530370116233826
+      },
+      {
+        "rank": 3,
+        "stock_code": "600150",
+        "stock_name": "中国船舶",
+        "cosine_similarity": 0.30466699600219727,
+        "s0": 0.6523339748382568
+      },
+      {
+        "rank": 4,
+        "stock_code": "601872",
+        "stock_name": "招商轮船",
+        "cosine_similarity": 0.3024410009384155,
+        "s0": 0.6512200236320496
+      },
+      {
+        "rank": 5,
+        "stock_code": "600018",
+        "stock_name": "上港集团",
+        "cosine_similarity": 0.29604101181030273,
+        "s0": 0.6480209827423096
+      },
+      {
+        "rank": 6,
+        "stock_code": "601018",
+        "stock_name": "宁波港",
+        "cosine_similarity": 0.2946909964084625,
+        "s0": 0.647346019744873
+      },
+      {
+        "rank": 7,
+        "stock_code": "601298",
+        "stock_name": "青岛港",
+        "cosine_similarity": 0.28310999274253845,
+        "s0": 0.6415550112724304
+      },
+      {
+        "rank": 8,
+        "stock_code": "000415",
+        "stock_name": "渤海租赁",
+        "cosine_similarity": 0.2771179974079132,
+        "s0": 0.6385589838027954
+      },
+      {
+        "rank": 9,
+        "stock_code": "600893",
+        "stock_name": "航发动力",
+        "cosine_similarity": 0.2696079909801483,
+        "s0": 0.6348040103912354
+      },
+      {
+        "rank": 10,
+        "stock_code": "000738",
+        "stock_name": "航发控制",
+        "cosine_similarity": 0.2664729952812195,
+        "s0": 0.6332359910011292
+      },
+      {
+        "rank": 11,
+        "stock_code": "601800",
+        "stock_name": "中国交建",
+        "cosine_similarity": 0.2662459909915924,
+        "s0": 0.633122980594635
+      },
+      {
+        "rank": 12,
+        "stock_code": "002013",
+        "stock_name": "中航机电",
+        "cosine_similarity": 0.2565160095691681,
+        "s0": 0.6282579898834229
+      },
+      {
+        "rank": 13,
+        "stock_code": "601111",
+        "stock_name": "中国国航",
+        "cosine_similarity": 0.2562200129032135,
+        "s0": 0.6281099915504456
+      },
+      {
+        "rank": 14,
+        "stock_code": "000837",
+        "stock_name": "秦川机床",
+        "cosine_similarity": 0.25296300649642944,
+        "s0": 0.6264809966087341
+      },
+      {
+        "rank": 15,
+        "stock_code": "600938",
+        "stock_name": "中国海油",
+        "cosine_similarity": 0.25130099058151245,
+        "s0": 0.6256499886512756
+      },
+      {
+        "rank": 16,
+        "stock_code": "601808",
+        "stock_name": "中海油服",
+        "cosine_similarity": 0.25097501277923584,
+        "s0": 0.6254879832267761
+      },
+      {
+        "rank": 17,
+        "stock_code": "002352",
+        "stock_name": "顺丰控股",
+        "cosine_similarity": 0.2503649890422821,
+        "s0": 0.6251819729804993
+      },
+      {
+        "rank": 18,
+        "stock_code": "000039",
+        "stock_name": "中集集团",
+        "cosine_similarity": 0.25031501054763794,
+        "s0": 0.6251580119132996
+      },
+      {
+        "rank": 19,
+        "stock_code": "600900",
+        "stock_name": "长江电力",
+        "cosine_similarity": 0.246848002076149,
+        "s0": 0.6234239935874939
+      },
+      {
+        "rank": 20,
+        "stock_code": "000338",
+        "stock_name": "潍柴动力",
+        "cosine_similarity": 0.2466990053653717,
+        "s0": 0.6233500242233276
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0010",
+    "title": "【风口研报】商业航天迎密集验证+资本催化 行业有望步入产业化关键拐点",
+    "event_type": "行业类",
+    "event_summary": "中国商业航天将于4月下旬进入可回收火箭密集验证窗口，核心事件为长征十号乙于4月28日首飞并同步验证全球首创海上网系回收技术。",
+    "attribute_score": 0.857,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "601698",
+        "stock_name": "中国卫通",
+        "cosine_similarity": 0.5438209772109985,
+        "s0": 0.7719110250473022
+      },
+      {
+        "rank": 2,
+        "stock_code": "002013",
+        "stock_name": "中航机电",
+        "cosine_similarity": 0.5050839781761169,
+        "s0": 0.7525420188903809
+      },
+      {
+        "rank": 3,
+        "stock_code": "600893",
+        "stock_name": "航发动力",
+        "cosine_similarity": 0.50307697057724,
+        "s0": 0.7515379786491394
+      },
+      {
+        "rank": 4,
+        "stock_code": "000738",
+        "stock_name": "航发控制",
+        "cosine_similarity": 0.4925230145454407,
+        "s0": 0.7462610006332397
+      },
+      {
+        "rank": 5,
+        "stock_code": "600760",
+        "stock_name": "中航沈飞",
+        "cosine_similarity": 0.4911539852619171,
+        "s0": 0.7455769777297974
+      },
+      {
+        "rank": 6,
+        "stock_code": "000768",
+        "stock_name": "中航西飞",
+        "cosine_similarity": 0.4903680086135864,
+        "s0": 0.7451840043067932
+      },
+      {
+        "rank": 7,
+        "stock_code": "002025",
+        "stock_name": "航天彩虹",
+        "cosine_similarity": 0.4835990071296692,
+        "s0": 0.741798996925354
+      },
+      {
+        "rank": 8,
+        "stock_code": "600522",
+        "stock_name": "中天科技",
+        "cosine_similarity": 0.4821609854698181,
+        "s0": 0.7410809993743896
+      },
+      {
+        "rank": 9,
+        "stock_code": "601985",
+        "stock_name": "中国核电",
+        "cosine_similarity": 0.48181599378585815,
+        "s0": 0.7409080266952515
+      },
+      {
+        "rank": 10,
+        "stock_code": "600115",
+        "stock_name": "中国东航",
+        "cosine_similarity": 0.48047199845314026,
+        "s0": 0.7402359843254089
+      },
+      {
+        "rank": 11,
+        "stock_code": "002231",
+        "stock_name": "合众思壮",
+        "cosine_similarity": 0.47753700613975525,
+        "s0": 0.738768994808197
+      },
+      {
+        "rank": 12,
+        "stock_code": "600150",
+        "stock_name": "中国船舶",
+        "cosine_similarity": 0.4773789942264557,
+        "s0": 0.7386890053749084
+      },
+      {
+        "rank": 13,
+        "stock_code": "000519",
+        "stock_name": "银河磁体",
+        "cosine_similarity": 0.4768030047416687,
+        "s0": 0.7384009957313538
+      },
+      {
+        "rank": 14,
+        "stock_code": "601766",
+        "stock_name": "中国中车",
+        "cosine_similarity": 0.47676900029182434,
+        "s0": 0.738385021686554
+      },
+      {
+        "rank": 15,
+        "stock_code": "000520",
+        "stock_name": "中船防务",
+        "cosine_similarity": 0.47536501288414,
+        "s0": 0.7376829981803894
+      },
+      {
+        "rank": 16,
+        "stock_code": "601111",
+        "stock_name": "中国国航",
+        "cosine_similarity": 0.47494399547576904,
+        "s0": 0.7374719977378845
+      },
+      {
+        "rank": 17,
+        "stock_code": "688009",
+        "stock_name": "中国通号",
+        "cosine_similarity": 0.4733690023422241,
+        "s0": 0.7366840243339539
+      },
+      {
+        "rank": 18,
+        "stock_code": "601800",
+        "stock_name": "中国交建",
+        "cosine_similarity": 0.46871599555015564,
+        "s0": 0.734358012676239
+      },
+      {
+        "rank": 19,
+        "stock_code": "600938",
+        "stock_name": "中国海油",
+        "cosine_similarity": 0.46855899691581726,
+        "s0": 0.734279990196228
+      },
+      {
+        "rank": 20,
+        "stock_code": "601919",
+        "stock_name": "中远海控",
+        "cosine_similarity": 0.4671039879322052,
+        "s0": 0.7335519790649414
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0011",
+    "title": "海南：提升航天产业全链条技术服务",
+    "event_type": "政策类",
+    "event_summary": "海南省推动商业航天全链条技术服务能力提升，强化产业链、发射保障链与航天旅游链协同融合。",
+    "attribute_score": 0.81,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "601698",
+        "stock_name": "中国卫通",
+        "cosine_similarity": 0.4598970115184784,
+        "s0": 0.7299479842185974
+      },
+      {
+        "rank": 2,
+        "stock_code": "601888",
+        "stock_name": "中国中免",
+        "cosine_similarity": 0.43356800079345703,
+        "s0": 0.7167840003967285
+      },
+      {
+        "rank": 3,
+        "stock_code": "600893",
+        "stock_name": "航发动力",
+        "cosine_similarity": 0.4320859909057617,
+        "s0": 0.7160429954528809
+      },
+      {
+        "rank": 4,
+        "stock_code": "600029",
+        "stock_name": "南方航空",
+        "cosine_similarity": 0.4311330020427704,
+        "s0": 0.7155659794807434
+      },
+      {
+        "rank": 5,
+        "stock_code": "601808",
+        "stock_name": "中海油服",
+        "cosine_similarity": 0.425790011882782,
+        "s0": 0.7128949761390686
+      },
+      {
+        "rank": 6,
+        "stock_code": "000519",
+        "stock_name": "银河磁体",
+        "cosine_similarity": 0.4249289929866791,
+        "s0": 0.7124639749526978
+      },
+      {
+        "rank": 7,
+        "stock_code": "000738",
+        "stock_name": "航发控制",
+        "cosine_similarity": 0.4246140122413635,
+        "s0": 0.7123069763183594
+      },
+      {
+        "rank": 8,
+        "stock_code": "002013",
+        "stock_name": "中航机电",
+        "cosine_similarity": 0.4239189922809601,
+        "s0": 0.7119590044021606
+      },
+      {
+        "rank": 9,
+        "stock_code": "600760",
+        "stock_name": "中航沈飞",
+        "cosine_similarity": 0.42368701100349426,
+        "s0": 0.7118440270423889
+      },
+      {
+        "rank": 10,
+        "stock_code": "600219",
+        "stock_name": "南山铝业",
+        "cosine_similarity": 0.42298200726509094,
+        "s0": 0.7114909887313843
+      },
+      {
+        "rank": 11,
+        "stock_code": "600115",
+        "stock_name": "中国东航",
+        "cosine_similarity": 0.42213699221611023,
+        "s0": 0.7110679745674133
+      },
+      {
+        "rank": 12,
+        "stock_code": "601111",
+        "stock_name": "中国国航",
+        "cosine_similarity": 0.4213719964027405,
+        "s0": 0.7106860280036926
+      },
+      {
+        "rank": 13,
+        "stock_code": "600522",
+        "stock_name": "中天科技",
+        "cosine_similarity": 0.4183970093727112,
+        "s0": 0.7091990113258362
+      },
+      {
+        "rank": 14,
+        "stock_code": "002025",
+        "stock_name": "航天彩虹",
+        "cosine_similarity": 0.41551899909973145,
+        "s0": 0.7077590227127075
+      },
+      {
+        "rank": 15,
+        "stock_code": "000768",
+        "stock_name": "中航西飞",
+        "cosine_similarity": 0.41430899500846863,
+        "s0": 0.7071539759635925
+      },
+      {
+        "rank": 16,
+        "stock_code": "002231",
+        "stock_name": "合众思壮",
+        "cosine_similarity": 0.41373398900032043,
+        "s0": 0.706866979598999
+      },
+      {
+        "rank": 17,
+        "stock_code": "600009",
+        "stock_name": "上海机场",
+        "cosine_similarity": 0.41153401136398315,
+        "s0": 0.7057669758796692
+      },
+      {
+        "rank": 18,
+        "stock_code": "600938",
+        "stock_name": "中国海油",
+        "cosine_similarity": 0.40706199407577515,
+        "s0": 0.70353102684021
+      },
+      {
+        "rank": 19,
+        "stock_code": "601868",
+        "stock_name": "中国能建",
+        "cosine_similarity": 0.4057300090789795,
+        "s0": 0.7028650045394897
+      },
+      {
+        "rank": 20,
+        "stock_code": "000520",
+        "stock_name": "中船防务",
+        "cosine_similarity": 0.4034059941768646,
+        "s0": 0.7017030119895935
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0012",
+    "title": "不光化肥！“硫磺荒”正引发连锁危机 铜和镍供应将成重灾区？",
+    "event_type": "地缘类",
+    "event_summary": "中东地缘冲突导致霍尔木兹海峡航运受阻，引发全球硫磺供应中断，叠加中国暂停硫酸出口政策，造成铜镍等金属冶炼原料短缺，印尼多家镍企已减产至少10%。",
+    "attribute_score": 1.2,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "600362",
+        "stock_name": "江西铜业",
+        "cosine_similarity": 0.5018110275268555,
+        "s0": 0.7509049773216248
+      },
+      {
+        "rank": 2,
+        "stock_code": "603993",
+        "stock_name": "洛阳钼业",
+        "cosine_similarity": 0.48996299505233765,
+        "s0": 0.7449820041656494
+      },
+      {
+        "rank": 3,
+        "stock_code": "601899",
+        "stock_name": "紫金矿业",
+        "cosine_similarity": 0.4692780077457428,
+        "s0": 0.7346389889717102
+      },
+      {
+        "rank": 4,
+        "stock_code": "600028",
+        "stock_name": "中国石化",
+        "cosine_similarity": 0.4429439902305603,
+        "s0": 0.7214720249176025
+      },
+      {
+        "rank": 5,
+        "stock_code": "002493",
+        "stock_name": "荣盛石化",
+        "cosine_similarity": 0.44117501378059387,
+        "s0": 0.7205880284309387
+      },
+      {
+        "rank": 6,
+        "stock_code": "601618",
+        "stock_name": "中国中冶",
+        "cosine_similarity": 0.4377700090408325,
+        "s0": 0.7188850045204163
+      },
+      {
+        "rank": 7,
+        "stock_code": "600938",
+        "stock_name": "中国海油",
+        "cosine_similarity": 0.4373289942741394,
+        "s0": 0.7186650037765503
+      },
+      {
+        "rank": 8,
+        "stock_code": "603799",
+        "stock_name": "华友钴业",
+        "cosine_similarity": 0.4356299936771393,
+        "s0": 0.7178149819374084
+      },
+      {
+        "rank": 9,
+        "stock_code": "000630",
+        "stock_name": "铜陵有色",
+        "cosine_similarity": 0.43393999338150024,
+        "s0": 0.7169700264930725
+      },
+      {
+        "rank": 10,
+        "stock_code": "600489",
+        "stock_name": "中金黄金",
+        "cosine_similarity": 0.43018999695777893,
+        "s0": 0.7150949835777283
+      },
+      {
+        "rank": 11,
+        "stock_code": "000831",
+        "stock_name": "五矿稀土",
+        "cosine_similarity": 0.4291360080242157,
+        "s0": 0.714568018913269
+      },
+      {
+        "rank": 12,
+        "stock_code": "600188",
+        "stock_name": "兖矿能源",
+        "cosine_similarity": 0.42869099974632263,
+        "s0": 0.7143449783325195
+      },
+      {
+        "rank": 13,
+        "stock_code": "000723",
+        "stock_name": "美锦能源",
+        "cosine_similarity": 0.41947299242019653,
+        "s0": 0.7097370028495789
+      },
+      {
+        "rank": 14,
+        "stock_code": "000898",
+        "stock_name": "鞍钢股份",
+        "cosine_similarity": 0.41923099756240845,
+        "s0": 0.7096149921417236
+      },
+      {
+        "rank": 15,
+        "stock_code": "601225",
+        "stock_name": "陕西煤业",
+        "cosine_similarity": 0.4186129868030548,
+        "s0": 0.7093070149421692
+      },
+      {
+        "rank": 16,
+        "stock_code": "601857",
+        "stock_name": "中国石油",
+        "cosine_similarity": 0.41861000657081604,
+        "s0": 0.7093049883842468
+      },
+      {
+        "rank": 17,
+        "stock_code": "601088",
+        "stock_name": "中国神华",
+        "cosine_similarity": 0.4173080027103424,
+        "s0": 0.70865398645401
+      },
+      {
+        "rank": 18,
+        "stock_code": "601117",
+        "stock_name": "中国化学",
+        "cosine_similarity": 0.41723400354385376,
+        "s0": 0.7086169719696045
+      },
+      {
+        "rank": 19,
+        "stock_code": "601808",
+        "stock_name": "中海油服",
+        "cosine_similarity": 0.4168359935283661,
+        "s0": 0.7084180116653442
+      },
+      {
+        "rank": 20,
+        "stock_code": "600111",
+        "stock_name": "北方稀土",
+        "cosine_similarity": 0.41484901309013367,
+        "s0": 0.707423985004425
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0013",
+    "title": "国际油价大涨 金银、美股期货跳水！美军开火！伊朗重大警告",
+    "event_type": "地缘类",
+    "event_summary": "美军与伊朗在霍尔木兹海峡发生军事对峙，导致国际油价大涨、美股及贵金属期货跳水。",
+    "attribute_score": 1.2,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "600938",
+        "stock_name": "中国海油",
+        "cosine_similarity": 0.39358100295066833,
+        "s0": 0.6967899799346924
+      },
+      {
+        "rank": 2,
+        "stock_code": "601808",
+        "stock_name": "中海油服",
+        "cosine_similarity": 0.3564459979534149,
+        "s0": 0.6782230138778687
+      },
+      {
+        "rank": 3,
+        "stock_code": "600028",
+        "stock_name": "中国石化",
+        "cosine_similarity": 0.35503798723220825,
+        "s0": 0.6775190234184265
+      },
+      {
+        "rank": 4,
+        "stock_code": "601857",
+        "stock_name": "中国石油",
+        "cosine_similarity": 0.354543000459671,
+        "s0": 0.6772720217704773
+      },
+      {
+        "rank": 5,
+        "stock_code": "601899",
+        "stock_name": "紫金矿业",
+        "cosine_similarity": 0.35036200284957886,
+        "s0": 0.675180971622467
+      },
+      {
+        "rank": 6,
+        "stock_code": "000617",
+        "stock_name": "中油资本",
+        "cosine_similarity": 0.3401179909706116,
+        "s0": 0.6700590252876282
+      },
+      {
+        "rank": 7,
+        "stock_code": "600011",
+        "stock_name": "华能国际",
+        "cosine_similarity": 0.33915600180625916,
+        "s0": 0.6695780158042908
+      },
+      {
+        "rank": 8,
+        "stock_code": "601872",
+        "stock_name": "招商轮船",
+        "cosine_similarity": 0.3383750021457672,
+        "s0": 0.6691880226135254
+      },
+      {
+        "rank": 9,
+        "stock_code": "600489",
+        "stock_name": "中金黄金",
+        "cosine_similarity": 0.33272799849510193,
+        "s0": 0.6663640141487122
+      },
+      {
+        "rank": 10,
+        "stock_code": "000415",
+        "stock_name": "渤海租赁",
+        "cosine_similarity": 0.3326539993286133,
+        "s0": 0.6663269996643066
+      },
+      {
+        "rank": 11,
+        "stock_code": "002013",
+        "stock_name": "中航机电",
+        "cosine_similarity": 0.3308340013027191,
+        "s0": 0.6654170155525208
+      },
+      {
+        "rank": 12,
+        "stock_code": "601298",
+        "stock_name": "青岛港",
+        "cosine_similarity": 0.3268730044364929,
+        "s0": 0.663437008857727
+      },
+      {
+        "rank": 13,
+        "stock_code": "600893",
+        "stock_name": "航发动力",
+        "cosine_similarity": 0.32609501481056213,
+        "s0": 0.6630480289459229
+      },
+      {
+        "rank": 14,
+        "stock_code": "601919",
+        "stock_name": "中远海控",
+        "cosine_similarity": 0.32508501410484314,
+        "s0": 0.662542998790741
+      },
+      {
+        "rank": 15,
+        "stock_code": "600150",
+        "stock_name": "中国船舶",
+        "cosine_similarity": 0.3241119980812073,
+        "s0": 0.662056028842926
+      },
+      {
+        "rank": 16,
+        "stock_code": "601018",
+        "stock_name": "宁波港",
+        "cosine_similarity": 0.32334598898887634,
+        "s0": 0.6616730093955994
+      },
+      {
+        "rank": 17,
+        "stock_code": "000723",
+        "stock_name": "美锦能源",
+        "cosine_similarity": 0.32333600521087646,
+        "s0": 0.6616680026054382
+      },
+      {
+        "rank": 18,
+        "stock_code": "601985",
+        "stock_name": "中国核电",
+        "cosine_similarity": 0.32197999954223633,
+        "s0": 0.6609899997711182
+      },
+      {
+        "rank": 19,
+        "stock_code": "601988",
+        "stock_name": "中国银行",
+        "cosine_similarity": 0.32158800959587097,
+        "s0": 0.6607940196990967
+      },
+      {
+        "rank": 20,
+        "stock_code": "601225",
+        "stock_name": "陕西煤业",
+        "cosine_similarity": 0.3211280107498169,
+        "s0": 0.6605640053749084
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0014",
+    "title": "券商整合潮再添“新军” 行业加速迈向“大而强、专而精”",
+    "event_type": "公司类",
+    "event_summary": "东方证券筹划收购上海证券100%股权，合并后资产总额预计突破6000亿元。",
+    "attribute_score": 0.684,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "600958",
+        "stock_name": "东方证券",
+        "cosine_similarity": 0.5905900001525879,
+        "s0": 0.795295000076294
+      },
+      {
+        "rank": 2,
+        "stock_code": "601901",
+        "stock_name": "方正证券",
+        "cosine_similarity": 0.5414130091667175,
+        "s0": 0.7707059979438782
+      },
+      {
+        "rank": 3,
+        "stock_code": "300059",
+        "stock_name": "东方财富",
+        "cosine_similarity": 0.5318940281867981,
+        "s0": 0.7659469842910767
+      },
+      {
+        "rank": 4,
+        "stock_code": "601377",
+        "stock_name": "兴业证券",
+        "cosine_similarity": 0.5265529751777649,
+        "s0": 0.763276994228363
+      },
+      {
+        "rank": 5,
+        "stock_code": "601881",
+        "stock_name": "中国银河",
+        "cosine_similarity": 0.5218920111656189,
+        "s0": 0.7609459757804871
+      },
+      {
+        "rank": 6,
+        "stock_code": "601456",
+        "stock_name": "国联证券",
+        "cosine_similarity": 0.5209239721298218,
+        "s0": 0.7604619860649109
+      },
+      {
+        "rank": 7,
+        "stock_code": "600999",
+        "stock_name": "招商证券",
+        "cosine_similarity": 0.5197250247001648,
+        "s0": 0.7598620057106018
+      },
+      {
+        "rank": 8,
+        "stock_code": "000686",
+        "stock_name": "东北证券",
+        "cosine_similarity": 0.518809974193573,
+        "s0": 0.7594050168991089
+      },
+      {
+        "rank": 9,
+        "stock_code": "601995",
+        "stock_name": "中金公司",
+        "cosine_similarity": 0.5147070288658142,
+        "s0": 0.7573530077934265
+      },
+      {
+        "rank": 10,
+        "stock_code": "601059",
+        "stock_name": "信达证券",
+        "cosine_similarity": 0.5141599774360657,
+        "s0": 0.7570800185203552
+      },
+      {
+        "rank": 11,
+        "stock_code": "600030",
+        "stock_name": "中信证券",
+        "cosine_similarity": 0.5127450227737427,
+        "s0": 0.7563729882240295
+      },
+      {
+        "rank": 12,
+        "stock_code": "000166",
+        "stock_name": "申万宏源",
+        "cosine_similarity": 0.5101810097694397,
+        "s0": 0.7550910115242004
+      },
+      {
+        "rank": 13,
+        "stock_code": "002736",
+        "stock_name": "国信证券",
+        "cosine_similarity": 0.5067830085754395,
+        "s0": 0.7533919811248779
+      },
+      {
+        "rank": 14,
+        "stock_code": "601688",
+        "stock_name": "华泰证券",
+        "cosine_similarity": 0.5059430003166199,
+        "s0": 0.7529709935188293
+      },
+      {
+        "rank": 15,
+        "stock_code": "000728",
+        "stock_name": "国元证券",
+        "cosine_similarity": 0.5020520091056824,
+        "s0": 0.7510259747505188
+      },
+      {
+        "rank": 16,
+        "stock_code": "601211",
+        "stock_name": "国泰君安",
+        "cosine_similarity": 0.4998230040073395,
+        "s0": 0.7499110102653503
+      },
+      {
+        "rank": 17,
+        "stock_code": "601788",
+        "stock_name": "光大证券",
+        "cosine_similarity": 0.4989910125732422,
+        "s0": 0.7494959831237793
+      },
+      {
+        "rank": 18,
+        "stock_code": "600009",
+        "stock_name": "上海机场",
+        "cosine_similarity": 0.49626898765563965,
+        "s0": 0.7481340169906616
+      },
+      {
+        "rank": 19,
+        "stock_code": "601878",
+        "stock_name": "浙商证券",
+        "cosine_similarity": 0.49373799562454224,
+        "s0": 0.7468690276145935
+      },
+      {
+        "rank": 20,
+        "stock_code": "000776",
+        "stock_name": "广发证券",
+        "cosine_similarity": 0.4915040135383606,
+        "s0": 0.7457519769668579
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0015",
+    "title": "知情人士：AI投入猛增 字节跳动2025年净利润下滑超70% 海外营收占比创新高",
+    "event_type": "公司类",
+    "event_summary": "字节跳动因AI投入猛增，2025年净利润同比下滑超70%",
+    "attribute_score": 0.603,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "300033",
+        "stock_name": "同花顺",
+        "cosine_similarity": 0.44586101174354553,
+        "s0": 0.7229310274124146
+      },
+      {
+        "rank": 2,
+        "stock_code": "000977",
+        "stock_name": "浪潮信息",
+        "cosine_similarity": 0.42253100872039795,
+        "s0": 0.7112659811973572
+      },
+      {
+        "rank": 3,
+        "stock_code": "600588",
+        "stock_name": "用友网络",
+        "cosine_similarity": 0.4139010012149811,
+        "s0": 0.7069500088691711
+      },
+      {
+        "rank": 4,
+        "stock_code": "300433",
+        "stock_name": "蓝思科技",
+        "cosine_similarity": 0.4117850065231323,
+        "s0": 0.7058929800987244
+      },
+      {
+        "rank": 5,
+        "stock_code": "601138",
+        "stock_name": "工业富联",
+        "cosine_similarity": 0.4081360101699829,
+        "s0": 0.7040680050849915
+      },
+      {
+        "rank": 6,
+        "stock_code": "688256",
+        "stock_name": "寒武纪",
+        "cosine_similarity": 0.40553298592567444,
+        "s0": 0.7027660012245178
+      },
+      {
+        "rank": 7,
+        "stock_code": "603893",
+        "stock_name": "瑞芯微",
+        "cosine_similarity": 0.39983299374580383,
+        "s0": 0.6999160051345825
+      },
+      {
+        "rank": 8,
+        "stock_code": "600570",
+        "stock_name": "恒生电子",
+        "cosine_similarity": 0.39952799677848816,
+        "s0": 0.6997640132904053
+      },
+      {
+        "rank": 9,
+        "stock_code": "688111",
+        "stock_name": "金山办公",
+        "cosine_similarity": 0.3985390067100525,
+        "s0": 0.6992700099945068
+      },
+      {
+        "rank": 10,
+        "stock_code": "002044",
+        "stock_name": "美年健康",
+        "cosine_similarity": 0.39769500494003296,
+        "s0": 0.6988480091094971
+      },
+      {
+        "rank": 11,
+        "stock_code": "603296",
+        "stock_name": "华勤技术",
+        "cosine_similarity": 0.3954260051250458,
+        "s0": 0.6977130174636841
+      },
+      {
+        "rank": 12,
+        "stock_code": "603886",
+        "stock_name": "兆易创新",
+        "cosine_similarity": 0.39493098855018616,
+        "s0": 0.6974660158157349
+      },
+      {
+        "rank": 13,
+        "stock_code": "601728",
+        "stock_name": "中国电信",
+        "cosine_similarity": 0.39342400431632996,
+        "s0": 0.6967120170593262
+      },
+      {
+        "rank": 14,
+        "stock_code": "600050",
+        "stock_name": "中国联通",
+        "cosine_similarity": 0.3860670030117035,
+        "s0": 0.69303297996521
+      },
+      {
+        "rank": 15,
+        "stock_code": "600845",
+        "stock_name": "宝信软件",
+        "cosine_similarity": 0.38502201437950134,
+        "s0": 0.6925110220909119
+      },
+      {
+        "rank": 16,
+        "stock_code": "002594",
+        "stock_name": "比亚迪",
+        "cosine_similarity": 0.38237500190734863,
+        "s0": 0.6911879777908325
+      },
+      {
+        "rank": 17,
+        "stock_code": "688041",
+        "stock_name": "海光信息",
+        "cosine_similarity": 0.38072898983955383,
+        "s0": 0.6903640031814575
+      },
+      {
+        "rank": 18,
+        "stock_code": "301269",
+        "stock_name": "华大九天",
+        "cosine_similarity": 0.3805580139160156,
+        "s0": 0.6902790069580078
+      },
+      {
+        "rank": 19,
+        "stock_code": "000503",
+        "stock_name": "国新健康",
+        "cosine_similarity": 0.37946799397468567,
+        "s0": 0.6897339820861816
+      },
+      {
+        "rank": 20,
+        "stock_code": "688981",
+        "stock_name": "中芯国际",
+        "cosine_similarity": 0.37886399030685425,
+        "s0": 0.6894320249557495
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0016",
+    "title": "工信部等部门召开光伏行业座谈会 部署规范光伏产业竞争秩序相关工作",
+    "event_type": "政策类",
+    "event_summary": "工信部等多部门联合召开光伏行业座谈会，部署规范产业竞争秩序、治理“内卷式”竞争工作。",
+    "attribute_score": 0.942,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "300274",
+        "stock_name": "阳光电源",
+        "cosine_similarity": 0.46042299270629883,
+        "s0": 0.7302119731903076
+      },
+      {
+        "rank": 2,
+        "stock_code": "688303",
+        "stock_name": "大全能源",
+        "cosine_similarity": 0.4594939947128296,
+        "s0": 0.7297469973564148
+      },
+      {
+        "rank": 3,
+        "stock_code": "603260",
+        "stock_name": "合盛硅业",
+        "cosine_similarity": 0.4564799964427948,
+        "s0": 0.7282400131225586
+      },
+      {
+        "rank": 4,
+        "stock_code": "002459",
+        "stock_name": "晶澳科技",
+        "cosine_similarity": 0.4539479911327362,
+        "s0": 0.7269740104675293
+      },
+      {
+        "rank": 5,
+        "stock_code": "688223",
+        "stock_name": "晶科能源",
+        "cosine_similarity": 0.4479070007801056,
+        "s0": 0.7239530086517334
+      },
+      {
+        "rank": 6,
+        "stock_code": "688472",
+        "stock_name": "固德威",
+        "cosine_similarity": 0.44600099325180054,
+        "s0": 0.7229999899864197
+      },
+      {
+        "rank": 7,
+        "stock_code": "600438",
+        "stock_name": "通威股份",
+        "cosine_similarity": 0.4420349895954132,
+        "s0": 0.7210180163383484
+      },
+      {
+        "rank": 8,
+        "stock_code": "601985",
+        "stock_name": "中国核电",
+        "cosine_similarity": 0.43936899304389954,
+        "s0": 0.7196850180625916
+      },
+      {
+        "rank": 9,
+        "stock_code": "605117",
+        "stock_name": "德业股份",
+        "cosine_similarity": 0.4389500021934509,
+        "s0": 0.7194749712944031
+      },
+      {
+        "rank": 10,
+        "stock_code": "002129",
+        "stock_name": "TCL中环",
+        "cosine_similarity": 0.43763500452041626,
+        "s0": 0.7188169956207275
+      },
+      {
+        "rank": 11,
+        "stock_code": "601868",
+        "stock_name": "中国能建",
+        "cosine_similarity": 0.4371959865093231,
+        "s0": 0.7185980081558228
+      },
+      {
+        "rank": 12,
+        "stock_code": "601877",
+        "stock_name": "正泰电器",
+        "cosine_similarity": 0.4361880123615265,
+        "s0": 0.718093991279602
+      },
+      {
+        "rank": 13,
+        "stock_code": "600089",
+        "stock_name": "特变电工",
+        "cosine_similarity": 0.430774986743927,
+        "s0": 0.7153880000114441
+      },
+      {
+        "rank": 14,
+        "stock_code": "000012",
+        "stock_name": "南玻A",
+        "cosine_similarity": 0.4281289875507355,
+        "s0": 0.7140640020370483
+      },
+      {
+        "rank": 15,
+        "stock_code": "601818",
+        "stock_name": "光大银行",
+        "cosine_similarity": 0.42058899998664856,
+        "s0": 0.7102940082550049
+      },
+      {
+        "rank": 16,
+        "stock_code": "000009",
+        "stock_name": "中国宝安",
+        "cosine_similarity": 0.42042601108551025,
+        "s0": 0.7102130055427551
+      },
+      {
+        "rank": 17,
+        "stock_code": "600989",
+        "stock_name": "宝丰能源",
+        "cosine_similarity": 0.4159660041332245,
+        "s0": 0.7079830169677734
+      },
+      {
+        "rank": 18,
+        "stock_code": "300316",
+        "stock_name": "晶盛机电",
+        "cosine_similarity": 0.4153119921684265,
+        "s0": 0.7076560258865356
+      },
+      {
+        "rank": 19,
+        "stock_code": "600011",
+        "stock_name": "华能国际",
+        "cosine_similarity": 0.4105910062789917,
+        "s0": 0.7052950263023376
+      },
+      {
+        "rank": 20,
+        "stock_code": "600905",
+        "stock_name": "三峡能源",
+        "cosine_similarity": 0.41017401218414307,
+        "s0": 0.7050870060920715
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0017",
+    "title": "CPO引领算力互联新周期 多只核心标的透露最新业务进展",
+    "event_type": "行业类",
+    "event_summary": "CPO技术推动算力互联发展，多只相关核心标的披露最新业务进展",
+    "attribute_score": 0.538,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "603019",
+        "stock_name": "中科曙光",
+        "cosine_similarity": 0.49852898716926575,
+        "s0": 0.7492640018463135
+      },
+      {
+        "rank": 2,
+        "stock_code": "300033",
+        "stock_name": "同花顺",
+        "cosine_similarity": 0.4795700013637543,
+        "s0": 0.7397850155830383
+      },
+      {
+        "rank": 3,
+        "stock_code": "600050",
+        "stock_name": "中国联通",
+        "cosine_similarity": 0.47577500343322754,
+        "s0": 0.7378870248794556
+      },
+      {
+        "rank": 4,
+        "stock_code": "688041",
+        "stock_name": "海光信息",
+        "cosine_similarity": 0.4705600142478943,
+        "s0": 0.7352799773216248
+      },
+      {
+        "rank": 5,
+        "stock_code": "600845",
+        "stock_name": "宝信软件",
+        "cosine_similarity": 0.470537006855011,
+        "s0": 0.7352690100669861
+      },
+      {
+        "rank": 6,
+        "stock_code": "601138",
+        "stock_name": "工业富联",
+        "cosine_similarity": 0.4634380042552948,
+        "s0": 0.7317190170288086
+      },
+      {
+        "rank": 7,
+        "stock_code": "600588",
+        "stock_name": "用友网络",
+        "cosine_similarity": 0.46281298995018005,
+        "s0": 0.7314069867134094
+      },
+      {
+        "rank": 8,
+        "stock_code": "000977",
+        "stock_name": "浪潮信息",
+        "cosine_similarity": 0.45921099185943604,
+        "s0": 0.7296059727668762
+      },
+      {
+        "rank": 9,
+        "stock_code": "603886",
+        "stock_name": "兆易创新",
+        "cosine_similarity": 0.45709899067878723,
+        "s0": 0.7285490036010742
+      },
+      {
+        "rank": 10,
+        "stock_code": "600584",
+        "stock_name": "长电科技",
+        "cosine_similarity": 0.45569300651550293,
+        "s0": 0.7278460264205933
+      },
+      {
+        "rank": 11,
+        "stock_code": "000938",
+        "stock_name": "紫光股份",
+        "cosine_similarity": 0.4547809958457947,
+        "s0": 0.7273899912834167
+      },
+      {
+        "rank": 12,
+        "stock_code": "688256",
+        "stock_name": "寒武纪",
+        "cosine_similarity": 0.4546410143375397,
+        "s0": 0.7273210287094116
+      },
+      {
+        "rank": 13,
+        "stock_code": "000503",
+        "stock_name": "国新健康",
+        "cosine_similarity": 0.4532270133495331,
+        "s0": 0.7266139984130859
+      },
+      {
+        "rank": 14,
+        "stock_code": "688008",
+        "stock_name": "澜起科技",
+        "cosine_similarity": 0.45111900568008423,
+        "s0": 0.7255600094795227
+      },
+      {
+        "rank": 15,
+        "stock_code": "600570",
+        "stock_name": "恒生电子",
+        "cosine_similarity": 0.4503050148487091,
+        "s0": 0.7251530289649963
+      },
+      {
+        "rank": 16,
+        "stock_code": "600522",
+        "stock_name": "中天科技",
+        "cosine_similarity": 0.44712498784065247,
+        "s0": 0.7235620021820068
+      },
+      {
+        "rank": 17,
+        "stock_code": "601985",
+        "stock_name": "中国核电",
+        "cosine_similarity": 0.4464919865131378,
+        "s0": 0.7232459783554077
+      },
+      {
+        "rank": 18,
+        "stock_code": "000166",
+        "stock_name": "申万宏源",
+        "cosine_similarity": 0.4451029896736145,
+        "s0": 0.7225509881973267
+      },
+      {
+        "rank": 19,
+        "stock_code": "601059",
+        "stock_name": "信达证券",
+        "cosine_similarity": 0.4446899890899658,
+        "s0": 0.7223449945449829
+      },
+      {
+        "rank": 20,
+        "stock_code": "688009",
+        "stock_name": "中国通号",
+        "cosine_similarity": 0.4439049959182739,
+        "s0": 0.7219520211219788
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0018",
+    "title": "AI算力“必选项”！液冷概念爆发 龙头股8连板！融资客提前埋伏这些票",
+    "event_type": "行业类",
+    "event_summary": "AI算力需求爆发驱动液冷技术加速落地，液冷概念股集体上涨，龙头股实现8连板。",
+    "attribute_score": 0.816,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "603019",
+        "stock_name": "中科曙光",
+        "cosine_similarity": 0.5247259736061096,
+        "s0": 0.7623630166053772
+      },
+      {
+        "rank": 2,
+        "stock_code": "688256",
+        "stock_name": "寒武纪",
+        "cosine_similarity": 0.5205109715461731,
+        "s0": 0.760254979133606
+      },
+      {
+        "rank": 3,
+        "stock_code": "301269",
+        "stock_name": "华大九天",
+        "cosine_similarity": 0.5031589865684509,
+        "s0": 0.751579999923706
+      },
+      {
+        "rank": 4,
+        "stock_code": "000977",
+        "stock_name": "浪潮信息",
+        "cosine_similarity": 0.49277999997138977,
+        "s0": 0.7463899850845337
+      },
+      {
+        "rank": 5,
+        "stock_code": "002371",
+        "stock_name": "北方华创",
+        "cosine_similarity": 0.48965299129486084,
+        "s0": 0.7448260188102722
+      },
+      {
+        "rank": 6,
+        "stock_code": "603501",
+        "stock_name": "韦尔股份",
+        "cosine_similarity": 0.476408988237381,
+        "s0": 0.7382040023803711
+      },
+      {
+        "rank": 7,
+        "stock_code": "300124",
+        "stock_name": "汇川技术",
+        "cosine_similarity": 0.47590699791908264,
+        "s0": 0.7379530072212219
+      },
+      {
+        "rank": 8,
+        "stock_code": "600406",
+        "stock_name": "国电南瑞",
+        "cosine_similarity": 0.4742020070552826,
+        "s0": 0.7371010184288025
+      },
+      {
+        "rank": 9,
+        "stock_code": "300433",
+        "stock_name": "蓝思科技",
+        "cosine_similarity": 0.4736979901790619,
+        "s0": 0.7368490099906921
+      },
+      {
+        "rank": 10,
+        "stock_code": "300033",
+        "stock_name": "同花顺",
+        "cosine_similarity": 0.4713050127029419,
+        "s0": 0.7356529831886292
+      },
+      {
+        "rank": 11,
+        "stock_code": "601138",
+        "stock_name": "工业富联",
+        "cosine_similarity": 0.46999800205230713,
+        "s0": 0.7349990010261536
+      },
+      {
+        "rank": 12,
+        "stock_code": "002050",
+        "stock_name": "三花智控",
+        "cosine_similarity": 0.4699609875679016,
+        "s0": 0.7349799871444702
+      },
+      {
+        "rank": 13,
+        "stock_code": "002475",
+        "stock_name": "立讯精密",
+        "cosine_similarity": 0.4691689908504486,
+        "s0": 0.7345839738845825
+      },
+      {
+        "rank": 14,
+        "stock_code": "688041",
+        "stock_name": "海光信息",
+        "cosine_similarity": 0.46867799758911133,
+        "s0": 0.7343389987945557
+      },
+      {
+        "rank": 15,
+        "stock_code": "688008",
+        "stock_name": "澜起科技",
+        "cosine_similarity": 0.466838002204895,
+        "s0": 0.7334190011024475
+      },
+      {
+        "rank": 16,
+        "stock_code": "300316",
+        "stock_name": "晶盛机电",
+        "cosine_similarity": 0.4648340046405792,
+        "s0": 0.7324169874191284
+      },
+      {
+        "rank": 17,
+        "stock_code": "600570",
+        "stock_name": "恒生电子",
+        "cosine_similarity": 0.4627299904823303,
+        "s0": 0.7313650250434875
+      },
+      {
+        "rank": 18,
+        "stock_code": "688082",
+        "stock_name": "盛美上海",
+        "cosine_similarity": 0.45968198776245117,
+        "s0": 0.7298409938812256
+      },
+      {
+        "rank": 19,
+        "stock_code": "002008",
+        "stock_name": "大族激光",
+        "cosine_similarity": 0.4562169909477234,
+        "s0": 0.7281079888343811
+      },
+      {
+        "rank": 20,
+        "stock_code": "300661",
+        "stock_name": "圣邦股份",
+        "cosine_similarity": 0.45587900280952454,
+        "s0": 0.7279390096664429
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0019",
+    "title": "暴涨650%依旧不愁卖！光纤行业迎“量价齐升” 多股业绩有望倍增(名单)",
+    "event_type": "行业类",
+    "event_summary": "光纤行业产品价格暴涨650%、产销量暴增500%，行业进入量价齐升的景气周期。",
+    "attribute_score": 1.0,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "600522",
+        "stock_name": "中天科技",
+        "cosine_similarity": 0.45045599341392517,
+        "s0": 0.7252280116081238
+      },
+      {
+        "rank": 2,
+        "stock_code": "000938",
+        "stock_name": "紫光股份",
+        "cosine_similarity": 0.45002999901771545,
+        "s0": 0.7250149846076965
+      },
+      {
+        "rank": 3,
+        "stock_code": "603260",
+        "stock_name": "合盛硅业",
+        "cosine_similarity": 0.4487749934196472,
+        "s0": 0.7243880033493042
+      },
+      {
+        "rank": 4,
+        "stock_code": "000012",
+        "stock_name": "南玻A",
+        "cosine_similarity": 0.43660101294517517,
+        "s0": 0.7182999849319458
+      },
+      {
+        "rank": 5,
+        "stock_code": "600050",
+        "stock_name": "中国联通",
+        "cosine_similarity": 0.4360159933567047,
+        "s0": 0.7180079817771912
+      },
+      {
+        "rank": 6,
+        "stock_code": "603501",
+        "stock_name": "韦尔股份",
+        "cosine_similarity": 0.43271100521087646,
+        "s0": 0.7163559794425964
+      },
+      {
+        "rank": 7,
+        "stock_code": "688223",
+        "stock_name": "晶科能源",
+        "cosine_similarity": 0.4316500127315521,
+        "s0": 0.7158250212669373
+      },
+      {
+        "rank": 8,
+        "stock_code": "000063",
+        "stock_name": "中兴通讯",
+        "cosine_similarity": 0.4315899908542633,
+        "s0": 0.7157949805259705
+      },
+      {
+        "rank": 9,
+        "stock_code": "600089",
+        "stock_name": "特变电工",
+        "cosine_similarity": 0.4314590096473694,
+        "s0": 0.7157300114631653
+      },
+      {
+        "rank": 10,
+        "stock_code": "300274",
+        "stock_name": "阳光电源",
+        "cosine_similarity": 0.4307689964771271,
+        "s0": 0.7153840065002441
+      },
+      {
+        "rank": 11,
+        "stock_code": "600438",
+        "stock_name": "通威股份",
+        "cosine_similarity": 0.43024298548698425,
+        "s0": 0.7151209712028503
+      },
+      {
+        "rank": 12,
+        "stock_code": "688303",
+        "stock_name": "大全能源",
+        "cosine_similarity": 0.4271950125694275,
+        "s0": 0.7135980129241943
+      },
+      {
+        "rank": 13,
+        "stock_code": "688472",
+        "stock_name": "固德威",
+        "cosine_similarity": 0.4241139888763428,
+        "s0": 0.7120569944381714
+      },
+      {
+        "rank": 14,
+        "stock_code": "002493",
+        "stock_name": "荣盛石化",
+        "cosine_similarity": 0.42410698533058167,
+        "s0": 0.7120530009269714
+      },
+      {
+        "rank": 15,
+        "stock_code": "688041",
+        "stock_name": "海光信息",
+        "cosine_similarity": 0.4219819903373718,
+        "s0": 0.7109910249710083
+      },
+      {
+        "rank": 16,
+        "stock_code": "300316",
+        "stock_name": "晶盛机电",
+        "cosine_similarity": 0.4211750030517578,
+        "s0": 0.7105879783630371
+      },
+      {
+        "rank": 17,
+        "stock_code": "600176",
+        "stock_name": "中国巨石",
+        "cosine_similarity": 0.4191359877586365,
+        "s0": 0.7095680236816406
+      },
+      {
+        "rank": 18,
+        "stock_code": "002459",
+        "stock_name": "晶澳科技",
+        "cosine_similarity": 0.417620986700058,
+        "s0": 0.7088109850883484
+      },
+      {
+        "rank": 19,
+        "stock_code": "002008",
+        "stock_name": "大族激光",
+        "cosine_similarity": 0.4176050126552582,
+        "s0": 0.7088019847869873
+      },
+      {
+        "rank": 20,
+        "stock_code": "000100",
+        "stock_name": "TCL科技",
+        "cosine_similarity": 0.4174540042877197,
+        "s0": 0.7087270021438599
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0020",
+    "title": "8连板 最新“涨停王”出炉！业绩连亏股浮出 最低营收仅145万元",
+    "event_type": "公司类",
+    "event_summary": "某只股票连续8日涨停，成为市场“涨停王”，但其业绩连续亏损且最低营收仅145万元。",
+    "attribute_score": 0.337,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "000860",
+        "stock_name": "顺鑫农业",
+        "cosine_similarity": 0.3874270021915436,
+        "s0": 0.6937140226364136
+      },
+      {
+        "rank": 2,
+        "stock_code": "000002",
+        "stock_name": "万科A",
+        "cosine_similarity": 0.37432798743247986,
+        "s0": 0.6871640086174011
+      },
+      {
+        "rank": 3,
+        "stock_code": "601236",
+        "stock_name": "红塔证券",
+        "cosine_similarity": 0.37424901127815247,
+        "s0": 0.687125027179718
+      },
+      {
+        "rank": 4,
+        "stock_code": "000009",
+        "stock_name": "中国宝安",
+        "cosine_similarity": 0.3734210133552551,
+        "s0": 0.6867110133171082
+      },
+      {
+        "rank": 5,
+        "stock_code": "601377",
+        "stock_name": "兴业证券",
+        "cosine_similarity": 0.3704400062561035,
+        "s0": 0.6852200031280518
+      },
+      {
+        "rank": 6,
+        "stock_code": "000012",
+        "stock_name": "南玻A",
+        "cosine_similarity": 0.3695540130138397,
+        "s0": 0.684777021408081
+      },
+      {
+        "rank": 7,
+        "stock_code": "601006",
+        "stock_name": "大秦铁路",
+        "cosine_similarity": 0.36820998787879944,
+        "s0": 0.6841049790382385
+      },
+      {
+        "rank": 8,
+        "stock_code": "000025",
+        "stock_name": "特力A",
+        "cosine_similarity": 0.36599600315093994,
+        "s0": 0.68299800157547
+      },
+      {
+        "rank": 9,
+        "stock_code": "002056",
+        "stock_name": "横店东磁",
+        "cosine_similarity": 0.3653019964694977,
+        "s0": 0.6826509833335876
+      },
+      {
+        "rank": 10,
+        "stock_code": "601456",
+        "stock_name": "国联证券",
+        "cosine_similarity": 0.36406901478767395,
+        "s0": 0.6820340156555176
+      },
+      {
+        "rank": 11,
+        "stock_code": "600377",
+        "stock_name": "宁沪高速",
+        "cosine_similarity": 0.3638019859790802,
+        "s0": 0.6819009780883789
+      },
+      {
+        "rank": 12,
+        "stock_code": "002493",
+        "stock_name": "荣盛石化",
+        "cosine_similarity": 0.3630880117416382,
+        "s0": 0.6815440058708191
+      },
+      {
+        "rank": 13,
+        "stock_code": "601816",
+        "stock_name": "京沪高铁",
+        "cosine_similarity": 0.3624509871006012,
+        "s0": 0.6812260150909424
+      },
+      {
+        "rank": 14,
+        "stock_code": "000006",
+        "stock_name": "深振业A",
+        "cosine_similarity": 0.3619120121002197,
+        "s0": 0.6809560060501099
+      },
+      {
+        "rank": 15,
+        "stock_code": "600918",
+        "stock_name": "中泰证券",
+        "cosine_similarity": 0.3618119955062866,
+        "s0": 0.6809059977531433
+      },
+      {
+        "rank": 16,
+        "stock_code": "000603",
+        "stock_name": "盛达资源",
+        "cosine_similarity": 0.3606640100479126,
+        "s0": 0.6803320050239563
+      },
+      {
+        "rank": 17,
+        "stock_code": "601136",
+        "stock_name": "首创证券",
+        "cosine_similarity": 0.36033499240875244,
+        "s0": 0.680167019367218
+      },
+      {
+        "rank": 18,
+        "stock_code": "000617",
+        "stock_name": "中油资本",
+        "cosine_similarity": 0.3584370017051697,
+        "s0": 0.6792179942131042
+      },
+      {
+        "rank": 19,
+        "stock_code": "603260",
+        "stock_name": "合盛硅业",
+        "cosine_similarity": 0.35736098885536194,
+        "s0": 0.6786810159683228
+      },
+      {
+        "rank": 20,
+        "stock_code": "600011",
+        "stock_name": "华能国际",
+        "cosine_similarity": 0.35682201385498047,
+        "s0": 0.6784110069274902
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0021",
+    "title": "内存短缺或致苹果推迟上新 新款Mac Studio据称延迟数月发布",
+    "event_type": "行业类",
+    "event_summary": "受全球内存芯片短缺影响，苹果推迟新款Mac Studio至10月发布，并延后OLED MacBook Pro至2027年。",
+    "attribute_score": 0.617,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "603893",
+        "stock_name": "瑞芯微",
+        "cosine_similarity": 0.3635669946670532,
+        "s0": 0.6817839741706848
+      },
+      {
+        "rank": 2,
+        "stock_code": "688008",
+        "stock_name": "澜起科技",
+        "cosine_similarity": 0.35419100522994995,
+        "s0": 0.6770960092544556
+      },
+      {
+        "rank": 3,
+        "stock_code": "688012",
+        "stock_name": "中微公司",
+        "cosine_similarity": 0.3475480079650879,
+        "s0": 0.673774003982544
+      },
+      {
+        "rank": 4,
+        "stock_code": "688981",
+        "stock_name": "中芯国际",
+        "cosine_similarity": 0.3458710014820099,
+        "s0": 0.6729350090026855
+      },
+      {
+        "rank": 5,
+        "stock_code": "000050",
+        "stock_name": "深天马A",
+        "cosine_similarity": 0.33997398614883423,
+        "s0": 0.6699870228767395
+      },
+      {
+        "rank": 6,
+        "stock_code": "603886",
+        "stock_name": "兆易创新",
+        "cosine_similarity": 0.3364439904689789,
+        "s0": 0.6682220101356506
+      },
+      {
+        "rank": 7,
+        "stock_code": "002938",
+        "stock_name": "鹏鼎控股",
+        "cosine_similarity": 0.33252400159835815,
+        "s0": 0.6662619709968567
+      },
+      {
+        "rank": 8,
+        "stock_code": "600460",
+        "stock_name": "士兰微",
+        "cosine_similarity": 0.3301540017127991,
+        "s0": 0.6650769710540771
+      },
+      {
+        "rank": 9,
+        "stock_code": "301269",
+        "stock_name": "华大九天",
+        "cosine_similarity": 0.3283439874649048,
+        "s0": 0.6641719937324524
+      },
+      {
+        "rank": 10,
+        "stock_code": "688041",
+        "stock_name": "海光信息",
+        "cosine_similarity": 0.32398900389671326,
+        "s0": 0.6619939804077148
+      },
+      {
+        "rank": 11,
+        "stock_code": "688396",
+        "stock_name": "华润微",
+        "cosine_similarity": 0.31992900371551514,
+        "s0": 0.6599649786949158
+      },
+      {
+        "rank": 12,
+        "stock_code": "002049",
+        "stock_name": "紫光国微",
+        "cosine_similarity": 0.3145290017127991,
+        "s0": 0.6572650074958801
+      },
+      {
+        "rank": 13,
+        "stock_code": "688256",
+        "stock_name": "寒武纪",
+        "cosine_similarity": 0.3107660114765167,
+        "s0": 0.6553829908370972
+      },
+      {
+        "rank": 14,
+        "stock_code": "300866",
+        "stock_name": "安克创新",
+        "cosine_similarity": 0.3076219856739044,
+        "s0": 0.653810977935791
+      },
+      {
+        "rank": 15,
+        "stock_code": "002475",
+        "stock_name": "立讯精密",
+        "cosine_similarity": 0.3064740002155304,
+        "s0": 0.653236985206604
+      },
+      {
+        "rank": 16,
+        "stock_code": "600584",
+        "stock_name": "长电科技",
+        "cosine_similarity": 0.30350399017333984,
+        "s0": 0.6517519950866699
+      },
+      {
+        "rank": 17,
+        "stock_code": "688128",
+        "stock_name": "沪硅产业",
+        "cosine_similarity": 0.30339300632476807,
+        "s0": 0.6516969799995422
+      },
+      {
+        "rank": 18,
+        "stock_code": "002916",
+        "stock_name": "深南电路",
+        "cosine_similarity": 0.30306899547576904,
+        "s0": 0.6515340209007263
+      },
+      {
+        "rank": 19,
+        "stock_code": "600570",
+        "stock_name": "恒生电子",
+        "cosine_similarity": 0.3016299903392792,
+        "s0": 0.6508150100708008
+      },
+      {
+        "rank": 20,
+        "stock_code": "002371",
+        "stock_name": "北方华创",
+        "cosine_similarity": 0.29999101161956787,
+        "s0": 0.6499959826469421
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0022",
+    "title": "十大券商策略：市场有望走出新高！科技风格回归 价值也会有春天",
+    "event_type": "行业类",
+    "event_summary": "多家券商发布策略观点，认为市场有望创新高，科技与价值风格均有机会。",
+    "attribute_score": 0.628,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "600999",
+        "stock_name": "招商证券",
+        "cosine_similarity": 0.4448089897632599,
+        "s0": 0.7224050164222717
+      },
+      {
+        "rank": 2,
+        "stock_code": "601059",
+        "stock_name": "信达证券",
+        "cosine_similarity": 0.44157999753952026,
+        "s0": 0.7207900285720825
+      },
+      {
+        "rank": 3,
+        "stock_code": "000166",
+        "stock_name": "申万宏源",
+        "cosine_similarity": 0.44050100445747375,
+        "s0": 0.7202500104904175
+      },
+      {
+        "rank": 4,
+        "stock_code": "601688",
+        "stock_name": "华泰证券",
+        "cosine_similarity": 0.43966999650001526,
+        "s0": 0.7198349833488464
+      },
+      {
+        "rank": 5,
+        "stock_code": "600030",
+        "stock_name": "中信证券",
+        "cosine_similarity": 0.4365440011024475,
+        "s0": 0.7182719707489014
+      },
+      {
+        "rank": 6,
+        "stock_code": "601995",
+        "stock_name": "中金公司",
+        "cosine_similarity": 0.43242400884628296,
+        "s0": 0.7162119746208191
+      },
+      {
+        "rank": 7,
+        "stock_code": "000776",
+        "stock_name": "广发证券",
+        "cosine_similarity": 0.43025100231170654,
+        "s0": 0.7151250243186951
+      },
+      {
+        "rank": 8,
+        "stock_code": "601881",
+        "stock_name": "中国银河",
+        "cosine_similarity": 0.42811501026153564,
+        "s0": 0.714057981967926
+      },
+      {
+        "rank": 9,
+        "stock_code": "601377",
+        "stock_name": "兴业证券",
+        "cosine_similarity": 0.4253529906272888,
+        "s0": 0.7126759886741638
+      },
+      {
+        "rank": 10,
+        "stock_code": "601456",
+        "stock_name": "国联证券",
+        "cosine_similarity": 0.422309011220932,
+        "s0": 0.7111539840698242
+      },
+      {
+        "rank": 11,
+        "stock_code": "002736",
+        "stock_name": "国信证券",
+        "cosine_similarity": 0.42051899433135986,
+        "s0": 0.7102599740028381
+      },
+      {
+        "rank": 12,
+        "stock_code": "601901",
+        "stock_name": "方正证券",
+        "cosine_similarity": 0.41955000162124634,
+        "s0": 0.7097749710083008
+      },
+      {
+        "rank": 13,
+        "stock_code": "601066",
+        "stock_name": "中信建投",
+        "cosine_similarity": 0.41890400648117065,
+        "s0": 0.7094519734382629
+      },
+      {
+        "rank": 14,
+        "stock_code": "601668",
+        "stock_name": "中国建筑",
+        "cosine_similarity": 0.418614000082016,
+        "s0": 0.7093070149421692
+      },
+      {
+        "rank": 15,
+        "stock_code": "603019",
+        "stock_name": "中科曙光",
+        "cosine_similarity": 0.41573700308799744,
+        "s0": 0.7078679800033569
+      },
+      {
+        "rank": 16,
+        "stock_code": "601136",
+        "stock_name": "首创证券",
+        "cosine_similarity": 0.41496700048446655,
+        "s0": 0.7074829936027527
+      },
+      {
+        "rank": 17,
+        "stock_code": "601398",
+        "stock_name": "工商银行",
+        "cosine_similarity": 0.41384801268577576,
+        "s0": 0.7069240212440491
+      },
+      {
+        "rank": 18,
+        "stock_code": "601211",
+        "stock_name": "国泰君安",
+        "cosine_similarity": 0.4122759997844696,
+        "s0": 0.706138014793396
+      },
+      {
+        "rank": 19,
+        "stock_code": "300059",
+        "stock_name": "东方财富",
+        "cosine_similarity": 0.4116950035095215,
+        "s0": 0.705847978591919
+      },
+      {
+        "rank": 20,
+        "stock_code": "600570",
+        "stock_name": "恒生电子",
+        "cosine_similarity": 0.41038501262664795,
+        "s0": 0.7051920294761658
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0023",
+    "title": "4月LPR不变：1年期3.0% 5年期以上3.5%",
+    "event_type": "宏观类",
+    "event_summary": "2026年4月贷款市场报价利率（LPR）维持不变，1年期为3.0%，5年期以上为3.5%，已连续11个月持稳。",
+    "attribute_score": 0.539,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "601988",
+        "stock_name": "中国银行",
+        "cosine_similarity": 0.5101230144500732,
+        "s0": 0.7550609707832336
+      },
+      {
+        "rank": 2,
+        "stock_code": "601398",
+        "stock_name": "工商银行",
+        "cosine_similarity": 0.4978620111942291,
+        "s0": 0.7489309906959534
+      },
+      {
+        "rank": 3,
+        "stock_code": "601288",
+        "stock_name": "农业银行",
+        "cosine_similarity": 0.49016499519348145,
+        "s0": 0.7450829744338989
+      },
+      {
+        "rank": 4,
+        "stock_code": "600000",
+        "stock_name": "浦发银行",
+        "cosine_similarity": 0.47688400745391846,
+        "s0": 0.7384420037269592
+      },
+      {
+        "rank": 5,
+        "stock_code": "601818",
+        "stock_name": "光大银行",
+        "cosine_similarity": 0.4762920141220093,
+        "s0": 0.7381460070610046
+      },
+      {
+        "rank": 6,
+        "stock_code": "601229",
+        "stock_name": "上海银行",
+        "cosine_similarity": 0.47254300117492676,
+        "s0": 0.7362719774246216
+      },
+      {
+        "rank": 7,
+        "stock_code": "601169",
+        "stock_name": "北京银行",
+        "cosine_similarity": 0.47161000967025757,
+        "s0": 0.7358049750328064
+      },
+      {
+        "rank": 8,
+        "stock_code": "600016",
+        "stock_name": "民生银行",
+        "cosine_similarity": 0.4643450081348419,
+        "s0": 0.7321730256080627
+      },
+      {
+        "rank": 9,
+        "stock_code": "601939",
+        "stock_name": "建设银行",
+        "cosine_similarity": 0.4641990065574646,
+        "s0": 0.7320989966392517
+      },
+      {
+        "rank": 10,
+        "stock_code": "601825",
+        "stock_name": "沪农商行",
+        "cosine_similarity": 0.46143999695777893,
+        "s0": 0.7307199835777283
+      },
+      {
+        "rank": 11,
+        "stock_code": "601658",
+        "stock_name": "邮储银行",
+        "cosine_similarity": 0.4569169878959656,
+        "s0": 0.7284579873085022
+      },
+      {
+        "rank": 12,
+        "stock_code": "601838",
+        "stock_name": "成都银行",
+        "cosine_similarity": 0.4565170109272003,
+        "s0": 0.7282590270042419
+      },
+      {
+        "rank": 13,
+        "stock_code": "601916",
+        "stock_name": "浙商银行",
+        "cosine_similarity": 0.4563150107860565,
+        "s0": 0.7281579971313477
+      },
+      {
+        "rank": 14,
+        "stock_code": "601998",
+        "stock_name": "中信银行",
+        "cosine_similarity": 0.4554919898509979,
+        "s0": 0.7277460098266602
+      },
+      {
+        "rank": 15,
+        "stock_code": "601328",
+        "stock_name": "交通银行",
+        "cosine_similarity": 0.4552980065345764,
+        "s0": 0.7276489734649658
+      },
+      {
+        "rank": 16,
+        "stock_code": "000001",
+        "stock_name": "平安银行",
+        "cosine_similarity": 0.45389899611473083,
+        "s0": 0.7269499897956848
+      },
+      {
+        "rank": 17,
+        "stock_code": "600919",
+        "stock_name": "江苏银行",
+        "cosine_similarity": 0.45275500416755676,
+        "s0": 0.7263780236244202
+      },
+      {
+        "rank": 18,
+        "stock_code": "601166",
+        "stock_name": "兴业银行",
+        "cosine_similarity": 0.44680601358413696,
+        "s0": 0.7234029769897461
+      },
+      {
+        "rank": 19,
+        "stock_code": "600036",
+        "stock_name": "招商银行",
+        "cosine_similarity": 0.4394479990005493,
+        "s0": 0.7197239995002747
+      },
+      {
+        "rank": 20,
+        "stock_code": "600926",
+        "stock_name": "杭州银行",
+        "cosine_similarity": 0.4378649890422821,
+        "s0": 0.7189319729804993
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0024",
+    "title": "4月20日投资日历 | 华为Pura及全场景新品发布会今日召开",
+    "event_type": "公司类",
+    "event_summary": "华为于4月20日召开Pura系列及全场景新品发布会，发布Pura 90系列、阔折叠屏手机、AI眼镜等多款产品。",
+    "attribute_score": 0.452,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "300433",
+        "stock_name": "蓝思科技",
+        "cosine_similarity": 0.5631499886512756,
+        "s0": 0.7815750241279602
+      },
+      {
+        "rank": 2,
+        "stock_code": "600660",
+        "stock_name": "福耀玻璃",
+        "cosine_similarity": 0.5524529814720154,
+        "s0": 0.7762269973754883
+      },
+      {
+        "rank": 3,
+        "stock_code": "603296",
+        "stock_name": "华勤技术",
+        "cosine_similarity": 0.5410829782485962,
+        "s0": 0.7705420255661011
+      },
+      {
+        "rank": 4,
+        "stock_code": "601127",
+        "stock_name": "赛力斯",
+        "cosine_similarity": 0.5352699756622314,
+        "s0": 0.7676349878311157
+      },
+      {
+        "rank": 5,
+        "stock_code": "603893",
+        "stock_name": "瑞芯微",
+        "cosine_similarity": 0.5328149795532227,
+        "s0": 0.7664070129394531
+      },
+      {
+        "rank": 6,
+        "stock_code": "603501",
+        "stock_name": "韦尔股份",
+        "cosine_similarity": 0.5256659984588623,
+        "s0": 0.7628329992294312
+      },
+      {
+        "rank": 7,
+        "stock_code": "688036",
+        "stock_name": "传音控股",
+        "cosine_similarity": 0.5239949822425842,
+        "s0": 0.7619979977607727
+      },
+      {
+        "rank": 8,
+        "stock_code": "002008",
+        "stock_name": "大族激光",
+        "cosine_similarity": 0.5225380063056946,
+        "s0": 0.7612689733505249
+      },
+      {
+        "rank": 9,
+        "stock_code": "688256",
+        "stock_name": "寒武纪",
+        "cosine_similarity": 0.5217859745025635,
+        "s0": 0.7608929872512817
+      },
+      {
+        "rank": 10,
+        "stock_code": "600570",
+        "stock_name": "恒生电子",
+        "cosine_similarity": 0.5168089866638184,
+        "s0": 0.7584050297737122
+      },
+      {
+        "rank": 11,
+        "stock_code": "301269",
+        "stock_name": "华大九天",
+        "cosine_similarity": 0.5140519738197327,
+        "s0": 0.7570260167121887
+      },
+      {
+        "rank": 12,
+        "stock_code": "000938",
+        "stock_name": "紫光股份",
+        "cosine_similarity": 0.5098029971122742,
+        "s0": 0.7549020051956177
+      },
+      {
+        "rank": 13,
+        "stock_code": "002025",
+        "stock_name": "航天彩虹",
+        "cosine_similarity": 0.5092200040817261,
+        "s0": 0.754610002040863
+      },
+      {
+        "rank": 14,
+        "stock_code": "002241",
+        "stock_name": "歌尔股份",
+        "cosine_similarity": 0.5086690187454224,
+        "s0": 0.7543349862098694
+      },
+      {
+        "rank": 15,
+        "stock_code": "601689",
+        "stock_name": "拓普集团",
+        "cosine_similarity": 0.50729900598526,
+        "s0": 0.7536489963531494
+      },
+      {
+        "rank": 16,
+        "stock_code": "688041",
+        "stock_name": "海光信息",
+        "cosine_similarity": 0.5062119960784912,
+        "s0": 0.7531059980392456
+      },
+      {
+        "rank": 17,
+        "stock_code": "002415",
+        "stock_name": "海康威视",
+        "cosine_similarity": 0.5043519735336304,
+        "s0": 0.7521759867668152
+      },
+      {
+        "rank": 18,
+        "stock_code": "600588",
+        "stock_name": "用友网络",
+        "cosine_similarity": 0.5029119849205017,
+        "s0": 0.7514560222625732
+      },
+      {
+        "rank": 19,
+        "stock_code": "002231",
+        "stock_name": "合众思壮",
+        "cosine_similarity": 0.5008590221405029,
+        "s0": 0.7504299879074097
+      },
+      {
+        "rank": 20,
+        "stock_code": "688981",
+        "stock_name": "中芯国际",
+        "cosine_similarity": 0.5003209710121155,
+        "s0": 0.7501599788665771
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0025",
+    "title": "货币贬值周期未过半？富国银行大胆预测：金价或飙升至8000美元",
+    "event_type": "宏观类",
+    "event_summary": "富国银行预测金价或飙升至每盎司8000美元，理由为货币贬值周期尚未过半。",
+    "attribute_score": 1.1,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "600489",
+        "stock_name": "中金黄金",
+        "cosine_similarity": 0.4558190107345581,
+        "s0": 0.7279090285301208
+      },
+      {
+        "rank": 2,
+        "stock_code": "600547",
+        "stock_name": "山东黄金",
+        "cosine_similarity": 0.4407390058040619,
+        "s0": 0.7203699946403503
+      },
+      {
+        "rank": 3,
+        "stock_code": "601899",
+        "stock_name": "紫金矿业",
+        "cosine_similarity": 0.4164159893989563,
+        "s0": 0.7082080245018005
+      },
+      {
+        "rank": 4,
+        "stock_code": "000603",
+        "stock_name": "盛达资源",
+        "cosine_similarity": 0.41507700085639954,
+        "s0": 0.7075380086898804
+      },
+      {
+        "rank": 5,
+        "stock_code": "601988",
+        "stock_name": "中国银行",
+        "cosine_similarity": 0.4110870063304901,
+        "s0": 0.7055439949035645
+      },
+      {
+        "rank": 6,
+        "stock_code": "601398",
+        "stock_name": "工商银行",
+        "cosine_similarity": 0.3929559886455536,
+        "s0": 0.696478009223938
+      },
+      {
+        "rank": 7,
+        "stock_code": "601995",
+        "stock_name": "中金公司",
+        "cosine_similarity": 0.3841089904308319,
+        "s0": 0.6920549869537354
+      },
+      {
+        "rank": 8,
+        "stock_code": "601901",
+        "stock_name": "方正证券",
+        "cosine_similarity": 0.37056198716163635,
+        "s0": 0.685280978679657
+      },
+      {
+        "rank": 9,
+        "stock_code": "601939",
+        "stock_name": "建设银行",
+        "cosine_similarity": 0.36830899119377136,
+        "s0": 0.6841549873352051
+      },
+      {
+        "rank": 10,
+        "stock_code": "600362",
+        "stock_name": "江西铜业",
+        "cosine_similarity": 0.36814001202583313,
+        "s0": 0.6840699911117554
+      },
+      {
+        "rank": 11,
+        "stock_code": "601166",
+        "stock_name": "兴业银行",
+        "cosine_similarity": 0.36758700013160706,
+        "s0": 0.6837940216064453
+      },
+      {
+        "rank": 12,
+        "stock_code": "600000",
+        "stock_name": "浦发银行",
+        "cosine_similarity": 0.366921991109848,
+        "s0": 0.6834610104560852
+      },
+      {
+        "rank": 13,
+        "stock_code": "601881",
+        "stock_name": "中国银河",
+        "cosine_similarity": 0.36623600125312805,
+        "s0": 0.6831179857254028
+      },
+      {
+        "rank": 14,
+        "stock_code": "600926",
+        "stock_name": "杭州银行",
+        "cosine_similarity": 0.3636929988861084,
+        "s0": 0.681846022605896
+      },
+      {
+        "rank": 15,
+        "stock_code": "601328",
+        "stock_name": "交通银行",
+        "cosine_similarity": 0.36289000511169434,
+        "s0": 0.6814450025558472
+      },
+      {
+        "rank": 16,
+        "stock_code": "601229",
+        "stock_name": "上海银行",
+        "cosine_similarity": 0.3590700030326843,
+        "s0": 0.6795349717140198
+      },
+      {
+        "rank": 17,
+        "stock_code": "601288",
+        "stock_name": "农业银行",
+        "cosine_similarity": 0.35717299580574036,
+        "s0": 0.678587019443512
+      },
+      {
+        "rank": 18,
+        "stock_code": "600036",
+        "stock_name": "招商银行",
+        "cosine_similarity": 0.35657399892807007,
+        "s0": 0.6782870292663574
+      },
+      {
+        "rank": 19,
+        "stock_code": "601998",
+        "stock_name": "中信银行",
+        "cosine_similarity": 0.35519298911094666,
+        "s0": 0.6775969862937927
+      },
+      {
+        "rank": 20,
+        "stock_code": "600016",
+        "stock_name": "民生银行",
+        "cosine_similarity": 0.35441499948501587,
+        "s0": 0.6772080063819885
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0026",
+    "title": "沃什究竟会如何降息+缩表？预告美联储未来四年走向的听证会要来了！",
+    "event_type": "宏观类",
+    "event_summary": "美联储主席提名人沃什即将出席参议院提名确认听证会，其关于降息与缩表的立场将影响未来四年货币政策走向。",
+    "attribute_score": 1.1,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "601988",
+        "stock_name": "中国银行",
+        "cosine_similarity": 0.3593190014362335,
+        "s0": 0.6796590089797974
+      },
+      {
+        "rank": 2,
+        "stock_code": "601398",
+        "stock_name": "工商银行",
+        "cosine_similarity": 0.35676100850105286,
+        "s0": 0.6783810257911682
+      },
+      {
+        "rank": 3,
+        "stock_code": "601939",
+        "stock_name": "建设银行",
+        "cosine_similarity": 0.3550409972667694,
+        "s0": 0.6775199770927429
+      },
+      {
+        "rank": 4,
+        "stock_code": "601881",
+        "stock_name": "中国银河",
+        "cosine_similarity": 0.3479369878768921,
+        "s0": 0.6739689707756042
+      },
+      {
+        "rank": 5,
+        "stock_code": "601818",
+        "stock_name": "光大银行",
+        "cosine_similarity": 0.34596800804138184,
+        "s0": 0.6729840040206909
+      },
+      {
+        "rank": 6,
+        "stock_code": "601901",
+        "stock_name": "方正证券",
+        "cosine_similarity": 0.34584200382232666,
+        "s0": 0.6729210019111633
+      },
+      {
+        "rank": 7,
+        "stock_code": "601066",
+        "stock_name": "中信建投",
+        "cosine_similarity": 0.3423599898815155,
+        "s0": 0.671180009841919
+      },
+      {
+        "rank": 8,
+        "stock_code": "601456",
+        "stock_name": "国联证券",
+        "cosine_similarity": 0.340707004070282,
+        "s0": 0.6703529953956604
+      },
+      {
+        "rank": 9,
+        "stock_code": "600016",
+        "stock_name": "民生银行",
+        "cosine_similarity": 0.33917298913002014,
+        "s0": 0.6695860028266907
+      },
+      {
+        "rank": 10,
+        "stock_code": "000166",
+        "stock_name": "申万宏源",
+        "cosine_similarity": 0.3383769989013672,
+        "s0": 0.6691880226135254
+      },
+      {
+        "rank": 11,
+        "stock_code": "601059",
+        "stock_name": "信达证券",
+        "cosine_similarity": 0.3373180031776428,
+        "s0": 0.668658971786499
+      },
+      {
+        "rank": 12,
+        "stock_code": "601328",
+        "stock_name": "交通银行",
+        "cosine_similarity": 0.33579498529434204,
+        "s0": 0.6678979992866516
+      },
+      {
+        "rank": 13,
+        "stock_code": "601998",
+        "stock_name": "中信银行",
+        "cosine_similarity": 0.33473101258277893,
+        "s0": 0.6673660278320312
+      },
+      {
+        "rank": 14,
+        "stock_code": "601995",
+        "stock_name": "中金公司",
+        "cosine_similarity": 0.3340210020542145,
+        "s0": 0.667011022567749
+      },
+      {
+        "rank": 15,
+        "stock_code": "600015",
+        "stock_name": "华夏银行",
+        "cosine_similarity": 0.3333050012588501,
+        "s0": 0.6666520237922668
+      },
+      {
+        "rank": 16,
+        "stock_code": "601288",
+        "stock_name": "农业银行",
+        "cosine_similarity": 0.3309659957885742,
+        "s0": 0.6654829978942871
+      },
+      {
+        "rank": 17,
+        "stock_code": "002736",
+        "stock_name": "国信证券",
+        "cosine_similarity": 0.3285279870033264,
+        "s0": 0.6642640233039856
+      },
+      {
+        "rank": 18,
+        "stock_code": "601838",
+        "stock_name": "成都银行",
+        "cosine_similarity": 0.32827499508857727,
+        "s0": 0.6641370058059692
+      },
+      {
+        "rank": 19,
+        "stock_code": "601788",
+        "stock_name": "光大证券",
+        "cosine_similarity": 0.3279379904270172,
+        "s0": 0.6639689803123474
+      },
+      {
+        "rank": 20,
+        "stock_code": "600000",
+        "stock_name": "浦发银行",
+        "cosine_similarity": 0.3261919915676117,
+        "s0": 0.663096010684967
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0027",
+    "title": "格力海信“真铜实料”之争背后：“铝代铜”到底是怎么回事？影响有多大？",
+    "event_type": "公司类",
+    "event_summary": "格力与海信因“真铜实料”宣传语爆发公开冲突，引发家电行业对“铝代铜”技术路线的广泛讨论。",
+    "attribute_score": 0.634,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "601600",
+        "stock_name": "中国铝业",
+        "cosine_similarity": 0.4501180052757263,
+        "s0": 0.7250589728355408
+      },
+      {
+        "rank": 2,
+        "stock_code": "600362",
+        "stock_name": "江西铜业",
+        "cosine_similarity": 0.4457069933414459,
+        "s0": 0.7228530049324036
+      },
+      {
+        "rank": 3,
+        "stock_code": "000333",
+        "stock_name": "美的集团",
+        "cosine_similarity": 0.4448719918727875,
+        "s0": 0.7224360108375549
+      },
+      {
+        "rank": 4,
+        "stock_code": "000807",
+        "stock_name": "云铝股份",
+        "cosine_similarity": 0.4443260133266449,
+        "s0": 0.7221630215644836
+      },
+      {
+        "rank": 5,
+        "stock_code": "600690",
+        "stock_name": "海尔智家",
+        "cosine_similarity": 0.43559399247169495,
+        "s0": 0.7177969813346863
+      },
+      {
+        "rank": 6,
+        "stock_code": "603195",
+        "stock_name": "公牛集团",
+        "cosine_similarity": 0.43453699350357056,
+        "s0": 0.7172690033912659
+      },
+      {
+        "rank": 7,
+        "stock_code": "601899",
+        "stock_name": "紫金矿业",
+        "cosine_similarity": 0.4286560118198395,
+        "s0": 0.7143279910087585
+      },
+      {
+        "rank": 8,
+        "stock_code": "000630",
+        "stock_name": "铜陵有色",
+        "cosine_similarity": 0.4285700023174286,
+        "s0": 0.7142850160598755
+      },
+      {
+        "rank": 9,
+        "stock_code": "600219",
+        "stock_name": "南山铝业",
+        "cosine_similarity": 0.42712199687957764,
+        "s0": 0.7135609984397888
+      },
+      {
+        "rank": 10,
+        "stock_code": "000709",
+        "stock_name": "华菱钢铁",
+        "cosine_similarity": 0.42381998896598816,
+        "s0": 0.7119100093841553
+      },
+      {
+        "rank": 11,
+        "stock_code": "000012",
+        "stock_name": "南玻A",
+        "cosine_similarity": 0.421970009803772,
+        "s0": 0.710985004901886
+      },
+      {
+        "rank": 12,
+        "stock_code": "002032",
+        "stock_name": "苏泊尔",
+        "cosine_similarity": 0.4188750088214874,
+        "s0": 0.7094380259513855
+      },
+      {
+        "rank": 13,
+        "stock_code": "600660",
+        "stock_name": "福耀玻璃",
+        "cosine_similarity": 0.416159987449646,
+        "s0": 0.708079993724823
+      },
+      {
+        "rank": 14,
+        "stock_code": "601877",
+        "stock_name": "正泰电器",
+        "cosine_similarity": 0.41556501388549805,
+        "s0": 0.707781970500946
+      },
+      {
+        "rank": 15,
+        "stock_code": "300750",
+        "stock_name": "宁德时代",
+        "cosine_similarity": 0.4154449999332428,
+        "s0": 0.707722008228302
+      },
+      {
+        "rank": 16,
+        "stock_code": "600585",
+        "stock_name": "海螺水泥",
+        "cosine_similarity": 0.4135819971561432,
+        "s0": 0.7067909836769104
+      },
+      {
+        "rank": 17,
+        "stock_code": "600011",
+        "stock_name": "华能国际",
+        "cosine_similarity": 0.41329801082611084,
+        "s0": 0.7066490054130554
+      },
+      {
+        "rank": 18,
+        "stock_code": "600019",
+        "stock_name": "宝钢股份",
+        "cosine_similarity": 0.41304799914360046,
+        "s0": 0.7065240144729614
+      },
+      {
+        "rank": 19,
+        "stock_code": "300274",
+        "stock_name": "阳光电源",
+        "cosine_similarity": 0.4130449891090393,
+        "s0": 0.7065219879150391
+      },
+      {
+        "rank": 20,
+        "stock_code": "000009",
+        "stock_name": "中国宝安",
+        "cosine_similarity": 0.40984100103378296,
+        "s0": 0.7049210071563721
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0028",
+    "title": "政策利好+关键发射将至！商业航天涨停潮 31股被融资净买过亿",
+    "event_type": "行业类",
+    "event_summary": "商业航天板块受政策利好与关键发射临近双重催化，31只个股获融资净买入超亿元，引发板块涨停潮。",
+    "attribute_score": 1.0,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "000738",
+        "stock_name": "航发控制",
+        "cosine_similarity": 0.49064499139785767,
+        "s0": 0.7453219890594482
+      },
+      {
+        "rank": 2,
+        "stock_code": "000519",
+        "stock_name": "银河磁体",
+        "cosine_similarity": 0.4770359992980957,
+        "s0": 0.7385179996490479
+      },
+      {
+        "rank": 3,
+        "stock_code": "002013",
+        "stock_name": "中航机电",
+        "cosine_similarity": 0.47214800119400024,
+        "s0": 0.7360739707946777
+      },
+      {
+        "rank": 4,
+        "stock_code": "600893",
+        "stock_name": "航发动力",
+        "cosine_similarity": 0.4648419916629791,
+        "s0": 0.7324209809303284
+      },
+      {
+        "rank": 5,
+        "stock_code": "601881",
+        "stock_name": "中国银河",
+        "cosine_similarity": 0.4565719962120056,
+        "s0": 0.7282860279083252
+      },
+      {
+        "rank": 6,
+        "stock_code": "601816",
+        "stock_name": "京沪高铁",
+        "cosine_similarity": 0.450765997171402,
+        "s0": 0.7253829836845398
+      },
+      {
+        "rank": 7,
+        "stock_code": "600760",
+        "stock_name": "中航沈飞",
+        "cosine_similarity": 0.4506889879703522,
+        "s0": 0.7253450155258179
+      },
+      {
+        "rank": 8,
+        "stock_code": "000768",
+        "stock_name": "中航西飞",
+        "cosine_similarity": 0.4495449960231781,
+        "s0": 0.7247719764709473
+      },
+      {
+        "rank": 9,
+        "stock_code": "600009",
+        "stock_name": "上海机场",
+        "cosine_similarity": 0.4468829929828644,
+        "s0": 0.7234410047531128
+      },
+      {
+        "rank": 10,
+        "stock_code": "601377",
+        "stock_name": "兴业证券",
+        "cosine_similarity": 0.4455220103263855,
+        "s0": 0.7227609753608704
+      },
+      {
+        "rank": 11,
+        "stock_code": "601059",
+        "stock_name": "信达证券",
+        "cosine_similarity": 0.44328001141548157,
+        "s0": 0.7216399908065796
+      },
+      {
+        "rank": 12,
+        "stock_code": "600030",
+        "stock_name": "中信证券",
+        "cosine_similarity": 0.44272398948669434,
+        "s0": 0.7213619947433472
+      },
+      {
+        "rank": 13,
+        "stock_code": "600999",
+        "stock_name": "招商证券",
+        "cosine_similarity": 0.4424450099468231,
+        "s0": 0.721222996711731
+      },
+      {
+        "rank": 14,
+        "stock_code": "601995",
+        "stock_name": "中金公司",
+        "cosine_similarity": 0.4423240125179291,
+        "s0": 0.7211620211601257
+      },
+      {
+        "rank": 15,
+        "stock_code": "601901",
+        "stock_name": "方正证券",
+        "cosine_similarity": 0.44076499342918396,
+        "s0": 0.7203819751739502
+      },
+      {
+        "rank": 16,
+        "stock_code": "000415",
+        "stock_name": "渤海租赁",
+        "cosine_similarity": 0.4394879937171936,
+        "s0": 0.7197440266609192
+      },
+      {
+        "rank": 17,
+        "stock_code": "601800",
+        "stock_name": "中国交建",
+        "cosine_similarity": 0.43830999732017517,
+        "s0": 0.7191550135612488
+      },
+      {
+        "rank": 18,
+        "stock_code": "000166",
+        "stock_name": "申万宏源",
+        "cosine_similarity": 0.43760499358177185,
+        "s0": 0.7188029885292053
+      },
+      {
+        "rank": 19,
+        "stock_code": "000540",
+        "stock_name": "中天城投",
+        "cosine_similarity": 0.4368419945240021,
+        "s0": 0.7184209823608398
+      },
+      {
+        "rank": 20,
+        "stock_code": "601668",
+        "stock_name": "中国建筑",
+        "cosine_similarity": 0.4364269971847534,
+        "s0": 0.7182130217552185
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0029",
+    "title": "4月20日国内四大证券报纸、重要财经媒体头版头条内容精华摘要",
+    "event_type": "政策类",
+    "event_summary": "商业不动产REITs试点加速推进，申报规模已超去年全年，市场有望扩容至千亿元量级。",
+    "attribute_score": 1.013,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "000166",
+        "stock_name": "申万宏源",
+        "cosine_similarity": 0.46425899863243103,
+        "s0": 0.7321299910545349
+      },
+      {
+        "rank": 2,
+        "stock_code": "000402",
+        "stock_name": "金融街",
+        "cosine_similarity": 0.4516499936580658,
+        "s0": 0.7258250117301941
+      },
+      {
+        "rank": 3,
+        "stock_code": "000540",
+        "stock_name": "中天城投",
+        "cosine_similarity": 0.44922998547554016,
+        "s0": 0.7246149778366089
+      },
+      {
+        "rank": 4,
+        "stock_code": "601995",
+        "stock_name": "中金公司",
+        "cosine_similarity": 0.44144299626350403,
+        "s0": 0.7207210063934326
+      },
+      {
+        "rank": 5,
+        "stock_code": "000006",
+        "stock_name": "深振业A",
+        "cosine_similarity": 0.4347270131111145,
+        "s0": 0.7173640131950378
+      },
+      {
+        "rank": 6,
+        "stock_code": "601901",
+        "stock_name": "方正证券",
+        "cosine_similarity": 0.43432798981666565,
+        "s0": 0.7171639800071716
+      },
+      {
+        "rank": 7,
+        "stock_code": "601398",
+        "stock_name": "工商银行",
+        "cosine_similarity": 0.43156298995018005,
+        "s0": 0.7157819867134094
+      },
+      {
+        "rank": 8,
+        "stock_code": "600999",
+        "stock_name": "招商证券",
+        "cosine_similarity": 0.42851799726486206,
+        "s0": 0.7142590284347534
+      },
+      {
+        "rank": 9,
+        "stock_code": "601059",
+        "stock_name": "信达证券",
+        "cosine_similarity": 0.4274510145187378,
+        "s0": 0.7137259840965271
+      },
+      {
+        "rank": 10,
+        "stock_code": "000002",
+        "stock_name": "万科A",
+        "cosine_similarity": 0.4272249937057495,
+        "s0": 0.7136120200157166
+      },
+      {
+        "rank": 11,
+        "stock_code": "002736",
+        "stock_name": "国信证券",
+        "cosine_similarity": 0.4267610013484955,
+        "s0": 0.713379979133606
+      },
+      {
+        "rank": 12,
+        "stock_code": "601211",
+        "stock_name": "国泰君安",
+        "cosine_similarity": 0.4209679961204529,
+        "s0": 0.7104840278625488
+      },
+      {
+        "rank": 13,
+        "stock_code": "000009",
+        "stock_name": "中国宝安",
+        "cosine_similarity": 0.41920599341392517,
+        "s0": 0.7096030116081238
+      },
+      {
+        "rank": 14,
+        "stock_code": "601377",
+        "stock_name": "兴业证券",
+        "cosine_similarity": 0.41864699125289917,
+        "s0": 0.7093240022659302
+      },
+      {
+        "rank": 15,
+        "stock_code": "600030",
+        "stock_name": "中信证券",
+        "cosine_similarity": 0.4186429977416992,
+        "s0": 0.7093210220336914
+      },
+      {
+        "rank": 16,
+        "stock_code": "601668",
+        "stock_name": "中国建筑",
+        "cosine_similarity": 0.418597012758255,
+        "s0": 0.7092980146408081
+      },
+      {
+        "rank": 17,
+        "stock_code": "601939",
+        "stock_name": "建设银行",
+        "cosine_similarity": 0.4173780083656311,
+        "s0": 0.7086889743804932
+      },
+      {
+        "rank": 18,
+        "stock_code": "000728",
+        "stock_name": "国元证券",
+        "cosine_similarity": 0.41549399495124817,
+        "s0": 0.7077469825744629
+      },
+      {
+        "rank": 19,
+        "stock_code": "601881",
+        "stock_name": "中国银河",
+        "cosine_similarity": 0.41548800468444824,
+        "s0": 0.7077440023422241
+      },
+      {
+        "rank": 20,
+        "stock_code": "000776",
+        "stock_name": "广发证券",
+        "cosine_similarity": 0.41144001483917236,
+        "s0": 0.7057200074195862
+      }
+    ]
+  },
+  {
+    "sample_id": "LIVE-0030",
+    "title": "挑战英伟达？谷歌据称欲携手Marvell 围绕TPU开发两款AI芯片！",
+    "event_type": "公司类",
+    "event_summary": "谷歌与Marvell合作开发两款AI推理芯片，包括内存处理单元和新型TPU。",
+    "attribute_score": 0.555,
+    "top_companies": [
+      {
+        "rank": 1,
+        "stock_code": "688256",
+        "stock_name": "寒武纪",
+        "cosine_similarity": 0.4588809907436371,
+        "s0": 0.7294409871101379
+      },
+      {
+        "rank": 2,
+        "stock_code": "688008",
+        "stock_name": "澜起科技",
+        "cosine_similarity": 0.4536589980125427,
+        "s0": 0.726830005645752
+      },
+      {
+        "rank": 3,
+        "stock_code": "603893",
+        "stock_name": "瑞芯微",
+        "cosine_similarity": 0.4364370107650757,
+        "s0": 0.718218982219696
+      },
+      {
+        "rank": 4,
+        "stock_code": "603501",
+        "stock_name": "韦尔股份",
+        "cosine_similarity": 0.4214000105857849,
+        "s0": 0.7106999754905701
+      },
+      {
+        "rank": 5,
+        "stock_code": "688041",
+        "stock_name": "海光信息",
+        "cosine_similarity": 0.42051199078559875,
+        "s0": 0.7102559804916382
+      },
+      {
+        "rank": 6,
+        "stock_code": "603886",
+        "stock_name": "兆易创新",
+        "cosine_similarity": 0.3959819972515106,
+        "s0": 0.6979910135269165
+      },
+      {
+        "rank": 7,
+        "stock_code": "301269",
+        "stock_name": "华大九天",
+        "cosine_similarity": 0.38812699913978577,
+        "s0": 0.6940640211105347
+      },
+      {
+        "rank": 8,
+        "stock_code": "300433",
+        "stock_name": "蓝思科技",
+        "cosine_similarity": 0.37892600893974304,
+        "s0": 0.6894630193710327
+      },
+      {
+        "rank": 9,
+        "stock_code": "000977",
+        "stock_name": "浪潮信息",
+        "cosine_similarity": 0.3753269910812378,
+        "s0": 0.6876630187034607
+      },
+      {
+        "rank": 10,
+        "stock_code": "688047",
+        "stock_name": "龙芯中科",
+        "cosine_similarity": 0.3746820092201233,
+        "s0": 0.6873409748077393
+      },
+      {
+        "rank": 11,
+        "stock_code": "002241",
+        "stock_name": "歌尔股份",
+        "cosine_similarity": 0.36934301257133484,
+        "s0": 0.6846709847450256
+      },
+      {
+        "rank": 12,
+        "stock_code": "603296",
+        "stock_name": "华勤技术",
+        "cosine_similarity": 0.3656710088253021,
+        "s0": 0.6828359961509705
+      },
+      {
+        "rank": 13,
+        "stock_code": "601138",
+        "stock_name": "工业富联",
+        "cosine_similarity": 0.35857200622558594,
+        "s0": 0.679286003112793
+      },
+      {
+        "rank": 14,
+        "stock_code": "002920",
+        "stock_name": "德赛西威",
+        "cosine_similarity": 0.35666701197624207,
+        "s0": 0.6783329844474792
+      },
+      {
+        "rank": 15,
+        "stock_code": "688396",
+        "stock_name": "华润微",
+        "cosine_similarity": 0.35654398798942566,
+        "s0": 0.678272008895874
+      },
+      {
+        "rank": 16,
+        "stock_code": "002049",
+        "stock_name": "紫光国微",
+        "cosine_similarity": 0.35629498958587646,
+        "s0": 0.6781479716300964
+      },
+      {
+        "rank": 17,
+        "stock_code": "688981",
+        "stock_name": "中芯国际",
+        "cosine_similarity": 0.35585999488830566,
+        "s0": 0.6779299974441528
+      },
+      {
+        "rank": 18,
+        "stock_code": "300866",
+        "stock_name": "安克创新",
+        "cosine_similarity": 0.35488900542259216,
+        "s0": 0.6774449944496155
+      },
+      {
+        "rank": 19,
+        "stock_code": "600584",
+        "stock_name": "长电科技",
+        "cosine_similarity": 0.3546769917011261,
+        "s0": 0.6773380041122437
+      },
+      {
+        "rank": 20,
+        "stock_code": "300347",
+        "stock_name": "泰格医药",
+        "cosine_similarity": 0.3521519899368286,
+        "s0": 0.6760759949684143
+      }
+    ]
+  }
+]

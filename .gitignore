@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.claude/
+model_cache/
+archive_non_eastmoney_20260415/
+opencv_lab/
+Figures/
+papers/
+*.bak*

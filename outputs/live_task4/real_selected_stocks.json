@@ -1,0 +1,189 @@
+{
+  "window_id": 1,
+  "event_date": "20260420",
+  "K": 15,
+  "S0_threshold": 0.7,
+  "total_pairs": 271,
+  "total_candidates": 137,
+  "selected_stocks": [
+    {
+      "stock_code": "601901",
+      "stock_name": "方正证券",
+      "event_count": 5,
+      "fused_prob": 1.0,
+      "fused_return": 0.078411,
+      "score": 0.078411,
+      "real_return_420": 0.0,
+      "top_events": [
+        "LIVE-0004",
+        "LIVE-0014",
+        "LIVE-0022"
+      ],
+      "weight": 0.717,
+      "rank": 1
+    },
+    {
+      "stock_code": "600219",
+      "stock_name": "南山铝业",
+      "event_count": 2,
+      "fused_prob": 1.0,
+      "fused_return": 0.015905,
+      "score": 0.015905,
+      "real_return_420": -2.82,
+      "top_events": [
+        "LIVE-0011",
+        "LIVE-0027"
+      ],
+      "weight": 0.1454,
+      "rank": 2
+    },
+    {
+      "stock_code": "688223",
+      "stock_name": "晶科能源",
+      "event_count": 2,
+      "fused_prob": 1.0,
+      "fused_return": 0.015044,
+      "score": 0.015044,
+      "real_return_420": 0.0,
+      "top_events": [
+        "LIVE-0016",
+        "LIVE-0019"
+      ],
+      "weight": 0.1376,
+      "rank": 3
+    }
+  ],
+  "all_ranked_top10": [
+    {
+      "stock_code": "601901",
+      "stock_name": "方正证券",
+      "event_count": 5,
+      "fused_prob": 1.0,
+      "fused_return": 0.078411,
+      "score": 0.078411,
+      "real_return_420": 0.0,
+      "top_events": [
+        "LIVE-0004",
+        "LIVE-0014",
+        "LIVE-0022"
+      ],
+      "weight": 0.717,
+      "rank": 1
+    },
+    {
+      "stock_code": "600219",
+      "stock_name": "南山铝业",
+      "event_count": 2,
+      "fused_prob": 1.0,
+      "fused_return": 0.015905,
+      "score": 0.015905,
+      "real_return_420": -2.82,
+      "top_events": [
+        "LIVE-0011",
+        "LIVE-0027"
+      ],
+      "weight": 0.1454,
+      "rank": 2
+    },
+    {
+      "stock_code": "688223",
+      "stock_name": "晶科能源",
+      "event_count": 2,
+      "fused_prob": 1.0,
+      "fused_return": 0.015044,
+      "score": 0.015044,
+      "real_return_420": 0.0,
+      "top_events": [
+        "LIVE-0016",
+        "LIVE-0019"
+      ],
+      "weight": 0.1376,
+      "rank": 3
+    },
+    {
+      "stock_code": "688009",
+      "stock_name": "中国通号",
+      "event_count": 1,
+      "fused_prob": 0.7045,
+      "fused_return": 0.012696,
+      "score": 0.008944,
+      "real_return_420": -0.56,
+      "top_events": [
+        "LIVE-0010"
+      ]
+    },
+    {
+      "stock_code": "601916",
+      "stock_name": "浙商银行",
+      "event_count": 1,
+      "fused_prob": 0.7054,
+      "fused_return": 0.007873,
+      "score": 0.005554,
+      "real_return_420": -0.66,
+      "top_events": [
+        "LIVE-0023"
+      ]
+    },
+    {
+      "stock_code": "601766",
+      "stock_name": "中国中车",
+      "event_count": 1,
+      "fused_prob": 0.7371,
+      "fused_return": 0.007283,
+      "score": 0.005368,
+      "real_return_420": -0.98,
+      "top_events": [
+        "LIVE-0010"
+      ]
+    },
+    {
+      "stock_code": "601169",
+      "stock_name": "北京银行",
+      "event_count": 1,
+      "fused_prob": 0.7395,
+      "fused_return": 0.002317,
+      "score": 0.001713,
+      "real_return_420": 0.37,
+      "top_events": [
+        "LIVE-0023"
+      ]
+    },
+    {
+      "stock_code": "000728",
+      "stock_name": "国元证券",
+      "event_count": 1,
+      "fused_prob": 0.7699,
+      "fused_return": -0.001727,
+      "score": -0.00133,
+      "real_return_420": 0.13,
+      "top_events": [
+        "LIVE-0014"
+      ]
+    },
+    {
+      "stock_code": "002129",
+      "stock_name": "TCL中环",
+      "event_count": 1,
+      "fused_prob": 0.7719,
+      "fused_return": -0.001903,
+      "score": -0.001469,
+      "real_return_420": 1.73,
+      "top_events": [
+        "LIVE-0016"
+      ]
+    },
+    {
+      "stock_code": "601618",
+      "stock_name": "中国中冶",
+      "event_count": 2,
+      "fused_prob": 0.007,
+      "fused_return": -0.243867,
+      "score": -0.001707,
+      "real_return_420": -0.34,
+      "top_events": [
+        "LIVE-0004",
+        "LIVE-0012"
+      ]
+    }
+  ]
+}

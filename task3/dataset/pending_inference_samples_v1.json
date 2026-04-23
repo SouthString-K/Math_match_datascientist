@@ -1,0 +1,4426 @@
+{
+  "meta": {
+    "dataset_name": "lstm_event_stock_dataset_from_existing_three_files",
+    "version": "v1_dual_day_no_index",
+    "description": "基于三个现有JSON直接构造的样本级训练数据集。采用正式论文问题三的双交易日输入结构，但因缺少市场基准指数，不计算CAR(4)，改用未来4个交易日累计收益率作为标签。",
+    "source_files": [
+      "top45_event_company_4_11_to_4_14.json",
+      "hs300_history_batch1.json",
+      "hs300_history_batch2.json"
+    ],
+    "event_unit": "单事件-单公司",
+    "input_definition": {
+      "window": "事件触发前最近两个可用交易日",
+      "fields": [
+        "open",
+        "close",
+        "high",
+        "low",
+        "volume",
+        "amount",
+        "amplitude",
+        "pct_change",
+        "change_amount",
+        "turnover_rate"
+      ],
+      "extra": "提供delta_features = x[tau(j)] - x[tau-(j)]"
+    },
+    "time_alignment_rule": {
+      "tau_j": "不晚于事件自然日的最近交易日",
+      "tau_prev_j": "tau_j 的前一个交易日",
+      "eta_j": "严格晚于事件自然日的最近交易日",
+      "future_window": "从 eta_j 开始向后4个交易日"
+    },
+    "label_definition": {
+      "future_4day_return": "(close[last_future_day] - close[first_future_day]) / close[first_future_day]",
+      "future_4day_up": "1 if future_4day_return > 0 else 0"
+    },
+    "split_suggestion": {
+      "train_event_dates": [
+        "20260411",
+        "20260412"
+      ],
+      "val_event_dates": [
+        "20260413"
+      ],
+      "test_event_dates": [],
+      "note": "20260414 在现有股票文件中无法凑满完整未来4交易日标签窗口，因此单独放入 pending_inference_samples。"
+    },
+    "counts": {
+      "labeled_samples": 130,
+      "pending_inference_samples": 42,
+      "dropped_samples": 8
+    },
+    "subset": "pending_inference"
+  },
+  "samples": [
+    {
+      "sample_id": "20260414_DOC-0001_000503",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "000503",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.137101,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 1
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 7.77,
+          "close": 7.77,
+          "high": 7.79,
+          "low": 7.7,
+          "volume": 60734.0,
+          "amount": 47107.91,
+          "amplitude": 1.15,
+          "pct_change": -0.38,
+          "change_amount": -0.03,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 7.85,
+          "close": 7.68,
+          "high": 7.89,
+          "low": 7.6,
+          "volume": 138058.88,
+          "amount": 106239.88,
+          "amplitude": 3.73,
+          "pct_change": -1.16,
+          "change_amount": -0.09,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.08,
+        "close": -0.09,
+        "high": 0.1,
+        "low": -0.1,
+        "volume": 77324.88,
+        "amount": 59131.97,
+        "amplitude": 2.58,
+        "pct_change": -0.78,
+        "change_amount": -0.06,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 7.73,
+          "close": 7.63,
+          "high": 7.76,
+          "low": 7.61,
+          "volume": 77907.0,
+          "amount": 59594.74,
+          "amplitude": 1.95,
+          "pct_change": -0.65,
+          "change_amount": -0.05,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 7.65,
+          "close": 7.74,
+          "high": 7.76,
+          "low": 7.62,
+          "volume": 88977.55,
+          "amount": 68410.39,
+          "amplitude": 1.83,
+          "pct_change": 1.44,
+          "change_amount": 0.11,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 7.71,
+          "close": 7.57,
+          "high": 7.74,
+          "low": 7.49,
+          "volume": 132663.2,
+          "amount": 100418.34,
+          "amplitude": 3.23,
+          "pct_change": -2.2,
+          "change_amount": -0.17,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_601607",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "601607",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.135343,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 2
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 17.15,
+          "close": 17.08,
+          "high": 17.15,
+          "low": 17.02,
+          "volume": 74740.06,
+          "amount": 127542.22,
+          "amplitude": 0.76,
+          "pct_change": -0.47,
+          "change_amount": -0.08,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 17.12,
+          "close": 17.02,
+          "high": 17.12,
+          "low": 16.9,
+          "volume": 100631.18,
+          "amount": 170808.58,
+          "amplitude": 1.29,
+          "pct_change": -0.35,
+          "change_amount": -0.06,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": -0.03,
+        "close": -0.06,
+        "high": -0.03,
+        "low": -0.12,
+        "volume": 25891.12,
+        "amount": 43266.36,
+        "amplitude": 0.53,
+        "pct_change": 0.12,
+        "change_amount": 0.02,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 17.09,
+          "close": 17.25,
+          "high": 17.28,
+          "low": 17.04,
+          "volume": 142829.27,
+          "amount": 245496.78,
+          "amplitude": 1.41,
+          "pct_change": 1.35,
+          "change_amount": 0.23,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 17.28,
+          "close": 17.14,
+          "high": 17.28,
+          "low": 17.1,
+          "volume": 83642.02,
+          "amount": 143528.09,
+          "amplitude": 1.04,
+          "pct_change": -0.64,
+          "change_amount": -0.11,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 17.14,
+          "close": 16.99,
+          "high": 17.14,
+          "low": 16.96,
+          "volume": 92109.36,
+          "amount": 156615.24,
+          "amplitude": 1.05,
+          "pct_change": -0.88,
+          "change_amount": -0.15,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_600196",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "600196",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.131587,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 3
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 26.33,
+          "close": 26.35,
+          "high": 26.54,
+          "low": 26.18,
+          "volume": 124640.32,
+          "amount": 328478.67,
+          "amplitude": 1.36,
+          "pct_change": -0.49,
+          "change_amount": -0.13,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 26.33,
+          "close": 26.46,
+          "high": 26.46,
+          "low": 26.01,
+          "volume": 167253.65,
+          "amount": 438075.12,
+          "amplitude": 1.71,
+          "pct_change": 0.42,
+          "change_amount": 0.11,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.0,
+        "close": 0.11,
+        "high": -0.08,
+        "low": -0.17,
+        "volume": 42613.33,
+        "amount": 109596.45,
+        "amplitude": 0.35,
+        "pct_change": 0.91,
+        "change_amount": 0.24,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 26.91,
+          "close": 26.8,
+          "high": 27.09,
+          "low": 26.55,
+          "volume": 309835.19,
+          "amount": 830374.75,
+          "amplitude": 2.04,
+          "pct_change": 1.28,
+          "change_amount": 0.34,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 26.87,
+          "close": 26.7,
+          "high": 26.87,
+          "low": 26.61,
+          "volume": 158259.14,
+          "amount": 422524.21,
+          "amplitude": 0.97,
+          "pct_change": -0.37,
+          "change_amount": -0.1,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 26.6,
+          "close": 26.15,
+          "high": 26.6,
+          "low": 26.07,
+          "volume": 203199.4,
+          "amount": 533013.91,
+          "amplitude": 1.99,
+          "pct_change": -2.06,
+          "change_amount": -0.55,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_300347",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "300347",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.130185,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 4
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 57.33,
+          "close": 56.06,
+          "high": 57.6,
+          "low": 55.86,
+          "volume": 91120.0,
+          "amount": 513693.56,
+          "amplitude": 3.01,
+          "pct_change": -3.11,
+          "change_amount": -1.8,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 56.29,
+          "close": 59.45,
+          "high": 59.72,
+          "low": 55.81,
+          "volume": 142756.55,
+          "amount": 822041.15,
+          "amplitude": 6.97,
+          "pct_change": 6.05,
+          "change_amount": 3.39,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": -1.04,
+        "close": 3.39,
+        "high": 2.12,
+        "low": -0.05,
+        "volume": 51636.55,
+        "amount": 308347.59,
+        "amplitude": 3.96,
+        "pct_change": 9.16,
+        "change_amount": 5.19,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 60.8,
+          "close": 59.05,
+          "high": 60.91,
+          "low": 57.9,
+          "volume": 158218.73,
+          "amount": 932087.52,
+          "amplitude": 5.06,
+          "pct_change": -0.67,
+          "change_amount": -0.4,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 59.03,
+          "close": 58.62,
+          "high": 59.15,
+          "low": 57.88,
+          "volume": 85824.99,
+          "amount": 502347.72,
+          "amplitude": 2.15,
+          "pct_change": -0.73,
+          "change_amount": -0.43,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 58.63,
+          "close": 57.6,
+          "high": 58.63,
+          "low": 56.69,
+          "volume": 117392.9,
+          "amount": 672803.76,
+          "amplitude": 3.31,
+          "pct_change": -1.74,
+          "change_amount": -1.02,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_000538",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "000538",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.129443,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 5
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 54.81,
+          "close": 54.73,
+          "high": 54.89,
+          "low": 54.4,
+          "volume": 71548.21,
+          "amount": 390626.72,
+          "amplitude": 0.89,
+          "pct_change": -0.35,
+          "change_amount": -0.19,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 54.98,
+          "close": 55.05,
+          "high": 55.07,
+          "low": 54.71,
+          "volume": 52725.33,
+          "amount": 289644.48,
+          "amplitude": 0.66,
+          "pct_change": 0.58,
+          "change_amount": 0.32,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.17,
+        "close": 0.32,
+        "high": 0.18,
+        "low": 0.31,
+        "volume": -18822.88,
+        "amount": -100982.24,
+        "amplitude": -0.23,
+        "pct_change": 0.93,
+        "change_amount": 0.51,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 55.27,
+          "close": 55.72,
+          "high": 55.81,
+          "low": 55.14,
+          "volume": 78296.51,
+          "amount": 434587.03,
+          "amplitude": 1.22,
+          "pct_change": 1.22,
+          "change_amount": 0.67,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 55.68,
+          "close": 55.52,
+          "high": 55.72,
+          "low": 55.33,
+          "volume": 49072.69,
+          "amount": 272295.38,
+          "amplitude": 0.7,
+          "pct_change": -0.36,
+          "change_amount": -0.2,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 55.4,
+          "close": 55.29,
+          "high": 55.68,
+          "low": 55.12,
+          "volume": 66865.78,
+          "amount": 370502.85,
+          "amplitude": 1.01,
+          "pct_change": -0.41,
+          "change_amount": -0.23,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_600276",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "600276",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.127056,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 6
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 56.6,
+          "close": 55.2,
+          "high": 56.64,
+          "low": 55.01,
+          "volume": 796044.38,
+          "amount": 4431612.86,
+          "amplitude": 2.86,
+          "pct_change": -3.26,
+          "change_amount": -1.86,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 55.35,
+          "close": 56.18,
+          "high": 56.31,
+          "low": 54.8,
+          "volume": 574456.5,
+          "amount": 3184393.12,
+          "amplitude": 2.74,
+          "pct_change": 1.78,
+          "change_amount": 0.98,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": -1.25,
+        "close": 0.98,
+        "high": -0.33,
+        "low": -0.21,
+        "volume": -221587.88,
+        "amount": -1247219.74,
+        "amplitude": -0.12,
+        "pct_change": 5.04,
+        "change_amount": 2.84,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 57.94,
+          "close": 57.73,
+          "high": 58.45,
+          "low": 57.04,
+          "volume": 1029479.51,
+          "amount": 5945432.69,
+          "amplitude": 2.51,
+          "pct_change": 2.76,
+          "change_amount": 1.55,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 57.98,
+          "close": 57.47,
+          "high": 58.0,
+          "low": 57.02,
+          "volume": 576718.43,
+          "amount": 3311971.25,
+          "amplitude": 1.7,
+          "pct_change": -0.45,
+          "change_amount": -0.26,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 57.2,
+          "close": 56.33,
+          "high": 57.2,
+          "low": 56.01,
+          "volume": 632523.68,
+          "amount": 3567405.89,
+          "amplitude": 2.07,
+          "pct_change": -1.98,
+          "change_amount": -1.14,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_603259",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "603259",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.12142,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 7
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 105.8,
+          "close": 105.71,
+          "high": 106.78,
+          "low": 104.91,
+          "volume": 249608.97,
+          "amount": 2636691.39,
+          "amplitude": 1.76,
+          "pct_change": -0.58,
+          "change_amount": -0.62,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 106.71,
+          "close": 106.55,
+          "high": 106.8,
+          "low": 104.12,
+          "volume": 310174.34,
+          "amount": 3271850.7,
+          "amplitude": 2.54,
+          "pct_change": 0.79,
+          "change_amount": 0.84,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.91,
+        "close": 0.84,
+        "high": 0.02,
+        "low": -0.79,
+        "volume": 60565.37,
+        "amount": 635159.31,
+        "amplitude": 0.78,
+        "pct_change": 1.37,
+        "change_amount": 1.46,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 108.3,
+          "close": 106.83,
+          "high": 108.75,
+          "low": 105.44,
+          "volume": 367846.49,
+          "amount": 3924413.4,
+          "amplitude": 3.11,
+          "pct_change": 0.26,
+          "change_amount": 0.28,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 107.11,
+          "close": 105.66,
+          "high": 107.88,
+          "low": 105.59,
+          "volume": 347647.77,
+          "amount": 3694933.82,
+          "amplitude": 2.14,
+          "pct_change": -1.1,
+          "change_amount": -1.17,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 105.0,
+          "close": 99.39,
+          "high": 105.07,
+          "low": 99.27,
+          "volume": 777282.0,
+          "amount": 7833958.76,
+          "amplitude": 5.49,
+          "pct_change": -5.93,
+          "change_amount": -6.27,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_600085",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "600085",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.120088,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 8
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 27.65,
+          "close": 27.66,
+          "high": 27.66,
+          "low": 27.51,
+          "volume": 36426.03,
+          "amount": 100440.01,
+          "amplitude": 0.54,
+          "pct_change": -0.5,
+          "change_amount": -0.14,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 27.71,
+          "close": 28.04,
+          "high": 28.05,
+          "low": 27.61,
+          "volume": 55066.41,
+          "amount": 153067.12,
+          "amplitude": 1.59,
+          "pct_change": 1.37,
+          "change_amount": 0.38,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.06,
+        "close": 0.38,
+        "high": 0.39,
+        "low": 0.1,
+        "volume": 18640.38,
+        "amount": 52627.11,
+        "amplitude": 1.05,
+        "pct_change": 1.87,
+        "change_amount": 0.52,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 28.07,
+          "close": 28.05,
+          "high": 28.15,
+          "low": 27.95,
+          "volume": 52970.09,
+          "amount": 148705.44,
+          "amplitude": 0.71,
+          "pct_change": 0.04,
+          "change_amount": 0.01,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 28.05,
+          "close": 27.94,
+          "high": 28.08,
+          "low": 27.82,
+          "volume": 42478.07,
+          "amount": 118530.78,
+          "amplitude": 0.93,
+          "pct_change": -0.39,
+          "change_amount": -0.11,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 27.87,
+          "close": 27.73,
+          "high": 27.87,
+          "low": 27.68,
+          "volume": 39262.37,
+          "amount": 108868.62,
+          "amplitude": 0.68,
+          "pct_change": -0.75,
+          "change_amount": -0.21,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_002422",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "002422",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.118822,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 9
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 33.85,
+          "close": 34.67,
+          "high": 35.03,
+          "low": 33.75,
+          "volume": 190082.07,
+          "amount": 656886.55,
+          "amplitude": 3.76,
+          "pct_change": 1.97,
+          "change_amount": 0.67,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 34.77,
+          "close": 34.29,
+          "high": 34.94,
+          "low": 33.8,
+          "volume": 170098.16,
+          "amount": 581812.83,
+          "amplitude": 3.29,
+          "pct_change": -1.1,
+          "change_amount": -0.38,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.92,
+        "close": -0.38,
+        "high": -0.09,
+        "low": 0.05,
+        "volume": -19983.91,
+        "amount": -75073.72,
+        "amplitude": -0.47,
+        "pct_change": -3.07,
+        "change_amount": -1.05,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 34.66,
+          "close": 35.7,
+          "high": 35.79,
+          "low": 34.11,
+          "volume": 339413.87,
+          "amount": 1192154.0,
+          "amplitude": 4.9,
+          "pct_change": 4.11,
+          "change_amount": 1.41,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 35.35,
+          "close": 35.92,
+          "high": 36.15,
+          "low": 34.86,
+          "volume": 205069.4,
+          "amount": 731793.55,
+          "amplitude": 3.61,
+          "pct_change": 0.62,
+          "change_amount": 0.22,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 35.92,
+          "close": 35.23,
+          "high": 36.08,
+          "low": 34.3,
+          "volume": 238373.99,
+          "amount": 834931.4,
+          "amplitude": 4.96,
+          "pct_change": -1.92,
+          "change_amount": -0.69,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_600161",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "600161",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.109419,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 10
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 14.84,
+          "close": 14.78,
+          "high": 15.0,
+          "low": 14.5,
+          "volume": 205723.66,
+          "amount": 302257.99,
+          "amplitude": 3.36,
+          "pct_change": -0.81,
+          "change_amount": -0.12,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 14.78,
+          "close": 14.75,
+          "high": 14.8,
+          "low": 14.6,
+          "volume": 104901.18,
+          "amount": 153759.45,
+          "amplitude": 1.35,
+          "pct_change": -0.2,
+          "change_amount": -0.03,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": -0.06,
+        "close": -0.03,
+        "high": -0.2,
+        "low": 0.1,
+        "volume": -100822.48,
+        "amount": -148498.54,
+        "amplitude": -2.01,
+        "pct_change": 0.61,
+        "change_amount": 0.09,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 14.79,
+          "close": 14.98,
+          "high": 15.08,
+          "low": 14.76,
+          "volume": 131372.26,
+          "amount": 196299.02,
+          "amplitude": 2.17,
+          "pct_change": 1.56,
+          "change_amount": 0.23,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 14.97,
+          "close": 15.41,
+          "high": 15.67,
+          "low": 14.87,
+          "volume": 199195.2,
+          "amount": 305220.88,
+          "amplitude": 5.34,
+          "pct_change": 2.87,
+          "change_amount": 0.43,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 15.33,
+          "close": 15.18,
+          "high": 15.33,
+          "low": 15.1,
+          "volume": 102097.19,
+          "amount": 155114.08,
+          "amplitude": 1.49,
+          "pct_change": -1.49,
+          "change_amount": -0.23,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_000661",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "000661",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.109059,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 11
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 85.57,
+          "close": 85.35,
+          "high": 85.66,
+          "low": 85.04,
+          "volume": 29111.44,
+          "amount": 248393.26,
+          "amplitude": 0.72,
+          "pct_change": -0.76,
+          "change_amount": -0.65,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 85.6,
+          "close": 86.39,
+          "high": 87.12,
+          "low": 85.03,
+          "volume": 42028.15,
+          "amount": 360579.54,
+          "amplitude": 2.45,
+          "pct_change": 1.22,
+          "change_amount": 1.04,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.03,
+        "close": 1.04,
+        "high": 1.46,
+        "low": -0.01,
+        "volume": 12916.71,
+        "amount": 112186.28,
+        "amplitude": 1.73,
+        "pct_change": 1.98,
+        "change_amount": 1.69,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 87.64,
+          "close": 86.77,
+          "high": 87.89,
+          "low": 86.66,
+          "volume": 49004.01,
+          "amount": 426856.38,
+          "amplitude": 1.42,
+          "pct_change": 0.44,
+          "change_amount": 0.38,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 86.77,
+          "close": 87.3,
+          "high": 87.68,
+          "low": 86.04,
+          "volume": 44324.7,
+          "amount": 384620.13,
+          "amplitude": 1.89,
+          "pct_change": 0.61,
+          "change_amount": 0.53,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 87.27,
+          "close": 86.62,
+          "high": 88.0,
+          "low": 86.43,
+          "volume": 40503.31,
+          "amount": 352692.44,
+          "amplitude": 1.8,
+          "pct_change": -0.78,
+          "change_amount": -0.68,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_002173",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "002173",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.108409,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 12
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 24.85,
+          "close": 25.3,
+          "high": 25.5,
+          "low": 24.76,
+          "volume": 183477.17,
+          "amount": 463500.47,
+          "amplitude": 2.95,
+          "pct_change": 0.84,
+          "change_amount": 0.21,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 25.57,
+          "close": 25.96,
+          "high": 25.97,
+          "low": 25.38,
+          "volume": 245485.25,
+          "amount": 630316.17,
+          "amplitude": 2.33,
+          "pct_change": 2.61,
+          "change_amount": 0.66,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.72,
+        "close": 0.66,
+        "high": 0.47,
+        "low": 0.62,
+        "volume": 62008.08,
+        "amount": 166815.7,
+        "amplitude": -0.62,
+        "pct_change": 1.77,
+        "change_amount": 0.45,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 26.33,
+          "close": 25.52,
+          "high": 26.44,
+          "low": 25.41,
+          "volume": 245797.07,
+          "amount": 634151.98,
+          "amplitude": 3.97,
+          "pct_change": -1.69,
+          "change_amount": -0.44,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 25.42,
+          "close": 25.81,
+          "high": 25.82,
+          "low": 25.16,
+          "volume": 207029.29,
+          "amount": 528641.39,
+          "amplitude": 2.59,
+          "pct_change": 1.14,
+          "change_amount": 0.29,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 25.5,
+          "close": 25.55,
+          "high": 25.72,
+          "low": 25.36,
+          "volume": 141860.53,
+          "amount": 361883.03,
+          "amplitude": 1.39,
+          "pct_change": -1.01,
+          "change_amount": -0.26,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_601939",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "601939",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.097889,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 13
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 9.23,
+          "close": 9.32,
+          "high": 9.33,
+          "low": 9.16,
+          "volume": 692869.78,
+          "amount": 641176.99,
+          "amplitude": 1.84,
+          "pct_change": 0.87,
+          "change_amount": 0.08,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 9.29,
+          "close": 9.36,
+          "high": 9.38,
+          "low": 9.27,
+          "volume": 531152.74,
+          "amount": 495252.01,
+          "amplitude": 1.18,
+          "pct_change": 0.43,
+          "change_amount": 0.04,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.06,
+        "close": 0.04,
+        "high": 0.05,
+        "low": 0.11,
+        "volume": -161717.04,
+        "amount": -145924.98,
+        "amplitude": -0.66,
+        "pct_change": -0.44,
+        "change_amount": -0.04,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 9.32,
+          "close": 9.46,
+          "high": 9.52,
+          "low": 9.3,
+          "volume": 977531.55,
+          "amount": 924536.31,
+          "amplitude": 2.35,
+          "pct_change": 1.07,
+          "change_amount": 0.1,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 9.45,
+          "close": 9.45,
+          "high": 9.58,
+          "low": 9.4,
+          "volume": 1059819.47,
+          "amount": 1004895.24,
+          "amplitude": 1.9,
+          "pct_change": -0.11,
+          "change_amount": -0.01,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 9.47,
+          "close": 9.41,
+          "high": 9.5,
+          "low": 9.37,
+          "volume": 638823.12,
+          "amount": 601821.34,
+          "amplitude": 1.38,
+          "pct_change": -0.42,
+          "change_amount": -0.04,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_601988",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "601988",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.097578,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 14
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 5.65,
+          "close": 5.69,
+          "high": 5.69,
+          "low": 5.58,
+          "volume": 2002528.06,
+          "amount": 1128552.34,
+          "amplitude": 1.95,
+          "pct_change": 0.71,
+          "change_amount": 0.04,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 5.66,
+          "close": 5.73,
+          "high": 5.74,
+          "low": 5.65,
+          "volume": 1880664.5,
+          "amount": 1072107.4,
+          "amplitude": 1.58,
+          "pct_change": 0.7,
+          "change_amount": 0.04,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.01,
+        "close": 0.04,
+        "high": 0.05,
+        "low": 0.07,
+        "volume": -121863.56,
+        "amount": -56444.94,
+        "amplitude": -0.37,
+        "pct_change": -0.01,
+        "change_amount": 0.0,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 5.71,
+          "close": 5.79,
+          "high": 5.82,
+          "low": 5.7,
+          "volume": 2310032.34,
+          "amount": 1335510.07,
+          "amplitude": 2.09,
+          "pct_change": 1.05,
+          "change_amount": 0.06,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 5.8,
+          "close": 5.79,
+          "high": 5.87,
+          "low": 5.76,
+          "volume": 1890438.03,
+          "amount": 1096909.2,
+          "amplitude": 1.9,
+          "pct_change": 0.0,
+          "change_amount": 0.0,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 5.77,
+          "close": 5.77,
+          "high": 5.82,
+          "low": 5.75,
+          "volume": 1531680.13,
+          "amount": 884406.39,
+          "amplitude": 1.21,
+          "pct_change": -0.35,
+          "change_amount": -0.02,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_000739",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "000739",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.096635,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 15
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 17.71,
+          "close": 17.49,
+          "high": 17.81,
+          "low": 17.4,
+          "volume": 60094.72,
+          "amount": 105790.91,
+          "amplitude": 2.3,
+          "pct_change": -1.85,
+          "change_amount": -0.33,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 17.5,
+          "close": 17.51,
+          "high": 17.65,
+          "low": 17.28,
+          "volume": 58726.0,
+          "amount": 102459.99,
+          "amplitude": 2.12,
+          "pct_change": 0.11,
+          "change_amount": 0.02,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": -0.21,
+        "close": 0.02,
+        "high": -0.16,
+        "low": -0.12,
+        "volume": -1368.72,
+        "amount": -3330.92,
+        "amplitude": -0.18,
+        "pct_change": 1.96,
+        "change_amount": 0.35,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 17.61,
+          "close": 17.85,
+          "high": 17.88,
+          "low": 17.37,
+          "volume": 88002.38,
+          "amount": 155774.48,
+          "amplitude": 2.91,
+          "pct_change": 1.94,
+          "change_amount": 0.34,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 17.96,
+          "close": 18.06,
+          "high": 18.18,
+          "low": 17.72,
+          "volume": 81287.2,
+          "amount": 146258.05,
+          "amplitude": 2.58,
+          "pct_change": 1.18,
+          "change_amount": 0.21,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 18.0,
+          "close": 17.78,
+          "high": 18.01,
+          "low": 17.45,
+          "volume": 65269.99,
+          "amount": 115786.26,
+          "amplitude": 3.1,
+          "pct_change": -1.55,
+          "change_amount": -0.28,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_601169",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "601169",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.09565,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 16
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 5.39,
+          "close": 5.39,
+          "high": 5.4,
+          "low": 5.37,
+          "volume": 629576.27,
+          "amount": 338878.61,
+          "amplitude": 0.56,
+          "pct_change": 0.0,
+          "change_amount": 0.0,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 5.39,
+          "close": 5.43,
+          "high": 5.45,
+          "low": 5.39,
+          "volume": 976224.67,
+          "amount": 529041.92,
+          "amplitude": 1.11,
+          "pct_change": 0.74,
+          "change_amount": 0.04,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.0,
+        "close": 0.04,
+        "high": 0.05,
+        "low": 0.02,
+        "volume": 346648.4,
+        "amount": 190163.31,
+        "amplitude": 0.55,
+        "pct_change": 0.74,
+        "change_amount": 0.04,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 5.44,
+          "close": 5.47,
+          "high": 5.48,
+          "low": 5.43,
+          "volume": 799672.02,
+          "amount": 436298.05,
+          "amplitude": 0.92,
+          "pct_change": 0.74,
+          "change_amount": 0.04,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 5.47,
+          "close": 5.43,
+          "high": 5.48,
+          "low": 5.42,
+          "volume": 778568.83,
+          "amount": 423800.58,
+          "amplitude": 1.1,
+          "pct_change": -0.73,
+          "change_amount": -0.04,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 5.43,
+          "close": 5.42,
+          "high": 5.44,
+          "low": 5.41,
+          "volume": 676506.34,
+          "amount": 366667.64,
+          "amplitude": 0.55,
+          "pct_change": -0.18,
+          "change_amount": -0.01,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_600016",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "600016",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.095396,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 17
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 3.7,
+          "close": 3.7,
+          "high": 3.71,
+          "low": 3.69,
+          "volume": 978120.06,
+          "amount": 361968.31,
+          "amplitude": 0.54,
+          "pct_change": -0.54,
+          "change_amount": -0.02,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 3.7,
+          "close": 3.72,
+          "high": 3.73,
+          "low": 3.7,
+          "volume": 1296846.36,
+          "amount": 481560.22,
+          "amplitude": 0.81,
+          "pct_change": 0.54,
+          "change_amount": 0.02,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.0,
+        "close": 0.02,
+        "high": 0.02,
+        "low": 0.01,
+        "volume": 318726.3,
+        "amount": 119591.91,
+        "amplitude": 0.27,
+        "pct_change": 1.08,
+        "change_amount": 0.04,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 3.73,
+          "close": 3.73,
+          "high": 3.74,
+          "low": 3.72,
+          "volume": 1504923.6,
+          "amount": 561281.74,
+          "amplitude": 0.54,
+          "pct_change": 0.27,
+          "change_amount": 0.01,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 3.73,
+          "close": 3.72,
+          "high": 3.74,
+          "low": 3.71,
+          "volume": 1322068.89,
+          "amount": 491770.6,
+          "amplitude": 0.8,
+          "pct_change": -0.27,
+          "change_amount": -0.01,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 3.71,
+          "close": 3.71,
+          "high": 3.72,
+          "low": 3.7,
+          "volume": 1389849.67,
+          "amount": 515648.54,
+          "amplitude": 0.54,
+          "pct_change": -0.27,
+          "change_amount": -0.01,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_000651",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "000651",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.095303,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 18
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 37.28,
+          "close": 37.16,
+          "high": 37.28,
+          "low": 37.04,
+          "volume": 184075.16,
+          "amount": 683305.36,
+          "amplitude": 0.64,
+          "pct_change": -0.48,
+          "change_amount": -0.18,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 37.2,
+          "close": 37.28,
+          "high": 37.35,
+          "low": 37.1,
+          "volume": 201059.0,
+          "amount": 747700.88,
+          "amplitude": 0.67,
+          "pct_change": 0.32,
+          "change_amount": 0.12,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": -0.08,
+        "close": 0.12,
+        "high": 0.07,
+        "low": 0.06,
+        "volume": 16983.84,
+        "amount": 64395.52,
+        "amplitude": 0.03,
+        "pct_change": 0.8,
+        "change_amount": 0.3,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 37.33,
+          "close": 37.39,
+          "high": 37.46,
+          "low": 37.21,
+          "volume": 223351.68,
+          "amount": 834462.05,
+          "amplitude": 0.67,
+          "pct_change": 0.3,
+          "change_amount": 0.11,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 37.4,
+          "close": 37.32,
+          "high": 37.52,
+          "low": 37.23,
+          "volume": 219375.31,
+          "amount": 818475.41,
+          "amplitude": 0.78,
+          "pct_change": -0.19,
+          "change_amount": -0.07,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 37.25,
+          "close": 36.95,
+          "high": 37.25,
+          "low": 36.93,
+          "volume": 389503.5,
+          "amount": 1440862.49,
+          "amplitude": 0.86,
+          "pct_change": -0.99,
+          "change_amount": -0.37,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_000999",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "000999",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.09436,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 19
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 27.5,
+          "close": 27.37,
+          "high": 27.53,
+          "low": 27.32,
+          "volume": 114770.02,
+          "amount": 314440.53,
+          "amplitude": 0.76,
+          "pct_change": -1.55,
+          "change_amount": -0.43,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 27.4,
+          "close": 27.42,
+          "high": 27.48,
+          "low": 27.31,
+          "volume": 91098.48,
+          "amount": 249172.71,
+          "amplitude": 0.62,
+          "pct_change": 0.18,
+          "change_amount": 0.05,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": -0.1,
+        "close": 0.05,
+        "high": -0.05,
+        "low": -0.01,
+        "volume": -23671.54,
+        "amount": -65267.82,
+        "amplitude": -0.14,
+        "pct_change": 1.73,
+        "change_amount": 0.48,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 27.55,
+          "close": 28.05,
+          "high": 28.06,
+          "low": 27.52,
+          "volume": 223509.84,
+          "amount": 621938.87,
+          "amplitude": 1.97,
+          "pct_change": 2.3,
+          "change_amount": 0.63,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 28.01,
+          "close": 27.8,
+          "high": 28.08,
+          "low": 27.74,
+          "volume": 152091.14,
+          "amount": 423088.97,
+          "amplitude": 1.21,
+          "pct_change": -0.89,
+          "change_amount": -0.25,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 27.71,
+          "close": 27.48,
+          "high": 27.75,
+          "low": 27.4,
+          "volume": 131783.05,
+          "amount": 362556.46,
+          "amplitude": 1.26,
+          "pct_change": -1.15,
+          "change_amount": -0.32,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_600436",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "600436",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.094359,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 20
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 150.0,
+          "close": 148.77,
+          "high": 150.02,
+          "low": 148.6,
+          "volume": 19748.81,
+          "amount": 294173.84,
+          "amplitude": 0.94,
+          "pct_change": -1.28,
+          "change_amount": -1.93,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 148.76,
+          "close": 148.56,
+          "high": 149.26,
+          "low": 147.52,
+          "volume": 19548.69,
+          "amount": 289564.16,
+          "amplitude": 1.17,
+          "pct_change": -0.14,
+          "change_amount": -0.21,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": -1.24,
+        "close": -0.21,
+        "high": -0.76,
+        "low": -1.08,
+        "volume": -200.12,
+        "amount": -4609.68,
+        "amplitude": 0.23,
+        "pct_change": 1.14,
+        "change_amount": 1.72,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 148.86,
+          "close": 148.98,
+          "high": 149.48,
+          "low": 148.6,
+          "volume": 17329.1,
+          "amount": 258202.87,
+          "amplitude": 0.59,
+          "pct_change": 0.28,
+          "change_amount": 0.42,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 148.98,
+          "close": 148.07,
+          "high": 149.18,
+          "low": 147.78,
+          "volume": 15796.36,
+          "amount": 233933.66,
+          "amplitude": 0.94,
+          "pct_change": -0.61,
+          "change_amount": -0.91,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 147.47,
+          "close": 146.31,
+          "high": 147.5,
+          "low": 146.23,
+          "volume": 22592.68,
+          "amount": 330901.87,
+          "amplitude": 0.86,
+          "pct_change": -1.19,
+          "change_amount": -1.76,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_601838",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "601838",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.093704,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 21
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 17.41,
+          "close": 17.23,
+          "high": 17.48,
+          "low": 17.2,
+          "volume": 158245.09,
+          "amount": 273770.36,
+          "amplitude": 1.61,
+          "pct_change": -1.15,
+          "change_amount": -0.2,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 17.23,
+          "close": 17.29,
+          "high": 17.45,
+          "low": 17.22,
+          "volume": 125607.14,
+          "amount": 217534.73,
+          "amplitude": 1.33,
+          "pct_change": 0.35,
+          "change_amount": 0.06,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": -0.18,
+        "close": 0.06,
+        "high": -0.03,
+        "low": 0.02,
+        "volume": -32637.95,
+        "amount": -56235.63,
+        "amplitude": -0.28,
+        "pct_change": 1.5,
+        "change_amount": 0.26,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 17.32,
+          "close": 17.39,
+          "high": 17.4,
+          "low": 17.24,
+          "volume": 123603.04,
+          "amount": 214212.71,
+          "amplitude": 0.93,
+          "pct_change": 0.58,
+          "change_amount": 0.1,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 17.42,
+          "close": 17.27,
+          "high": 17.52,
+          "low": 17.24,
+          "volume": 199729.92,
+          "amount": 346200.51,
+          "amplitude": 1.61,
+          "pct_change": -0.69,
+          "change_amount": -0.12,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 17.26,
+          "close": 17.23,
+          "high": 17.29,
+          "low": 17.12,
+          "volume": 180549.39,
+          "amount": 310638.2,
+          "amplitude": 0.98,
+          "pct_change": -0.23,
+          "change_amount": -0.04,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_601398",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "601398",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.093628,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 22
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 7.31,
+          "close": 7.37,
+          "high": 7.39,
+          "low": 7.27,
+          "volume": 2292809.48,
+          "amount": 1682915.59,
+          "amplitude": 1.64,
+          "pct_change": 0.82,
+          "change_amount": 0.06,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 7.35,
+          "close": 7.46,
+          "high": 7.48,
+          "low": 7.33,
+          "volume": 2225026.81,
+          "amount": 1649575.63,
+          "amplitude": 2.04,
+          "pct_change": 1.22,
+          "change_amount": 0.09,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.04,
+        "close": 0.09,
+        "high": 0.09,
+        "low": 0.06,
+        "volume": -67782.67,
+        "amount": -33339.96,
+        "amplitude": 0.4,
+        "pct_change": 0.4,
+        "change_amount": 0.03,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 7.45,
+          "close": 7.5,
+          "high": 7.52,
+          "low": 7.42,
+          "volume": 2239976.32,
+          "amount": 1678471.12,
+          "amplitude": 1.34,
+          "pct_change": 0.54,
+          "change_amount": 0.04,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 7.5,
+          "close": 7.46,
+          "high": 7.54,
+          "low": 7.43,
+          "volume": 2276142.43,
+          "amount": 1701959.51,
+          "amplitude": 1.47,
+          "pct_change": -0.53,
+          "change_amount": -0.04,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 7.45,
+          "close": 7.44,
+          "high": 7.49,
+          "low": 7.43,
+          "volume": 1621135.54,
+          "amount": 1208485.74,
+          "amplitude": 0.8,
+          "pct_change": -0.27,
+          "change_amount": -0.02,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_002736",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "002736",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.092985,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 23
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 11.73,
+          "close": 11.94,
+          "high": 12.01,
+          "low": 11.7,
+          "volume": 294475.23,
+          "amount": 351374.8,
+          "amplitude": 2.63,
+          "pct_change": 1.36,
+          "change_amount": 0.16,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 12.02,
+          "close": 12.04,
+          "high": 12.07,
+          "low": 11.9,
+          "volume": 262827.14,
+          "amount": 315161.56,
+          "amplitude": 1.42,
+          "pct_change": 0.84,
+          "change_amount": 0.1,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.29,
+        "close": 0.1,
+        "high": 0.06,
+        "low": 0.2,
+        "volume": -31648.09,
+        "amount": -36213.24,
+        "amplitude": -1.21,
+        "pct_change": -0.52,
+        "change_amount": -0.06,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 12.06,
+          "close": 12.1,
+          "high": 12.21,
+          "low": 12.01,
+          "volume": 308898.98,
+          "amount": 374058.86,
+          "amplitude": 1.66,
+          "pct_change": 0.5,
+          "change_amount": 0.06,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 12.12,
+          "close": 12.27,
+          "high": 12.35,
+          "low": 12.1,
+          "volume": 319632.31,
+          "amount": 391940.9,
+          "amplitude": 2.07,
+          "pct_change": 1.41,
+          "change_amount": 0.17,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 12.2,
+          "close": 12.09,
+          "high": 12.24,
+          "low": 12.08,
+          "volume": 262709.58,
+          "amount": 318226.13,
+          "amplitude": 1.3,
+          "pct_change": -1.47,
+          "change_amount": -0.18,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_601136",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "601136",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.091241,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 24
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 16.3,
+          "close": 16.51,
+          "high": 16.63,
+          "low": 16.3,
+          "volume": 82199.37,
+          "amount": 135823.04,
+          "amplitude": 2.01,
+          "pct_change": 0.49,
+          "change_amount": 0.08,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 16.56,
+          "close": 16.55,
+          "high": 16.65,
+          "low": 16.39,
+          "volume": 65189.91,
+          "amount": 107500.33,
+          "amplitude": 1.57,
+          "pct_change": 0.24,
+          "change_amount": 0.04,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.26,
+        "close": 0.04,
+        "high": 0.02,
+        "low": 0.09,
+        "volume": -17009.46,
+        "amount": -28322.71,
+        "amplitude": -0.44,
+        "pct_change": -0.25,
+        "change_amount": -0.04,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 16.58,
+          "close": 16.4,
+          "high": 16.63,
+          "low": 16.37,
+          "volume": 52472.84,
+          "amount": 86400.42,
+          "amplitude": 1.57,
+          "pct_change": -0.91,
+          "change_amount": -0.15,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 16.45,
+          "close": 16.4,
+          "high": 16.53,
+          "low": 16.38,
+          "volume": 67347.23,
+          "amount": 110674.68,
+          "amplitude": 0.91,
+          "pct_change": 0.0,
+          "change_amount": 0.0,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 16.4,
+          "close": 16.32,
+          "high": 16.44,
+          "low": 16.22,
+          "volume": 65971.0,
+          "amount": 107516.85,
+          "amplitude": 1.34,
+          "pct_change": -0.49,
+          "change_amount": -0.08,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_601881",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "601881",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.088759,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 26
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 12.93,
+          "close": 12.99,
+          "high": 13.13,
+          "low": 12.86,
+          "volume": 411228.55,
+          "amount": 534356.39,
+          "amplitude": 2.08,
+          "pct_change": -0.15,
+          "change_amount": -0.02,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 13.1,
+          "close": 13.07,
+          "high": 13.13,
+          "low": 12.91,
+          "volume": 271084.72,
+          "amount": 352378.56,
+          "amplitude": 1.69,
+          "pct_change": 0.62,
+          "change_amount": 0.08,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.17,
+        "close": 0.08,
+        "high": 0.0,
+        "low": 0.05,
+        "volume": -140143.83,
+        "amount": -181977.83,
+        "amplitude": -0.39,
+        "pct_change": 0.77,
+        "change_amount": 0.1,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 13.14,
+          "close": 12.99,
+          "high": 13.15,
+          "low": 12.98,
+          "volume": 233636.2,
+          "amount": 304708.85,
+          "amplitude": 1.3,
+          "pct_change": -0.61,
+          "change_amount": -0.08,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 13.05,
+          "close": 12.98,
+          "high": 13.1,
+          "low": 12.96,
+          "volume": 357240.32,
+          "amount": 464737.43,
+          "amplitude": 1.08,
+          "pct_change": -0.08,
+          "change_amount": -0.01,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 12.97,
+          "close": 12.92,
+          "high": 12.97,
+          "low": 12.82,
+          "volume": 326278.87,
+          "amount": 420466.15,
+          "amplitude": 1.16,
+          "pct_change": -0.46,
+          "change_amount": -0.06,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_601995",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "601995",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.088266,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 27
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 32.88,
+          "close": 33.41,
+          "high": 33.54,
+          "low": 32.81,
+          "volume": 146733.36,
+          "amount": 488548.96,
+          "amplitude": 2.2,
+          "pct_change": 0.78,
+          "change_amount": 0.26,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 33.58,
+          "close": 33.59,
+          "high": 33.6,
+          "low": 33.22,
+          "volume": 132591.71,
+          "amount": 443164.15,
+          "amplitude": 1.14,
+          "pct_change": 0.54,
+          "change_amount": 0.18,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.7,
+        "close": 0.18,
+        "high": 0.06,
+        "low": 0.41,
+        "volume": -14141.65,
+        "amount": -45384.81,
+        "amplitude": -1.06,
+        "pct_change": -0.24,
+        "change_amount": -0.08,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 33.67,
+          "close": 33.45,
+          "high": 33.7,
+          "low": 33.4,
+          "volume": 94257.35,
+          "amount": 316116.33,
+          "amplitude": 0.89,
+          "pct_change": -0.42,
+          "change_amount": -0.14,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 34.15,
+          "close": 33.92,
+          "high": 34.15,
+          "low": 33.78,
+          "volume": 191911.9,
+          "amount": 651411.4,
+          "amplitude": 1.11,
+          "pct_change": 1.41,
+          "change_amount": 0.47,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 33.86,
+          "close": 33.87,
+          "high": 34.11,
+          "low": 33.68,
+          "volume": 126177.04,
+          "amount": 427444.33,
+          "amplitude": 1.27,
+          "pct_change": -0.15,
+          "change_amount": -0.05,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_600000",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "600000",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.088157,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 28
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 9.87,
+          "close": 9.86,
+          "high": 9.88,
+          "low": 9.78,
+          "volume": 428122.29,
+          "amount": 420527.98,
+          "amplitude": 1.01,
+          "pct_change": -0.3,
+          "change_amount": -0.03,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 9.86,
+          "close": 10.05,
+          "high": 10.05,
+          "low": 9.85,
+          "volume": 522511.53,
+          "amount": 521789.8,
+          "amplitude": 2.03,
+          "pct_change": 1.93,
+          "change_amount": 0.19,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": -0.01,
+        "close": 0.19,
+        "high": 0.17,
+        "low": 0.07,
+        "volume": 94389.24,
+        "amount": 101261.82,
+        "amplitude": 1.02,
+        "pct_change": 2.23,
+        "change_amount": 0.22,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 10.05,
+          "close": 10.11,
+          "high": 10.13,
+          "low": 10.03,
+          "volume": 430002.3,
+          "amount": 433931.95,
+          "amplitude": 1.0,
+          "pct_change": 0.6,
+          "change_amount": 0.06,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 10.12,
+          "close": 10.0,
+          "high": 10.17,
+          "low": 9.98,
+          "volume": 437023.19,
+          "amount": 438981.47,
+          "amplitude": 1.88,
+          "pct_change": -1.09,
+          "change_amount": -0.11,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 9.97,
+          "close": 9.86,
+          "high": 10.0,
+          "low": 9.85,
+          "volume": 579330.37,
+          "amount": 573972.3,
+          "amplitude": 1.5,
+          "pct_change": -1.4,
+          "change_amount": -0.14,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_688506",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "688506",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.08815,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 29
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 301.0,
+          "close": 299.95,
+          "high": 309.88,
+          "low": 298.07,
+          "volume": 16445.15,
+          "amount": 498392.34,
+          "amplitude": 3.89,
+          "pct_change": -1.26,
+          "change_amount": -3.83,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 299.96,
+          "close": 299.36,
+          "high": 301.34,
+          "low": 292.06,
+          "volume": 18234.35,
+          "amount": 541364.68,
+          "amplitude": 3.09,
+          "pct_change": -0.2,
+          "change_amount": -0.59,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": -1.04,
+        "close": -0.59,
+        "high": -8.54,
+        "low": -6.01,
+        "volume": 1789.2,
+        "amount": 42972.34,
+        "amplitude": -0.8,
+        "pct_change": 1.06,
+        "change_amount": 3.24,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 305.35,
+          "close": 313.85,
+          "high": 314.9,
+          "low": 295.39,
+          "volume": 25958.48,
+          "amount": 795209.15,
+          "amplitude": 6.52,
+          "pct_change": 4.84,
+          "change_amount": 14.49,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 308.5,
+          "close": 312.7,
+          "high": 313.78,
+          "low": 302.09,
+          "volume": 18359.3,
+          "amount": 569396.8,
+          "amplitude": 3.72,
+          "pct_change": -0.37,
+          "change_amount": -1.15,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 310.01,
+          "close": 298.39,
+          "high": 313.23,
+          "low": 290.08,
+          "volume": 31009.61,
+          "amount": 927954.07,
+          "amplitude": 7.4,
+          "pct_change": -4.58,
+          "change_amount": -14.31,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_000750",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "000750",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.087175,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 30
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 3.84,
+          "close": 3.88,
+          "high": 3.92,
+          "low": 3.83,
+          "volume": 458915.2,
+          "amount": 178355.57,
+          "amplitude": 2.33,
+          "pct_change": 0.52,
+          "change_amount": 0.02,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 3.91,
+          "close": 3.9,
+          "high": 3.91,
+          "low": 3.85,
+          "volume": 392539.15,
+          "amount": 152246.87,
+          "amplitude": 1.55,
+          "pct_change": 0.52,
+          "change_amount": 0.02,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.07,
+        "close": 0.02,
+        "high": -0.01,
+        "low": 0.02,
+        "volume": -66376.05,
+        "amount": -26108.7,
+        "amplitude": -0.78,
+        "pct_change": 0.0,
+        "change_amount": 0.0,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 3.91,
+          "close": 3.86,
+          "high": 3.92,
+          "low": 3.86,
+          "volume": 294948.63,
+          "amount": 114436.1,
+          "amplitude": 1.54,
+          "pct_change": -1.03,
+          "change_amount": -0.04,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 3.88,
+          "close": 3.89,
+          "high": 3.9,
+          "low": 3.87,
+          "volume": 317733.39,
+          "amount": 123496.25,
+          "amplitude": 0.78,
+          "pct_change": 0.78,
+          "change_amount": 0.03,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 3.88,
+          "close": 3.88,
+          "high": 3.9,
+          "low": 3.86,
+          "volume": 248281.09,
+          "amount": 96203.55,
+          "amplitude": 1.03,
+          "pct_change": -0.26,
+          "change_amount": -0.01,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_000002",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "000002",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.086643,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 31
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 3.85,
+          "close": 3.91,
+          "high": 3.92,
+          "low": 3.84,
+          "volume": 811014.07,
+          "amount": 315793.9,
+          "amplitude": 2.06,
+          "pct_change": 0.51,
+          "change_amount": 0.02,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 3.93,
+          "close": 4.02,
+          "high": 4.04,
+          "low": 3.91,
+          "volume": 1822756.41,
+          "amount": 724745.49,
+          "amplitude": 3.32,
+          "pct_change": 2.81,
+          "change_amount": 0.11,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.08,
+        "close": 0.11,
+        "high": 0.12,
+        "low": 0.07,
+        "volume": 1011742.34,
+        "amount": 408951.59,
+        "amplitude": 1.26,
+        "pct_change": 2.3,
+        "change_amount": 0.09,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 4.01,
+          "close": 3.97,
+          "high": 4.05,
+          "low": 3.95,
+          "volume": 1171299.43,
+          "amount": 466921.65,
+          "amplitude": 2.49,
+          "pct_change": -1.24,
+          "change_amount": -0.05,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 3.97,
+          "close": 3.96,
+          "high": 4.0,
+          "low": 3.94,
+          "volume": 689006.33,
+          "amount": 272882.73,
+          "amplitude": 1.51,
+          "pct_change": -0.25,
+          "change_amount": -0.01,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 3.96,
+          "close": 3.96,
+          "high": 4.02,
+          "low": 3.94,
+          "volume": 984424.49,
+          "amount": 391407.43,
+          "amplitude": 2.02,
+          "pct_change": 0.0,
+          "change_amount": 0.0,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_600999",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "600999",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.085918,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 32
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 15.77,
+          "close": 15.82,
+          "high": 15.96,
+          "low": 15.73,
+          "volume": 262228.04,
+          "amount": 415952.61,
+          "amplitude": 1.45,
+          "pct_change": -0.38,
+          "change_amount": -0.06,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 15.91,
+          "close": 15.92,
+          "high": 15.95,
+          "low": 15.75,
+          "volume": 241482.19,
+          "amount": 382535.85,
+          "amplitude": 1.26,
+          "pct_change": 0.63,
+          "change_amount": 0.1,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.14,
+        "close": 0.1,
+        "high": -0.01,
+        "low": 0.02,
+        "volume": -20745.85,
+        "amount": -33416.76,
+        "amplitude": -0.19,
+        "pct_change": 1.01,
+        "change_amount": 0.16,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 15.95,
+          "close": 15.85,
+          "high": 15.99,
+          "low": 15.84,
+          "volume": 171541.84,
+          "amount": 272736.42,
+          "amplitude": 0.94,
+          "pct_change": -0.44,
+          "change_amount": -0.07,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 15.92,
+          "close": 15.85,
+          "high": 15.97,
+          "low": 15.82,
+          "volume": 295693.69,
+          "amount": 469710.32,
+          "amplitude": 0.95,
+          "pct_change": 0.0,
+          "change_amount": 0.0,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 15.85,
+          "close": 15.71,
+          "high": 15.85,
+          "low": 15.69,
+          "volume": 258622.23,
+          "amount": 407086.3,
+          "amplitude": 1.01,
+          "pct_change": -0.88,
+          "change_amount": -0.14,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_601288",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "601288",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.085668,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 33
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 6.6,
+          "close": 6.64,
+          "high": 6.67,
+          "low": 6.55,
+          "volume": 2830751.85,
+          "amount": 1870617.28,
+          "amplitude": 1.82,
+          "pct_change": 0.76,
+          "change_amount": 0.05,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 6.6,
+          "close": 6.76,
+          "high": 6.79,
+          "low": 6.6,
+          "volume": 3627734.4,
+          "amount": 2430773.41,
+          "amplitude": 2.86,
+          "pct_change": 1.81,
+          "change_amount": 0.12,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.0,
+        "close": 0.12,
+        "high": 0.12,
+        "low": 0.05,
+        "volume": 796982.55,
+        "amount": 560156.13,
+        "amplitude": 1.04,
+        "pct_change": 1.05,
+        "change_amount": 0.07,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 6.74,
+          "close": 6.95,
+          "high": 6.97,
+          "low": 6.73,
+          "volume": 5292553.3,
+          "amount": 3648620.07,
+          "amplitude": 3.55,
+          "pct_change": 2.81,
+          "change_amount": 0.19,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 6.93,
+          "close": 7.0,
+          "high": 7.1,
+          "low": 6.91,
+          "volume": 4436728.18,
+          "amount": 3110504.67,
+          "amplitude": 2.73,
+          "pct_change": 0.72,
+          "change_amount": 0.05,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 7.0,
+          "close": 7.06,
+          "high": 7.12,
+          "low": 6.98,
+          "volume": 3558279.35,
+          "amount": 2513830.98,
+          "amplitude": 2.0,
+          "pct_change": 0.86,
+          "change_amount": 0.06,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_603392",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "603392",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.085163,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 34
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 38.73,
+          "close": 38.38,
+          "high": 38.89,
+          "low": 38.25,
+          "volume": 25661.26,
+          "amount": 98700.23,
+          "amplitude": 1.64,
+          "pct_change": -1.79,
+          "change_amount": -0.7,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 38.58,
+          "close": 39.08,
+          "high": 39.17,
+          "low": 38.12,
+          "volume": 29372.68,
+          "amount": 113128.07,
+          "amplitude": 2.74,
+          "pct_change": 1.82,
+          "change_amount": 0.7,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": -0.15,
+        "close": 0.7,
+        "high": 0.28,
+        "low": -0.13,
+        "volume": 3711.42,
+        "amount": 14427.84,
+        "amplitude": 1.1,
+        "pct_change": 3.61,
+        "change_amount": 1.4,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 39.23,
+          "close": 39.4,
+          "high": 39.63,
+          "low": 39.1,
+          "volume": 31680.15,
+          "amount": 124845.18,
+          "amplitude": 1.36,
+          "pct_change": 0.82,
+          "change_amount": 0.32,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 39.4,
+          "close": 39.35,
+          "high": 39.65,
+          "low": 39.0,
+          "volume": 25478.79,
+          "amount": 100090.74,
+          "amplitude": 1.65,
+          "pct_change": -0.13,
+          "change_amount": -0.05,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 39.3,
+          "close": 39.66,
+          "high": 40.4,
+          "low": 39.03,
+          "volume": 46336.99,
+          "amount": 184418.8,
+          "amplitude": 3.48,
+          "pct_change": 0.79,
+          "change_amount": 0.31,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_601229",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "601229",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.082572,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 35
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 9.59,
+          "close": 9.58,
+          "high": 9.61,
+          "low": 9.52,
+          "volume": 264314.18,
+          "amount": 252525.45,
+          "amplitude": 0.94,
+          "pct_change": -0.1,
+          "change_amount": -0.01,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 9.58,
+          "close": 9.79,
+          "high": 9.82,
+          "low": 9.57,
+          "volume": 550309.23,
+          "amount": 537023.93,
+          "amplitude": 2.61,
+          "pct_change": 2.19,
+          "change_amount": 0.21,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": -0.01,
+        "close": 0.21,
+        "high": 0.21,
+        "low": 0.05,
+        "volume": 285995.05,
+        "amount": 284498.48,
+        "amplitude": 1.67,
+        "pct_change": 2.29,
+        "change_amount": 0.22,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 9.81,
+          "close": 9.88,
+          "high": 9.9,
+          "low": 9.76,
+          "volume": 347137.78,
+          "amount": 341435.23,
+          "amplitude": 1.43,
+          "pct_change": 0.92,
+          "change_amount": 0.09,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 9.88,
+          "close": 9.8,
+          "high": 9.97,
+          "low": 9.79,
+          "volume": 366977.05,
+          "amount": 362110.09,
+          "amplitude": 1.82,
+          "pct_change": -0.81,
+          "change_amount": -0.08,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 9.8,
+          "close": 9.74,
+          "high": 9.84,
+          "low": 9.72,
+          "volume": 222481.37,
+          "amount": 217251.54,
+          "amplitude": 1.22,
+          "pct_change": -0.61,
+          "change_amount": -0.06,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_601818",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "601818",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.081596,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 36
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 3.19,
+          "close": 3.19,
+          "high": 3.2,
+          "low": 3.17,
+          "volume": 888967.42,
+          "amount": 282879.92,
+          "amplitude": 0.94,
+          "pct_change": 0.0,
+          "change_amount": 0.0,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 3.18,
+          "close": 3.2,
+          "high": 3.2,
+          "low": 3.18,
+          "volume": 965601.57,
+          "amount": 308167.2,
+          "amplitude": 0.63,
+          "pct_change": 0.31,
+          "change_amount": 0.01,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": -0.01,
+        "close": 0.01,
+        "high": 0.0,
+        "low": 0.01,
+        "volume": 76634.15,
+        "amount": 25287.28,
+        "amplitude": -0.31,
+        "pct_change": 0.31,
+        "change_amount": 0.01,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 3.2,
+          "close": 3.21,
+          "high": 3.21,
+          "low": 3.19,
+          "volume": 1119920.41,
+          "amount": 358671.04,
+          "amplitude": 0.63,
+          "pct_change": 0.31,
+          "change_amount": 0.01,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 3.2,
+          "close": 3.2,
+          "high": 3.21,
+          "low": 3.19,
+          "volume": 1236904.1,
+          "amount": 395664.5,
+          "amplitude": 0.62,
+          "pct_change": -0.31,
+          "change_amount": -0.01,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 3.2,
+          "close": 3.18,
+          "high": 3.2,
+          "low": 3.17,
+          "volume": 2049655.91,
+          "amount": 652284.0,
+          "amplitude": 0.94,
+          "pct_change": -0.62,
+          "change_amount": -0.02,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_601456",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "601456",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.081467,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 37
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 9.19,
+          "close": 9.31,
+          "high": 9.34,
+          "low": 9.17,
+          "volume": 247869.41,
+          "amount": 229963.8,
+          "amplitude": 1.83,
+          "pct_change": 0.43,
+          "change_amount": 0.04,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 9.37,
+          "close": 9.35,
+          "high": 9.4,
+          "low": 9.24,
+          "volume": 199416.06,
+          "amount": 185564.58,
+          "amplitude": 1.72,
+          "pct_change": 0.43,
+          "change_amount": 0.04,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.18,
+        "close": 0.04,
+        "high": 0.06,
+        "low": 0.07,
+        "volume": -48453.35,
+        "amount": -44399.22,
+        "amplitude": -0.11,
+        "pct_change": 0.0,
+        "change_amount": 0.0,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 9.4,
+          "close": 9.31,
+          "high": 9.4,
+          "low": 9.28,
+          "volume": 168137.33,
+          "amount": 156759.83,
+          "amplitude": 1.28,
+          "pct_change": -0.43,
+          "change_amount": -0.04,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 9.34,
+          "close": 9.33,
+          "high": 9.36,
+          "low": 9.3,
+          "volume": 198326.7,
+          "amount": 185064.85,
+          "amplitude": 0.64,
+          "pct_change": 0.21,
+          "change_amount": 0.02,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 9.33,
+          "close": 9.33,
+          "high": 9.35,
+          "low": 9.27,
+          "volume": 159842.3,
+          "amount": 148791.91,
+          "amplitude": 0.86,
+          "pct_change": 0.0,
+          "change_amount": 0.0,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_601336",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "601336",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.081193,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 38
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 61.2,
+          "close": 61.31,
+          "high": 61.67,
+          "low": 60.91,
+          "volume": 159226.13,
+          "amount": 974778.19,
+          "amplitude": 1.22,
+          "pct_change": -1.59,
+          "change_amount": -0.99,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 61.72,
+          "close": 62.16,
+          "high": 62.54,
+          "low": 61.35,
+          "volume": 189976.6,
+          "amount": 1176768.43,
+          "amplitude": 1.94,
+          "pct_change": 1.39,
+          "change_amount": 0.85,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.52,
+        "close": 0.85,
+        "high": 0.87,
+        "low": 0.44,
+        "volume": 30750.47,
+        "amount": 201990.24,
+        "amplitude": 0.72,
+        "pct_change": 2.98,
+        "change_amount": 1.84,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 62.54,
+          "close": 61.66,
+          "high": 62.7,
+          "low": 61.4,
+          "volume": 168965.98,
+          "amount": 1048659.42,
+          "amplitude": 2.09,
+          "pct_change": -0.8,
+          "change_amount": -0.5,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 61.67,
+          "close": 63.89,
+          "high": 64.13,
+          "low": 61.38,
+          "volume": 294350.24,
+          "amount": 1849598.03,
+          "amplitude": 4.46,
+          "pct_change": 3.62,
+          "change_amount": 2.23,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 63.26,
+          "close": 64.27,
+          "high": 65.16,
+          "low": 62.73,
+          "volume": 312375.13,
+          "amount": 2003246.95,
+          "amplitude": 3.8,
+          "pct_change": 0.59,
+          "change_amount": 0.38,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_000776",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "000776",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.081147,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 39
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 18.67,
+          "close": 19.37,
+          "high": 19.53,
+          "low": 18.6,
+          "volume": 827024.34,
+          "amount": 1589476.33,
+          "amplitude": 4.93,
+          "pct_change": 2.65,
+          "change_amount": 0.5,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 19.5,
+          "close": 19.63,
+          "high": 19.89,
+          "low": 19.39,
+          "volume": 914835.5,
+          "amount": 1796366.61,
+          "amplitude": 2.58,
+          "pct_change": 1.34,
+          "change_amount": 0.26,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.83,
+        "close": 0.26,
+        "high": 0.36,
+        "low": 0.79,
+        "volume": 87811.16,
+        "amount": 206890.28,
+        "amplitude": -2.35,
+        "pct_change": -1.31,
+        "change_amount": -0.24,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 19.62,
+          "close": 19.86,
+          "high": 20.18,
+          "low": 19.61,
+          "volume": 853764.9,
+          "amount": 1701315.0,
+          "amplitude": 2.9,
+          "pct_change": 1.17,
+          "change_amount": 0.23,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 19.85,
+          "close": 19.88,
+          "high": 20.13,
+          "low": 19.77,
+          "volume": 543744.67,
+          "amount": 1082732.82,
+          "amplitude": 1.81,
+          "pct_change": 0.1,
+          "change_amount": 0.02,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 19.84,
+          "close": 20.11,
+          "high": 20.24,
+          "low": 19.76,
+          "volume": 633319.71,
+          "amount": 1270379.2,
+          "amplitude": 2.41,
+          "pct_change": 1.16,
+          "change_amount": 0.23,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_600036",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "600036",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.080778,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 40
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 39.13,
+          "close": 38.98,
+          "high": 39.16,
+          "low": 38.92,
+          "volume": 525144.95,
+          "amount": 2047706.85,
+          "amplitude": 0.61,
+          "pct_change": -0.59,
+          "change_amount": -0.23,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 39.0,
+          "close": 39.13,
+          "high": 39.18,
+          "low": 38.95,
+          "volume": 503998.61,
+          "amount": 1967829.54,
+          "amplitude": 0.59,
+          "pct_change": 0.38,
+          "change_amount": 0.15,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": -0.13,
+        "close": 0.15,
+        "high": 0.02,
+        "low": 0.03,
+        "volume": -21146.34,
+        "amount": -79877.31,
+        "amplitude": -0.02,
+        "pct_change": 0.97,
+        "change_amount": 0.38,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 39.25,
+          "close": 39.9,
+          "high": 39.92,
+          "low": 39.22,
+          "volume": 1052103.79,
+          "amount": 4177253.34,
+          "amplitude": 1.79,
+          "pct_change": 1.97,
+          "change_amount": 0.77,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 39.9,
+          "close": 39.91,
+          "high": 40.15,
+          "low": 39.75,
+          "volume": 617257.76,
+          "amount": 2467044.52,
+          "amplitude": 1.0,
+          "pct_change": 0.03,
+          "change_amount": 0.01,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 39.85,
+          "close": 39.52,
+          "high": 39.9,
+          "low": 39.5,
+          "volume": 587925.18,
+          "amount": 2331744.88,
+          "amplitude": 1.0,
+          "pct_change": -0.98,
+          "change_amount": -0.39,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_601628",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "601628",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.079911,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 42
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 37.3,
+          "close": 37.52,
+          "high": 37.7,
+          "low": 37.11,
+          "volume": 117492.9,
+          "amount": 439886.78,
+          "amplitude": 1.56,
+          "pct_change": -0.66,
+          "change_amount": -0.25,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 37.81,
+          "close": 37.77,
+          "high": 37.96,
+          "low": 37.31,
+          "volume": 151499.17,
+          "amount": 569848.76,
+          "amplitude": 1.73,
+          "pct_change": 0.67,
+          "change_amount": 0.25,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.51,
+        "close": 0.25,
+        "high": 0.26,
+        "low": 0.2,
+        "volume": 34006.27,
+        "amount": 129961.98,
+        "amplitude": 0.17,
+        "pct_change": 1.33,
+        "change_amount": 0.5,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 38.05,
+          "close": 37.7,
+          "high": 38.31,
+          "low": 37.61,
+          "volume": 164834.15,
+          "amount": 624972.64,
+          "amplitude": 1.85,
+          "pct_change": -0.19,
+          "change_amount": -0.07,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 37.85,
+          "close": 37.87,
+          "high": 38.07,
+          "low": 37.59,
+          "volume": 184750.68,
+          "amount": 698342.16,
+          "amplitude": 1.27,
+          "pct_change": 0.45,
+          "change_amount": 0.17,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 37.78,
+          "close": 37.52,
+          "high": 37.8,
+          "low": 37.34,
+          "volume": 160559.48,
+          "amount": 602255.55,
+          "amplitude": 1.21,
+          "pct_change": -0.92,
+          "change_amount": -0.35,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_000166",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "000166",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.0795,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 43
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 4.69,
+          "close": 4.75,
+          "high": 4.78,
+          "low": 4.67,
+          "volume": 827092.28,
+          "amount": 392032.92,
+          "amplitude": 2.33,
+          "pct_change": 0.64,
+          "change_amount": 0.03,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 4.77,
+          "close": 4.77,
+          "high": 4.79,
+          "low": 4.72,
+          "volume": 562725.5,
+          "amount": 267546.73,
+          "amplitude": 1.47,
+          "pct_change": 0.42,
+          "change_amount": 0.02,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 0.08,
+        "close": 0.02,
+        "high": 0.01,
+        "low": 0.05,
+        "volume": -264366.78,
+        "amount": -124486.19,
+        "amplitude": -0.86,
+        "pct_change": -0.22,
+        "change_amount": -0.01,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 4.78,
+          "close": 4.75,
+          "high": 4.79,
+          "low": 4.74,
+          "volume": 541215.74,
+          "amount": 257496.52,
+          "amplitude": 1.05,
+          "pct_change": -0.42,
+          "change_amount": -0.02,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 4.77,
+          "close": 4.75,
+          "high": 4.79,
+          "low": 4.74,
+          "volume": 701754.23,
+          "amount": 334304.69,
+          "amplitude": 1.05,
+          "pct_change": 0.0,
+          "change_amount": 0.0,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 4.75,
+          "close": 4.74,
+          "high": 4.76,
+          "low": 4.71,
+          "volume": 588091.49,
+          "amount": 278471.64,
+          "amplitude": 1.05,
+          "pct_change": -0.21,
+          "change_amount": -0.01,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    },
+    {
+      "sample_id": "20260414_DOC-0001_300760",
+      "event_date": "20260414",
+      "event_trade_date": "20260414",
+      "label_start_date": "20260415",
+      "stock_code": "300760",
+      "event_id": "DOC-0001",
+      "event_title": "国办发布《关于健全药品价格形成机制的若干意见》",
+      "event_summary": "国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+      "relation_score": 1.079296,
+      "event_features": {
+        "event_text": "国办发布《关于健全药品价格形成机制的若干意见》。国务院办公厅于2026年4月14日发布《关于健全药品价格形成机制的若干意见》，提出14条举措优化创新药等新上市药品首发价格机制，引导药品价格合理形成。",
+        "actual_event_date": "4.14",
+        "date_source_field": "event_summary",
+        "date_match": "2026年4月14日",
+        "rank_within_day_top45": 44
+      },
+      "input_window_pre2": [
+        {
+          "date": "20260413",
+          "open": 157.5,
+          "close": 157.94,
+          "high": 159.62,
+          "low": 156.51,
+          "volume": 59907.31,
+          "amount": 946382.38,
+          "amplitude": 1.97,
+          "pct_change": -0.15,
+          "change_amount": -0.24,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260414",
+          "open": 158.68,
+          "close": 160.46,
+          "high": 161.57,
+          "low": 156.91,
+          "volume": 89108.06,
+          "amount": 1415425.78,
+          "amplitude": 2.95,
+          "pct_change": 1.6,
+          "change_amount": 2.52,
+          "turnover_rate": null
+        }
+      ],
+      "delta_features": {
+        "open": 1.18,
+        "close": 2.52,
+        "high": 1.95,
+        "low": 0.4,
+        "volume": 29200.75,
+        "amount": 469043.4,
+        "amplitude": 0.98,
+        "pct_change": 1.75,
+        "change_amount": 2.76,
+        "turnover_rate": null
+      },
+      "future_window_post4": [
+        {
+          "date": "20260415",
+          "open": 161.54,
+          "close": 160.3,
+          "high": 162.62,
+          "low": 160.02,
+          "volume": 66862.83,
+          "amount": 1076187.33,
+          "amplitude": 1.62,
+          "pct_change": -0.1,
+          "change_amount": -0.16,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260416",
+          "open": 160.32,
+          "close": 160.46,
+          "high": 160.86,
+          "low": 159.46,
+          "volume": 54493.17,
+          "amount": 872440.53,
+          "amplitude": 0.87,
+          "pct_change": 0.1,
+          "change_amount": 0.16,
+          "turnover_rate": null
+        },
+        {
+          "date": "20260417",
+          "open": 159.92,
+          "close": 156.75,
+          "high": 159.92,
+          "low": 156.71,
+          "volume": 89170.87,
+          "amount": 1404800.0,
+          "amplitude": 2.0,
+          "pct_change": -2.31,
+          "change_amount": -3.71,
+          "turnover_rate": null
+        }
+      ],
+      "targets": {
+        "future_4day_return": null,
+        "future_4day_up": null
+      },
+      "status": "pending_missing_future_window"
+    }
+  ]
+}

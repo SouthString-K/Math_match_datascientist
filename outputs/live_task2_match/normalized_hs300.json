@@ -1,0 +1,1802 @@
+[
+  {
+    "order": 1,
+    "stock_code": "688981",
+    "stock_name": "中芯国际",
+    "industry_seed": "半导体"
+  },
+  {
+    "order": 2,
+    "stock_code": "688506",
+    "stock_name": "百利天恒",
+    "industry_seed": "生物制品"
+  },
+  {
+    "order": 3,
+    "stock_code": "688472",
+    "stock_name": "固德威",
+    "industry_seed": "光伏设备"
+  },
+  {
+    "order": 4,
+    "stock_code": "688396",
+    "stock_name": "华润微",
+    "industry_seed": "半导体"
+  },
+  {
+    "order": 5,
+    "stock_code": "688303",
+    "stock_name": "大全能源",
+    "industry_seed": "光伏设备"
+  },
+  {
+    "order": 6,
+    "stock_code": "688271",
+    "stock_name": "联影医疗",
+    "industry_seed": "医疗器械"
+  },
+  {
+    "order": 7,
+    "stock_code": "688256",
+    "stock_name": "寒武纪",
+    "industry_seed": "半导体"
+  },
+  {
+    "order": 8,
+    "stock_code": "688223",
+    "stock_name": "晶科能源",
+    "industry_seed": "光伏设备"
+  },
+  {
+    "order": 9,
+    "stock_code": "688187",
+    "stock_name": "时代电气",
+    "industry_seed": "轨交设备II"
+  },
+  {
+    "order": 10,
+    "stock_code": "688169",
+    "stock_name": "石头科技",
+    "industry_seed": "小家电"
+  },
+  {
+    "order": 11,
+    "stock_code": "688128",
+    "stock_name": "沪硅产业",
+    "industry_seed": "半导体"
+  },
+  {
+    "order": 12,
+    "stock_code": "688111",
+    "stock_name": "金山办公",
+    "industry_seed": "软件开发"
+  },
+  {
+    "order": 13,
+    "stock_code": "688082",
+    "stock_name": "盛美上海",
+    "industry_seed": "半导体"
+  },
+  {
+    "order": 14,
+    "stock_code": "688047",
+    "stock_name": "龙芯中科",
+    "industry_seed": "半导体"
+  },
+  {
+    "order": 15,
+    "stock_code": "688041",
+    "stock_name": "海光信息",
+    "industry_seed": "半导体"
+  },
+  {
+    "order": 16,
+    "stock_code": "688036",
+    "stock_name": "传音控股",
+    "industry_seed": "消费电子"
+  },
+  {
+    "order": 17,
+    "stock_code": "688012",
+    "stock_name": "中微公司",
+    "industry_seed": "半导体"
+  },
+  {
+    "order": 18,
+    "stock_code": "688009",
+    "stock_name": "中国通号",
+    "industry_seed": "轨交设备II"
+  },
+  {
+    "order": 19,
+    "stock_code": "688008",
+    "stock_name": "澜起科技",
+    "industry_seed": "半导体"
+  },
+  {
+    "order": 20,
+    "stock_code": "605499",
+    "stock_name": "东鹏饮料",
+    "industry_seed": "饮料乳品"
+  },
+  {
+    "order": 21,
+    "stock_code": "605117",
+    "stock_name": "德业股份",
+    "industry_seed": "光伏设备"
+  },
+  {
+    "order": 22,
+    "stock_code": "603993",
+    "stock_name": "洛阳钼业",
+    "industry_seed": "工业金属"
+  },
+  {
+    "order": 23,
+    "stock_code": "603886",
+    "stock_name": "兆易创新",
+    "industry_seed": "半导体"
+  },
+  {
+    "order": 24,
+    "stock_code": "603893",
+    "stock_name": "瑞芯微",
+    "industry_seed": "半导体"
+  },
+  {
+    "order": 25,
+    "stock_code": "603799",
+    "stock_name": "华友钴业",
+    "industry_seed": "能源金属"
+  },
+  {
+    "order": 26,
+    "stock_code": "603501",
+    "stock_name": "韦尔股份",
+    "industry_seed": "半导体"
+  },
+  {
+    "order": 27,
+    "stock_code": "603392",
+    "stock_name": "万泰生物",
+    "industry_seed": "生物制品"
+  },
+  {
+    "order": 28,
+    "stock_code": "603369",
+    "stock_name": "今世缘",
+    "industry_seed": "白酒II"
+  },
+  {
+    "order": 29,
+    "stock_code": "603296",
+    "stock_name": "华勤技术",
+    "industry_seed": "消费电子"
+  },
+  {
+    "order": 30,
+    "stock_code": "603288",
+    "stock_name": "海天味业",
+    "industry_seed": "调味发酵品II"
+  },
+  {
+    "order": 31,
+    "stock_code": "603260",
+    "stock_name": "合盛硅业",
+    "industry_seed": "化学制品"
+  },
+  {
+    "order": 32,
+    "stock_code": "603259",
+    "stock_name": "药明康德",
+    "industry_seed": "医疗服务"
+  },
+  {
+    "order": 33,
+    "stock_code": "603195",
+    "stock_name": "公牛集团",
+    "industry_seed": "家居用品"
+  },
+  {
+    "order": 34,
+    "stock_code": "603019",
+    "stock_name": "中科曙光",
+    "industry_seed": "计算机设备"
+  },
+  {
+    "order": 35,
+    "stock_code": "601998",
+    "stock_name": "中信银行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 36,
+    "stock_code": "601995",
+    "stock_name": "中金公司",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 37,
+    "stock_code": "601988",
+    "stock_name": "中国银行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 38,
+    "stock_code": "601985",
+    "stock_name": "中国核电",
+    "industry_seed": "电力"
+  },
+  {
+    "order": 39,
+    "stock_code": "601939",
+    "stock_name": "建设银行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 40,
+    "stock_code": "601919",
+    "stock_name": "中远海控",
+    "industry_seed": "航运港口"
+  },
+  {
+    "order": 41,
+    "stock_code": "601916",
+    "stock_name": "浙商银行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 42,
+    "stock_code": "601901",
+    "stock_name": "方正证券",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 43,
+    "stock_code": "601899",
+    "stock_name": "紫金矿业",
+    "industry_seed": "工业金属"
+  },
+  {
+    "order": 44,
+    "stock_code": "601898",
+    "stock_name": "中煤能源",
+    "industry_seed": "煤炭开采"
+  },
+  {
+    "order": 45,
+    "stock_code": "601888",
+    "stock_name": "中国中免",
+    "industry_seed": "旅游零售II"
+  },
+  {
+    "order": 46,
+    "stock_code": "601881",
+    "stock_name": "中国银河",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 47,
+    "stock_code": "601878",
+    "stock_name": "浙商证券",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 48,
+    "stock_code": "601877",
+    "stock_name": "正泰电器",
+    "industry_seed": "电网设备"
+  },
+  {
+    "order": 49,
+    "stock_code": "601872",
+    "stock_name": "招商轮船",
+    "industry_seed": "航运港口"
+  },
+  {
+    "order": 50,
+    "stock_code": "601868",
+    "stock_name": "中国能建",
+    "industry_seed": "基础建设"
+  },
+  {
+    "order": 51,
+    "stock_code": "601857",
+    "stock_name": "中国石油",
+    "industry_seed": "炼化及贸易"
+  },
+  {
+    "order": 52,
+    "stock_code": "601838",
+    "stock_name": "成都银行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 53,
+    "stock_code": "601825",
+    "stock_name": "沪农商行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 54,
+    "stock_code": "601818",
+    "stock_name": "光大银行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 55,
+    "stock_code": "601816",
+    "stock_name": "京沪高铁",
+    "industry_seed": "铁路公路"
+  },
+  {
+    "order": 56,
+    "stock_code": "601808",
+    "stock_name": "中海油服",
+    "industry_seed": "油服工程"
+  },
+  {
+    "order": 57,
+    "stock_code": "601800",
+    "stock_name": "中国交建",
+    "industry_seed": "基础建设"
+  },
+  {
+    "order": 58,
+    "stock_code": "601788",
+    "stock_name": "光大证券",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 59,
+    "stock_code": "601766",
+    "stock_name": "中国中车",
+    "industry_seed": "轨交设备II"
+  },
+  {
+    "order": 60,
+    "stock_code": "601728",
+    "stock_name": "中国电信",
+    "industry_seed": "通信服务"
+  },
+  {
+    "order": 61,
+    "stock_code": "601698",
+    "stock_name": "中国卫通",
+    "industry_seed": "航天装备II"
+  },
+  {
+    "order": 62,
+    "stock_code": "601689",
+    "stock_name": "拓普集团",
+    "industry_seed": "汽车零部件"
+  },
+  {
+    "order": 63,
+    "stock_code": "601688",
+    "stock_name": "华泰证券",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 64,
+    "stock_code": "601669",
+    "stock_name": "中国电建",
+    "industry_seed": "基础建设"
+  },
+  {
+    "order": 65,
+    "stock_code": "601668",
+    "stock_name": "中国建筑",
+    "industry_seed": "房屋建设II"
+  },
+  {
+    "order": 66,
+    "stock_code": "601658",
+    "stock_name": "邮储银行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 67,
+    "stock_code": "601633",
+    "stock_name": "长城汽车",
+    "industry_seed": "乘用车"
+  },
+  {
+    "order": 68,
+    "stock_code": "601628",
+    "stock_name": "中国人寿",
+    "industry_seed": "保险II"
+  },
+  {
+    "order": 69,
+    "stock_code": "601618",
+    "stock_name": "中国中冶",
+    "industry_seed": "专业工程"
+  },
+  {
+    "order": 70,
+    "stock_code": "601607",
+    "stock_name": "上海医药",
+    "industry_seed": "医药商业"
+  },
+  {
+    "order": 71,
+    "stock_code": "601601",
+    "stock_name": "中国太保",
+    "industry_seed": "保险II"
+  },
+  {
+    "order": 72,
+    "stock_code": "601600",
+    "stock_name": "中国铝业",
+    "industry_seed": "工业金属"
+  },
+  {
+    "order": 73,
+    "stock_code": "601456",
+    "stock_name": "国联证券",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 74,
+    "stock_code": "601398",
+    "stock_name": "工商银行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 75,
+    "stock_code": "601390",
+    "stock_name": "中国中铁",
+    "industry_seed": "基础建设"
+  },
+  {
+    "order": 76,
+    "stock_code": "601377",
+    "stock_name": "兴业证券",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 77,
+    "stock_code": "601360",
+    "stock_name": "三六零",
+    "industry_seed": "软件开发"
+  },
+  {
+    "order": 78,
+    "stock_code": "601336",
+    "stock_name": "新华保险",
+    "industry_seed": "保险II"
+  },
+  {
+    "order": 79,
+    "stock_code": "601328",
+    "stock_name": "交通银行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 80,
+    "stock_code": "601319",
+    "stock_name": "中国人保",
+    "industry_seed": "保险II"
+  },
+  {
+    "order": 81,
+    "stock_code": "601318",
+    "stock_name": "中国平安",
+    "industry_seed": "保险II"
+  },
+  {
+    "order": 82,
+    "stock_code": "601298",
+    "stock_name": "青岛港",
+    "industry_seed": "航运港口"
+  },
+  {
+    "order": 83,
+    "stock_code": "601288",
+    "stock_name": "农业银行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 84,
+    "stock_code": "601238",
+    "stock_name": "广汽集团",
+    "industry_seed": "乘用车"
+  },
+  {
+    "order": 85,
+    "stock_code": "601236",
+    "stock_name": "红塔证券",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 86,
+    "stock_code": "601229",
+    "stock_name": "上海银行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 87,
+    "stock_code": "601225",
+    "stock_name": "陕西煤业",
+    "industry_seed": "煤炭开采"
+  },
+  {
+    "order": 88,
+    "stock_code": "601211",
+    "stock_name": "国泰君安",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 89,
+    "stock_code": "601186",
+    "stock_name": "中国铁建",
+    "industry_seed": "基础建设"
+  },
+  {
+    "order": 90,
+    "stock_code": "601169",
+    "stock_name": "北京银行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 91,
+    "stock_code": "601166",
+    "stock_name": "兴业银行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 92,
+    "stock_code": "601138",
+    "stock_name": "工业富联",
+    "industry_seed": "消费电子"
+  },
+  {
+    "order": 93,
+    "stock_code": "601136",
+    "stock_name": "首创证券",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 94,
+    "stock_code": "601127",
+    "stock_name": "赛力斯",
+    "industry_seed": "乘用车"
+  },
+  {
+    "order": 95,
+    "stock_code": "601117",
+    "stock_name": "中国化学",
+    "industry_seed": "专业工程"
+  },
+  {
+    "order": 96,
+    "stock_code": "601111",
+    "stock_name": "中国国航",
+    "industry_seed": "航空机场"
+  },
+  {
+    "order": 97,
+    "stock_code": "601100",
+    "stock_name": "恒立液压",
+    "industry_seed": "工程机械"
+  },
+  {
+    "order": 98,
+    "stock_code": "601088",
+    "stock_name": "中国神华",
+    "industry_seed": "煤炭开采"
+  },
+  {
+    "order": 99,
+    "stock_code": "601077",
+    "stock_name": "渝农商行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 100,
+    "stock_code": "601066",
+    "stock_name": "中信建投",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 101,
+    "stock_code": "601059",
+    "stock_name": "信达证券",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 102,
+    "stock_code": "601058",
+    "stock_name": "赛轮轮胎",
+    "industry_seed": "汽车零部件"
+  },
+  {
+    "order": 103,
+    "stock_code": "601021",
+    "stock_name": "春秋航空",
+    "industry_seed": "航空机场"
+  },
+  {
+    "order": 104,
+    "stock_code": "601018",
+    "stock_name": "宁波港",
+    "industry_seed": "航运港口"
+  },
+  {
+    "order": 105,
+    "stock_code": "601012",
+    "stock_name": "隆基绿能",
+    "industry_seed": "光伏设备"
+  },
+  {
+    "order": 106,
+    "stock_code": "601009",
+    "stock_name": "南京银行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 107,
+    "stock_code": "601006",
+    "stock_name": "大秦铁路",
+    "industry_seed": "铁路公路"
+  },
+  {
+    "order": 108,
+    "stock_code": "600999",
+    "stock_name": "招商证券",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 109,
+    "stock_code": "600989",
+    "stock_name": "宝丰能源",
+    "industry_seed": "化学原料"
+  },
+  {
+    "order": 110,
+    "stock_code": "600958",
+    "stock_name": "东方证券",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 111,
+    "stock_code": "600941",
+    "stock_name": "中国移动",
+    "industry_seed": "通信服务"
+  },
+  {
+    "order": 112,
+    "stock_code": "600938",
+    "stock_name": "中国海油",
+    "industry_seed": "油气开采II"
+  },
+  {
+    "order": 113,
+    "stock_code": "600926",
+    "stock_name": "杭州银行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 114,
+    "stock_code": "600919",
+    "stock_name": "江苏银行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 115,
+    "stock_code": "600918",
+    "stock_name": "中泰证券",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 116,
+    "stock_code": "600905",
+    "stock_name": "三峡能源",
+    "industry_seed": "电力"
+  },
+  {
+    "order": 117,
+    "stock_code": "600900",
+    "stock_name": "长江电力",
+    "industry_seed": "电力"
+  },
+  {
+    "order": 118,
+    "stock_code": "600893",
+    "stock_name": "航发动力",
+    "industry_seed": "航空装备II"
+  },
+  {
+    "order": 119,
+    "stock_code": "600887",
+    "stock_name": "伊利股份",
+    "industry_seed": "饮料乳品"
+  },
+  {
+    "order": 120,
+    "stock_code": "600886",
+    "stock_name": "国投电力",
+    "industry_seed": "电力"
+  },
+  {
+    "order": 121,
+    "stock_code": "600875",
+    "stock_name": "东方电气",
+    "industry_seed": "电源设备"
+  },
+  {
+    "order": 122,
+    "stock_code": "600845",
+    "stock_name": "宝信软件",
+    "industry_seed": "IT服务II"
+  },
+  {
+    "order": 123,
+    "stock_code": "600809",
+    "stock_name": "山西汾酒",
+    "industry_seed": "白酒II"
+  },
+  {
+    "order": 124,
+    "stock_code": "600803",
+    "stock_name": "新奥股份",
+    "industry_seed": "燃气II"
+  },
+  {
+    "order": 125,
+    "stock_code": "600795",
+    "stock_name": "国电电力",
+    "industry_seed": "电力"
+  },
+  {
+    "order": 126,
+    "stock_code": "600760",
+    "stock_name": "中航沈飞",
+    "industry_seed": "航空装备II"
+  },
+  {
+    "order": 127,
+    "stock_code": "600741",
+    "stock_name": "华域汽车",
+    "industry_seed": "汽车零部件"
+  },
+  {
+    "order": 128,
+    "stock_code": "600690",
+    "stock_name": "海尔智家",
+    "industry_seed": "白色家电"
+  },
+  {
+    "order": 129,
+    "stock_code": "600674",
+    "stock_name": "川投能源",
+    "industry_seed": "电力"
+  },
+  {
+    "order": 130,
+    "stock_code": "600660",
+    "stock_name": "福耀玻璃",
+    "industry_seed": "汽车零部件"
+  },
+  {
+    "order": 131,
+    "stock_code": "600600",
+    "stock_name": "青岛啤酒",
+    "industry_seed": "非白酒"
+  },
+  {
+    "order": 132,
+    "stock_code": "600588",
+    "stock_name": "用友网络",
+    "industry_seed": "软件开发"
+  },
+  {
+    "order": 133,
+    "stock_code": "600585",
+    "stock_name": "海螺水泥",
+    "industry_seed": "水泥"
+  },
+  {
+    "order": 134,
+    "stock_code": "600584",
+    "stock_name": "长电科技",
+    "industry_seed": "半导体"
+  },
+  {
+    "order": 135,
+    "stock_code": "600570",
+    "stock_name": "恒生电子",
+    "industry_seed": "软件开发"
+  },
+  {
+    "order": 136,
+    "stock_code": "600547",
+    "stock_name": "山东黄金",
+    "industry_seed": "贵金属"
+  },
+  {
+    "order": 137,
+    "stock_code": "600522",
+    "stock_name": "中天科技",
+    "industry_seed": "通信设备"
+  },
+  {
+    "order": 138,
+    "stock_code": "600519",
+    "stock_name": "贵州茅台",
+    "industry_seed": "白酒II"
+  },
+  {
+    "order": 139,
+    "stock_code": "600489",
+    "stock_name": "中金黄金",
+    "industry_seed": "贵金属"
+  },
+  {
+    "order": 140,
+    "stock_code": "600460",
+    "stock_name": "士兰微",
+    "industry_seed": "半导体"
+  },
+  {
+    "order": 141,
+    "stock_code": "600438",
+    "stock_name": "通威股份",
+    "industry_seed": "光伏设备"
+  },
+  {
+    "order": 142,
+    "stock_code": "600436",
+    "stock_name": "片仔癀",
+    "industry_seed": "中药II"
+  },
+  {
+    "order": 143,
+    "stock_code": "600426",
+    "stock_name": "华鲁恒升",
+    "industry_seed": "农化制品"
+  },
+  {
+    "order": 144,
+    "stock_code": "600415",
+    "stock_name": "小商品城",
+    "industry_seed": "一般零售"
+  },
+  {
+    "order": 145,
+    "stock_code": "600406",
+    "stock_name": "国电南瑞",
+    "industry_seed": "电网设备"
+  },
+  {
+    "order": 146,
+    "stock_code": "600377",
+    "stock_name": "宁沪高速",
+    "industry_seed": "铁路公路"
+  },
+  {
+    "order": 147,
+    "stock_code": "600362",
+    "stock_name": "江西铜业",
+    "industry_seed": "工业金属"
+  },
+  {
+    "order": 148,
+    "stock_code": "600309",
+    "stock_name": "万华化学",
+    "industry_seed": "化学制品"
+  },
+  {
+    "order": 149,
+    "stock_code": "600276",
+    "stock_name": "恒瑞医药",
+    "industry_seed": "化学制药"
+  },
+  {
+    "order": 150,
+    "stock_code": "600233",
+    "stock_name": "圆通速递",
+    "industry_seed": "物流"
+  },
+  {
+    "order": 151,
+    "stock_code": "600219",
+    "stock_name": "南山铝业",
+    "industry_seed": "工业金属"
+  },
+  {
+    "order": 152,
+    "stock_code": "600196",
+    "stock_name": "复星医药",
+    "industry_seed": "化学制药"
+  },
+  {
+    "order": 153,
+    "stock_code": "600188",
+    "stock_name": "兖矿能源",
+    "industry_seed": "煤炭开采"
+  },
+  {
+    "order": 154,
+    "stock_code": "600183",
+    "stock_name": "生益科技",
+    "industry_seed": "元件"
+  },
+  {
+    "order": 155,
+    "stock_code": "600176",
+    "stock_name": "中国巨石",
+    "industry_seed": "玻璃玻纤"
+  },
+  {
+    "order": 156,
+    "stock_code": "600161",
+    "stock_name": "天坛生物",
+    "industry_seed": "生物制品"
+  },
+  {
+    "order": 157,
+    "stock_code": "600160",
+    "stock_name": "巨化股份",
+    "industry_seed": "化学制品"
+  },
+  {
+    "order": 158,
+    "stock_code": "600150",
+    "stock_name": "中国船舶",
+    "industry_seed": "航海装备II"
+  },
+  {
+    "order": 159,
+    "stock_code": "600115",
+    "stock_name": "中国东航",
+    "industry_seed": "航空机场"
+  },
+  {
+    "order": 160,
+    "stock_code": "600111",
+    "stock_name": "北方稀土",
+    "industry_seed": "小金属"
+  },
+  {
+    "order": 161,
+    "stock_code": "600104",
+    "stock_name": "上汽集团",
+    "industry_seed": "乘用车"
+  },
+  {
+    "order": 162,
+    "stock_code": "600089",
+    "stock_name": "特变电工",
+    "industry_seed": "电网设备"
+  },
+  {
+    "order": 163,
+    "stock_code": "600085",
+    "stock_name": "同仁堂",
+    "industry_seed": "中药II"
+  },
+  {
+    "order": 164,
+    "stock_code": "600066",
+    "stock_name": "宇通客车",
+    "industry_seed": "商用车"
+  },
+  {
+    "order": 165,
+    "stock_code": "600050",
+    "stock_name": "中国联通",
+    "industry_seed": "通信服务"
+  },
+  {
+    "order": 166,
+    "stock_code": "600048",
+    "stock_name": "保利发展",
+    "industry_seed": "房地产开发"
+  },
+  {
+    "order": 167,
+    "stock_code": "600036",
+    "stock_name": "招商银行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 168,
+    "stock_code": "600031",
+    "stock_name": "三一重工",
+    "industry_seed": "工程机械"
+  },
+  {
+    "order": 169,
+    "stock_code": "600030",
+    "stock_name": "中信证券",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 170,
+    "stock_code": "600029",
+    "stock_name": "南方航空",
+    "industry_seed": "航空机场"
+  },
+  {
+    "order": 171,
+    "stock_code": "600028",
+    "stock_name": "中国石化",
+    "industry_seed": "炼化及贸易"
+  },
+  {
+    "order": 172,
+    "stock_code": "600025",
+    "stock_name": "华能水电",
+    "industry_seed": "电力"
+  },
+  {
+    "order": 173,
+    "stock_code": "600019",
+    "stock_name": "宝钢股份",
+    "industry_seed": "普钢"
+  },
+  {
+    "order": 174,
+    "stock_code": "600018",
+    "stock_name": "上港集团",
+    "industry_seed": "航运港口"
+  },
+  {
+    "order": 175,
+    "stock_code": "600016",
+    "stock_name": "民生银行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 176,
+    "stock_code": "600015",
+    "stock_name": "华夏银行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 177,
+    "stock_code": "600011",
+    "stock_name": "华能国际",
+    "industry_seed": "电力"
+  },
+  {
+    "order": 178,
+    "stock_code": "600009",
+    "stock_name": "上海机场",
+    "industry_seed": "航空机场"
+  },
+  {
+    "order": 179,
+    "stock_code": "600000",
+    "stock_name": "浦发银行",
+    "industry_seed": "银行II"
+  },
+  {
+    "order": 180,
+    "stock_code": "301269",
+    "stock_name": "华大九天",
+    "industry_seed": "软件开发"
+  },
+  {
+    "order": 181,
+    "stock_code": "300999",
+    "stock_name": "金龙鱼",
+    "industry_seed": "农产品加工"
+  },
+  {
+    "order": 182,
+    "stock_code": "300896",
+    "stock_name": "爱美客",
+    "industry_seed": "医疗美容"
+  },
+  {
+    "order": 183,
+    "stock_code": "300866",
+    "stock_name": "安克创新",
+    "industry_seed": "消费电子"
+  },
+  {
+    "order": 184,
+    "stock_code": "300782",
+    "stock_name": "卓胜微",
+    "industry_seed": "半导体"
+  },
+  {
+    "order": 185,
+    "stock_code": "300760",
+    "stock_name": "迈瑞医疗",
+    "industry_seed": "医疗器械"
+  },
+  {
+    "order": 186,
+    "stock_code": "300750",
+    "stock_name": "宁德时代",
+    "industry_seed": "电池"
+  },
+  {
+    "order": 187,
+    "stock_code": "300661",
+    "stock_name": "圣邦股份",
+    "industry_seed": "半导体"
+  },
+  {
+    "order": 188,
+    "stock_code": "300498",
+    "stock_name": "温氏股份",
+    "industry_seed": "养殖业"
+  },
+  {
+    "order": 189,
+    "stock_code": "300433",
+    "stock_name": "蓝思科技",
+    "industry_seed": "消费电子"
+  },
+  {
+    "order": 190,
+    "stock_code": "300347",
+    "stock_name": "泰格医药",
+    "industry_seed": "医疗服务"
+  },
+  {
+    "order": 191,
+    "stock_code": "300316",
+    "stock_name": "晶盛机电",
+    "industry_seed": "光伏设备"
+  },
+  {
+    "order": 192,
+    "stock_code": "300274",
+    "stock_name": "阳光电源",
+    "industry_seed": "光伏设备"
+  },
+  {
+    "order": 193,
+    "stock_code": "300124",
+    "stock_name": "汇川技术",
+    "industry_seed": "自动化设备"
+  },
+  {
+    "order": 194,
+    "stock_code": "300122",
+    "stock_name": "智飞生物",
+    "industry_seed": "生物制品"
+  },
+  {
+    "order": 195,
+    "stock_code": "300059",
+    "stock_name": "东方财富",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 196,
+    "stock_code": "300033",
+    "stock_name": "同花顺",
+    "industry_seed": "软件开发"
+  },
+  {
+    "order": 197,
+    "stock_code": "300015",
+    "stock_name": "爱尔眼科",
+    "industry_seed": "医疗服务"
+  },
+  {
+    "order": 198,
+    "stock_code": "300014",
+    "stock_name": "亿纬锂能",
+    "industry_seed": "电池"
+  },
+  {
+    "order": 199,
+    "stock_code": "003816",
+    "stock_name": "中国广核",
+    "industry_seed": "电力"
+  },
+  {
+    "order": 200,
+    "stock_code": "002938",
+    "stock_name": "鹏鼎控股",
+    "industry_seed": "元件"
+  },
+  {
+    "order": 201,
+    "stock_code": "002920",
+    "stock_name": "德赛西威",
+    "industry_seed": "汽车零部件"
+  },
+  {
+    "order": 202,
+    "stock_code": "002916",
+    "stock_name": "深南电路",
+    "industry_seed": "元件"
+  },
+  {
+    "order": 203,
+    "stock_code": "002736",
+    "stock_name": "国信证券",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 204,
+    "stock_code": "002714",
+    "stock_name": "牧原股份",
+    "industry_seed": "养殖业"
+  },
+  {
+    "order": 205,
+    "stock_code": "002648",
+    "stock_name": "卫星化学",
+    "industry_seed": "化学原料"
+  },
+  {
+    "order": 206,
+    "stock_code": "002601",
+    "stock_name": "龙佰集团",
+    "industry_seed": "化学原料"
+  },
+  {
+    "order": 207,
+    "stock_code": "002594",
+    "stock_name": "比亚迪",
+    "industry_seed": "乘用车"
+  },
+  {
+    "order": 208,
+    "stock_code": "002493",
+    "stock_name": "荣盛石化",
+    "industry_seed": "炼化及贸易"
+  },
+  {
+    "order": 209,
+    "stock_code": "002475",
+    "stock_name": "立讯精密",
+    "industry_seed": "消费电子"
+  },
+  {
+    "order": 210,
+    "stock_code": "002466",
+    "stock_name": "天齐锂业",
+    "industry_seed": "能源金属"
+  },
+  {
+    "order": 211,
+    "stock_code": "002460",
+    "stock_name": "赣锋锂业",
+    "industry_seed": "能源金属"
+  },
+  {
+    "order": 212,
+    "stock_code": "002459",
+    "stock_name": "晶澳科技",
+    "industry_seed": "光伏设备"
+  },
+  {
+    "order": 213,
+    "stock_code": "002422",
+    "stock_name": "科伦药业",
+    "industry_seed": "化学制药"
+  },
+  {
+    "order": 214,
+    "stock_code": "002415",
+    "stock_name": "海康威视",
+    "industry_seed": "计算机设备"
+  },
+  {
+    "order": 215,
+    "stock_code": "002371",
+    "stock_name": "北方华创",
+    "industry_seed": "半导体"
+  },
+  {
+    "order": 216,
+    "stock_code": "002352",
+    "stock_name": "顺丰控股",
+    "industry_seed": "物流"
+  },
+  {
+    "order": 217,
+    "stock_code": "002311",
+    "stock_name": "海大集团",
+    "industry_seed": "饲料"
+  },
+  {
+    "order": 218,
+    "stock_code": "002304",
+    "stock_name": "洋河股份",
+    "industry_seed": "白酒II"
+  },
+  {
+    "order": 219,
+    "stock_code": "002241",
+    "stock_name": "歌尔股份",
+    "industry_seed": "消费电子"
+  },
+  {
+    "order": 220,
+    "stock_code": "002231",
+    "stock_name": "合众思壮",
+    "industry_seed": "计算机设备"
+  },
+  {
+    "order": 221,
+    "stock_code": "002180",
+    "stock_name": "盛新锂能",
+    "industry_seed": "能源金属"
+  },
+  {
+    "order": 222,
+    "stock_code": "002173",
+    "stock_name": "创新医疗",
+    "industry_seed": "医疗服务"
+  },
+  {
+    "order": 223,
+    "stock_code": "002129",
+    "stock_name": "TCL中环",
+    "industry_seed": "光伏设备"
+  },
+  {
+    "order": 224,
+    "stock_code": "002110",
+    "stock_name": "三川智慧",
+    "industry_seed": "仪器仪表"
+  },
+  {
+    "order": 225,
+    "stock_code": "002074",
+    "stock_name": "国轩高科",
+    "industry_seed": "电池"
+  },
+  {
+    "order": 226,
+    "stock_code": "002056",
+    "stock_name": "横店东磁",
+    "industry_seed": "小金属"
+  },
+  {
+    "order": 227,
+    "stock_code": "002050",
+    "stock_name": "三花智控",
+    "industry_seed": "元件"
+  },
+  {
+    "order": 228,
+    "stock_code": "002049",
+    "stock_name": "紫光国微",
+    "industry_seed": "半导体"
+  },
+  {
+    "order": 229,
+    "stock_code": "002044",
+    "stock_name": "美年健康",
+    "industry_seed": "医疗服务"
+  },
+  {
+    "order": 230,
+    "stock_code": "002032",
+    "stock_name": "苏泊尔",
+    "industry_seed": "小家电"
+  },
+  {
+    "order": 231,
+    "stock_code": "002027",
+    "stock_name": "分众传媒",
+    "industry_seed": "数字媒体"
+  },
+  {
+    "order": 232,
+    "stock_code": "002025",
+    "stock_name": "航天彩虹",
+    "industry_seed": "航空装备"
+  },
+  {
+    "order": 233,
+    "stock_code": "002013",
+    "stock_name": "中航机电",
+    "industry_seed": "汽车零部件"
+  },
+  {
+    "order": 234,
+    "stock_code": "002008",
+    "stock_name": "大族激光",
+    "industry_seed": "通用设备"
+  },
+  {
+    "order": 235,
+    "stock_code": "000999",
+    "stock_name": "华润三九",
+    "industry_seed": "中药II"
+  },
+  {
+    "order": 236,
+    "stock_code": "000983",
+    "stock_name": "山西焦煤",
+    "industry_seed": "煤炭开采"
+  },
+  {
+    "order": 237,
+    "stock_code": "000977",
+    "stock_name": "浪潮信息",
+    "industry_seed": "计算机设备"
+  },
+  {
+    "order": 238,
+    "stock_code": "000970",
+    "stock_name": "中科三环",
+    "industry_seed": "金属磁性材料"
+  },
+  {
+    "order": 239,
+    "stock_code": "000938",
+    "stock_name": "紫光股份",
+    "industry_seed": "计算机设备"
+  },
+  {
+    "order": 240,
+    "stock_code": "000898",
+    "stock_name": "鞍钢股份",
+    "industry_seed": "普钢"
+  },
+  {
+    "order": 241,
+    "stock_code": "000876",
+    "stock_name": "新希望",
+    "industry_seed": "饲料"
+  },
+  {
+    "order": 242,
+    "stock_code": "000860",
+    "stock_name": "顺鑫农业",
+    "industry_seed": "食品加工"
+  },
+  {
+    "order": 243,
+    "stock_code": "000858",
+    "stock_name": "五粮液",
+    "industry_seed": "白酒II"
+  },
+  {
+    "order": 244,
+    "stock_code": "000837",
+    "stock_name": "秦川机床",
+    "industry_seed": "通用设备"
+  },
+  {
+    "order": 245,
+    "stock_code": "000831",
+    "stock_name": "五矿稀土",
+    "industry_seed": "小金属"
+  },
+  {
+    "order": 246,
+    "stock_code": "000828",
+    "stock_name": "东莞控股",
+    "industry_seed": "铁路公路"
+  },
+  {
+    "order": 247,
+    "stock_code": "000819",
+    "stock_name": "岳阳兴长",
+    "industry_seed": "化学制品"
+  },
+  {
+    "order": 248,
+    "stock_code": "000807",
+    "stock_name": "云铝股份",
+    "industry_seed": "工业金属"
+  },
+  {
+    "order": 249,
+    "stock_code": "000799",
+    "stock_name": "酒鬼酒",
+    "industry_seed": "白酒II"
+  },
+  {
+    "order": 250,
+    "stock_code": "000786",
+    "stock_name": "北新建材",
+    "industry_seed": "装修建材"
+  },
+  {
+    "order": 251,
+    "stock_code": "000776",
+    "stock_name": "广发证券",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 252,
+    "stock_code": "000768",
+    "stock_name": "中航西飞",
+    "industry_seed": "航空装备II"
+  },
+  {
+    "order": 253,
+    "stock_code": "000750",
+    "stock_name": "国海证券",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 254,
+    "stock_code": "000739",
+    "stock_name": "普洛药业",
+    "industry_seed": "化学制药"
+  },
+  {
+    "order": 255,
+    "stock_code": "000738",
+    "stock_name": "航发控制",
+    "industry_seed": "航空装备"
+  },
+  {
+    "order": 256,
+    "stock_code": "000733",
+    "stock_name": "振华科技",
+    "industry_seed": "军工电子"
+  },
+  {
+    "order": 257,
+    "stock_code": "000728",
+    "stock_name": "国元证券",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 258,
+    "stock_code": "000723",
+    "stock_name": "美锦能源",
+    "industry_seed": "煤炭开采"
+  },
+  {
+    "order": 259,
+    "stock_code": "000718",
+    "stock_name": "苏宁环球",
+    "industry_seed": "房地产开发"
+  },
+  {
+    "order": 260,
+    "stock_code": "000709",
+    "stock_name": "华菱钢铁",
+    "industry_seed": "普钢"
+  },
+  {
+    "order": 261,
+    "stock_code": "000708",
+    "stock_name": "中信特钢",
+    "industry_seed": "特钢"
+  },
+  {
+    "order": 262,
+    "stock_code": "000686",
+    "stock_name": "东北证券",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 263,
+    "stock_code": "000661",
+    "stock_name": "长春高新",
+    "industry_seed": "生物制品"
+  },
+  {
+    "order": 264,
+    "stock_code": "000651",
+    "stock_name": "泸州老窖",
+    "industry_seed": "白酒II"
+  },
+  {
+    "order": 265,
+    "stock_code": "000630",
+    "stock_name": "铜陵有色",
+    "industry_seed": "工业金属"
+  },
+  {
+    "order": 266,
+    "stock_code": "000625",
+    "stock_name": "长安汽车",
+    "industry_seed": "乘用车"
+  },
+  {
+    "order": 267,
+    "stock_code": "000617",
+    "stock_name": "中油资本",
+    "industry_seed": "多元金融"
+  },
+  {
+    "order": 268,
+    "stock_code": "000603",
+    "stock_name": "盛达资源",
+    "industry_seed": "贵金属"
+  },
+  {
+    "order": 269,
+    "stock_code": "000596",
+    "stock_name": "古井贡酒",
+    "industry_seed": "白酒II"
+  },
+  {
+    "order": 270,
+    "stock_code": "000581",
+    "stock_name": "威孚高科",
+    "industry_seed": "汽车零部件"
+  },
+  {
+    "order": 271,
+    "stock_code": "000559",
+    "stock_name": "万向钱潮",
+    "industry_seed": "汽车零部件"
+  },
+  {
+    "order": 272,
+    "stock_code": "000550",
+    "stock_name": "江铃汽车",
+    "industry_seed": "乘用车"
+  },
+  {
+    "order": 273,
+    "stock_code": "000540",
+    "stock_name": "中天城投",
+    "industry_seed": "房地产开发"
+  },
+  {
+    "order": 274,
+    "stock_code": "000538",
+    "stock_name": "云南白药",
+    "industry_seed": "中药II"
+  },
+  {
+    "order": 275,
+    "stock_code": "000528",
+    "stock_name": "柳工",
+    "industry_seed": "工程机械"
+  },
+  {
+    "order": 276,
+    "stock_code": "000520",
+    "stock_name": "中船防务",
+    "industry_seed": "航海装备"
+  },
+  {
+    "order": 277,
+    "stock_code": "000519",
+    "stock_name": "银河磁体",
+    "industry_seed": "金属磁性材料"
+  },
+  {
+    "order": 278,
+    "stock_code": "000503",
+    "stock_name": "国新健康",
+    "industry_seed": "医疗服务"
+  },
+  {
+    "order": 279,
+    "stock_code": "000425",
+    "stock_name": "徐工机械",
+    "industry_seed": "工程机械"
+  },
+  {
+    "order": 280,
+    "stock_code": "000415",
+    "stock_name": "渤海租赁",
+    "industry_seed": "多元金融"
+  },
+  {
+    "order": 281,
+    "stock_code": "000408",
+    "stock_name": "藏格矿业",
+    "industry_seed": "能源金属"
+  },
+  {
+    "order": 282,
+    "stock_code": "000402",
+    "stock_name": "金融街",
+    "industry_seed": "房地产开发"
+  },
+  {
+    "order": 283,
+    "stock_code": "000338",
+    "stock_name": "潍柴动力",
+    "industry_seed": "汽车零部件"
+  },
+  {
+    "order": 284,
+    "stock_code": "000333",
+    "stock_name": "美的集团",
+    "industry_seed": "白色家电"
+  },
+  {
+    "order": 285,
+    "stock_code": "000166",
+    "stock_name": "申万宏源",
+    "industry_seed": "证券II"
+  },
+  {
+    "order": 286,
+    "stock_code": "000155",
+    "stock_name": "川能动力",
+    "industry_seed": "电力"
+  },
+  {
+    "order": 287,
+    "stock_code": "000100",
+    "stock_name": "TCL科技",
+    "industry_seed": "光学光电子"
+  },
+  {
+    "order": 288,
+    "stock_code": "000066",
+    "stock_name": "中国长城",
+    "industry_seed": "计算机设备"
+  },
+  {
+    "order": 289,
+    "stock_code": "000063",
+    "stock_name": "中兴通讯",
+    "industry_seed": "通信设备"
+  },
+  {
+    "order": 290,
+    "stock_code": "000050",
+    "stock_name": "深天马A",
+    "industry_seed": "光学光电子"
+  },
+  {
+    "order": 291,
+    "stock_code": "000049",
+    "stock_name": "德赛电池",
+    "industry_seed": "电池"
+  },
+  {
+    "order": 292,
+    "stock_code": "000039",
+    "stock_name": "中集集团",
+    "industry_seed": "通用设备"
+  },
+  {
+    "order": 293,
+    "stock_code": "000027",
+    "stock_name": "深圳能源",
+    "industry_seed": "电力"
+  },
+  {
+    "order": 294,
+    "stock_code": "000025",
+    "stock_name": "特力A",
+    "industry_seed": "汽车服务"
+  },
+  {
+    "order": 295,
+    "stock_code": "000012",
+    "stock_name": "南玻A",
+    "industry_seed": "玻璃玻纤"
+  },
+  {
+    "order": 296,
+    "stock_code": "000009",
+    "stock_name": "中国宝安",
+    "industry_seed": "综合"
+  },
+  {
+    "order": 297,
+    "stock_code": "000006",
+    "stock_name": "深振业A",
+    "industry_seed": "房地产开发"
+  },
+  {
+    "order": 298,
+    "stock_code": "000005",
+    "stock_name": "世纪星源",
+    "industry_seed": "环保"
+  },
+  {
+    "order": 299,
+    "stock_code": "000002",
+    "stock_name": "万科A",
+    "industry_seed": "房地产开发"
+  },
+  {
+    "order": 300,
+    "stock_code": "000001",
+    "stock_name": "平安银行",
+    "industry_seed": "银行II"
+  }
+]
